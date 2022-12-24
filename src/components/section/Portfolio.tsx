@@ -10,7 +10,7 @@ export default function About() {
 
 		<div className="flex-container">
 			<Card
-			thumb={"./src/img/mTable.png"}
+			thumb={"/static/img/projects/mTable.png"}
 			title={"Multiplication table"}
 			text={"Multiplication table for web developed for the class 'Special topics in computing I'."}>
 				<Button href="https://ribborges.github.io/Multiply-Table/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
@@ -18,7 +18,7 @@ export default function About() {
 			</Card>
 
 			<Card
-			thumb={"./src/img/rkPortfofio.png"}
+			thumb={"/static/img/projects/rkPortfofio.png"}
 			title={"Portfolio"}
 			text={"Rocketseat portfolio challange"}>
 				<Button href="https://ribborges.github.io/rocketseat-challenges/portfolio/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
@@ -26,7 +26,7 @@ export default function About() {
 			</Card>
 
 			<Card
-			thumb={"./src/img/mTable.png"}
+			thumb={"/static/img/projects/mTable.png"}
 			title={"Multiplication table"}
 			text={"Multiplication table for web developed for the class 'Special topics in computing I'."}>
 				<Button href="https://ribborges.github.io/Multiply-Table/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
@@ -34,7 +34,7 @@ export default function About() {
 			</Card>
 
 			<Card
-			thumb={"./src/img/students.png"}
+			thumb={"/static/img/projects/students.png"}
 			title={"Students"}
 			text={"Student registration for web developed for the class 'Special topics in computing I'."}>
 				<Button href="https://ribborges.github.io/University/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
@@ -42,7 +42,7 @@ export default function About() {
 			</Card>
 
 			<Card
-			thumb={"./src/img/arcade.png"}
+			thumb={"/static/img/projects/arcade.png"}
 			title={"Arcade"}
 			text={"Tic tac toe and memory game developed for the class 'Algorithms and data structures I'."}>
 				<Button href="https://ribborges.github.io/Arcade/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
@@ -50,7 +50,7 @@ export default function About() {
 			</Card>
 
 			<Card
-			thumb={"./src/img/kids.png"}
+			thumb={"/static/img/projects/kids.png"}
 			title={"Audio game for kids"}
 			text={"A game to teach English for children. Developed for the class 'Algorithms and data structures I'."}>
 				<Button href="https://ribborges.github.io/Kids/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
