@@ -1,0 +1,78 @@
+@import "../../styles/abstract/var";
+
+.header {
+    background-color: $dark-color;
+    background-image:  linear-gradient($dark-grey-color 1px, transparent 1px), linear-gradient(to right, $dark-grey-color 1px, $dark-color 1px);
+    background-size: 20px 20px;
+    height: 60vh;
+    padding: 10vw;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    div {
+        display: flex;
+        margin: 10px;
+    }
+}
+
+.pageTitle {
+    background-color: $primary-color;
+    width: auto;
+    height: 20vh;
+	padding: 10vh;
+    padding-top: 30%;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: 0;
+    z-index: 8;
+	display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    background-color: #ffffff;
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: auto;
+	transition: 1s;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover, &:focus {
+        border-radius: 10px;
+    }
+}
+
+.title {
+    font-size: 5rem;
+    text-align: justify;
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        padding-top: 40%;
+
+        div {
+            margin: 0;
+        }
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}

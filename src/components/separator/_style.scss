@@ -1,0 +1,16 @@
+@import "../../styles/abstract/var";
+
+.spacer {
+	display: block;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	border-bottom: none;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: $dark-grey-color;
+}
+
+.blankspace {
+	border-style: none;
+	height: 1vw;
+}

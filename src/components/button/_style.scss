@@ -1,0 +1,72 @@
+@import "../../styles/abstract/var";
+
+.button {
+    color: $light-color;
+	background-color: transparent;
+    text-decoration: none;
+	display: inline-block;
+    border-radius: $border-radius;
+	padding: 10px;
+	margin: 10px;
+	transition: 1s;
+	border: 2px solid $light-color;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        color: $dark-color;
+        background-color: $light-color;
+        text-shadow: 1px 1px 10px $light-color;
+	    box-shadow: 0 0 2px 0 $dark-color;
+        text-decoration: none;
+    }
+}
+
+.big {
+    padding: 20px;
+    margin: 5px;
+    flex: 0 1 20%;
+}
+
+.email {
+    border: 2px solid $email-color;
+
+    &:hover, &:focus {
+        background-color: $email-color;
+    }
+}
+
+.linkedin {
+    border: 2px solid $linkedin-color;
+
+    &:hover, &:focus {
+        background-color: $linkedin-color;
+    }
+}
+
+.github {
+    border: 2px solid $github-color;
+
+    &:hover, &:focus {
+        background-color: $github-color;
+    }
+}
+
+.cv {
+    border: 2px solid $cv-color;
+
+    &:hover, &:focus {
+        background-color: $cv-color;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .big {
+        flex: 0 1 35%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .big {
+        flex: 0 1 100%;
+    }
+}

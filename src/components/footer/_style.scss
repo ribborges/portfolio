@@ -1,0 +1,21 @@
+@import "../../styles/abstract/var";
+
+.footer {
+	padding: 2vw;
+	margin: 2vw;
+	background-color: $dark-grey-color;
+	border-radius: $border-radius;
+	left: 0;
+	bottom: 0;
+	transition: 1s;
+
+    &:hover {
+        scale: 1.02;
+    }
+
+	p {
+		text-align: center;
+		font-size: 1rem;
+		font-weight: lighter;
+	}
+}

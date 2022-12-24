@@ -1,0 +1,23 @@
+#about {
+    p {
+        display: inline-block;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }    
+}
+
+.icon {
+    height: 8vw;
+    width: auto;
+    max-height: 80px;
+    margin-left: 5px;
+    margin-top: 20px;
+    transition: 1s;
+
+    &:hover {
+        filter: drop-shadow(0 0 30px #ffffff5a);
+        scale: 1.1;
+    }
+}

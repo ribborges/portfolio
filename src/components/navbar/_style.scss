@@ -1,0 +1,59 @@
+@import "../../styles/abstract/var";
+@import "../../styles/abstract/mixin";
+
+.navbar {
+	color: $light-color;
+	background-color: rgba($dark-color, 0.2);
+	height: 12vw;
+	max-height: 10vh;
+	width: auto;
+	position: fixed;
+	z-index: 9;
+	margin: 1vw;
+	transition: 1s;
+	display: flex;
+  	align-items: center;
+	border-radius: $border-radius;
+	border: 1px solid #ffffff46;
+	box-shadow: 0 0 10px #ffffff41;
+	@include acrylic();
+
+	.nav-item {
+		color: $light-color;
+		background-color: transparent;
+		padding: 30px;
+		text-decoration: none;
+		margin: 10px;
+		transition: 1s;
+		cursor: pointer;
+
+		&:hover, &:focus {
+			text-shadow: 1px 1px 10px $light-color;
+		}
+	}
+
+    &.scrolled {
+        background-color: rgba($light-color, 0.2);
+
+		.nav-item {
+			color: $dark-color;
+
+			&:hover, &:focus {
+				text-shadow: 1px 1px 10px $dark-color;
+			}
+		}
+    }
+}
+
+@media screen and (max-width: 800px) {
+	.navbar {
+		.nav-item {
+			padding: 10px;
+			font-size: 120%;
+
+			.nav-item-label {
+				display: none;
+			}
+		}
+	}
+}
