@@ -26,11 +26,27 @@ export default function About() {
 			</Card>
 
 			<Card
+			thumb={"/static/img/projects/rocketseatListaPresenca.png"}
+			title={"Lista de presença"}
+			text={""}>
+				<Button href="https://lista-presenca-two.vercel.app/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
+				<Button href="https://github.com/ribborges/lista-presenca/"><i className="bi bi-github"></i> Code</Button>
+			</Card>
+
+			<Card
 			thumb={"/static/img/projects/aluraStudies.png"}
 			title={"Alura Studies"}
 			text={"Studie list with stopwatch"}>
 				<Button href="https://alura-studies-gray.vercel.app/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
 				<Button href="https://github.com/ribborges/alura-studies/"><i className="bi bi-github"></i> Code</Button>
+			</Card>
+
+			<Card
+			thumb={"/static/img/projects/aluraSpa.png"}
+			title={"Alura Spa"}
+			text={"Alura Spa - Made with SCSS"}>
+				<Button href="https://ribborges.github.io/alura-spa/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
+				<Button href="https://github.com/ribborges/alura-spa/"><i className="bi bi-github"></i> Code</Button>
 			</Card>
 
 			<Card
