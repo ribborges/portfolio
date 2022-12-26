@@ -27,8 +27,8 @@ export default function About() {
 
 			<Card
 			thumb={"/static/img/projects/rocketseatListaPresenca.png"}
-			title={"Lista de presença"}
-			text={""}>
+			title={"Attendance list"}
+			text={"Rocketseat - Attendence list"}>
 				<Button href="https://lista-presenca-two.vercel.app/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
 				<Button href="https://github.com/ribborges/lista-presenca/"><i className="bi bi-github"></i> Code</Button>
 			</Card>
