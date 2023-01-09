@@ -10,6 +10,14 @@ export default function About() {
 
 		<div className="flex-container">
 			<Card
+			thumb={"/static/img/projects/rocketnews.png"}
+			title={"Rocketnews"}
+			text={"Rocketseat newsletter challenge"}>
+				<Button href="https://ribborges.github.io/rocketnews/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
+				<Button href="https://github.com/ribborges/rocketnews/"><i className="bi bi-github"></i> Code</Button>
+			</Card>
+
+			<Card
 			thumb={"/static/img/projects/socialTree.png"}
 			title={"Social tree"}
 			text={"Rocketseat social tree challenge"}>
