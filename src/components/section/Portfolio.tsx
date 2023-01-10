@@ -29,8 +29,8 @@ export default function About() {
 			thumb={"/static/img/projects/rkPortfofio.png"}
 			title={"Portfolio"}
 			text={"Rocketseat portfolio challenge"}>
-				<Button href="https://ribborges.github.io/rocketseat-challenges/portfolio/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
-				<Button href="https://github.com/ribborges/rocketseat-challenges/tree/main/portfolio/"><i className="bi bi-github"></i> Code</Button>
+				<Button href="https://ribborges.github.io/rocket-portfolio/"><i className="bi bi-box-arrow-up-right"></i> Demo</Button>
+				<Button href="https://github.com/ribborges/rocket-portfolio/"><i className="bi bi-github"></i> Code</Button>
 			</Card>
 
 			<Card
