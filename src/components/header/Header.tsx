@@ -10,7 +10,7 @@ export default function Header() {
 			<h1>I'm Richard Borges</h1>
 			<h2>Front-end developer</h2>
 			<Blanckspace/>
-			<Button href="public/cv/cv-richard-borges.pdf" className="accent big"><i className="bi bi-file-earmark-person-fill"></i> Curriculum Vitae</Button>
+			<Button href="/cv/cv-richard-borges.pdf" className="accent big"><i className="bi bi-file-earmark-person-fill"></i> Curriculum Vitae</Button>
 		</div>
 	</header>
   )
