@@ -14,3 +14,9 @@
 	border-style: none;
 	height: 1vw;
 }
+
+@media (prefers-color-scheme: light) {
+	.spacer {
+		border-top-color: $light-grey-color;
+	}
+}

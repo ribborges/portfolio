@@ -2,6 +2,7 @@
 @import "../../styles/abstract/mixin";
 
 .card {
+    color: $light-color;
 	background-color: $dark-grey-color;
     border-radius: $border-radius;
     position: relative;
@@ -30,7 +31,7 @@
 
     .card-caption {
         @include acrylic();
-        background-color: rgba($primary-color, 0.2);
+        background-color: rgba($primary-accent-color, 0.2);
         position: absolute;
         top: 0;
         left: 0;

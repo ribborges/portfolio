@@ -19,3 +19,9 @@
 		font-weight: lighter;
 	}
 }
+
+@media (prefers-color-scheme: light) {
+	.footer {
+		background-color: $light-grey-color;
+	}
+}

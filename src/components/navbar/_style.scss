@@ -3,7 +3,7 @@
 
 .navbar {
 	color: $light-color;
-	background-color: rgba($dark-color, 0.2);
+	background-color: rgba($light-color, 0.2);
 	height: 12vw;
 	max-height: 10vh;
 	width: auto;
@@ -31,18 +31,6 @@
 			text-shadow: 1px 1px 10px $light-color;
 		}
 	}
-
-    &.scrolled {
-        background-color: rgba($light-color, 0.2);
-
-		.nav-item {
-			color: $dark-color;
-
-			&:hover, &:focus {
-				text-shadow: 1px 1px 10px $dark-color;
-			}
-		}
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -53,6 +41,21 @@
 
 			.nav-item-label {
 				display: none;
+			}
+		}
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.navbar {
+		color: $dark-color;
+		background-color: rgba($dark-color, 0.2);
+
+		.nav-item {
+			color: $dark-color;
+
+			&:hover, &:focus {
+				text-shadow: 1px 1px 10px $dark-color;
 			}
 		}
 	}

@@ -2,7 +2,7 @@ import './_style.scss';
 
 export default function Nav() {
   return (
-    <nav id="navbar" className="navbar scrolled">
+    <nav id="navbar" className="navbar">
 		<a className="nav-item" href="index.html"><i className="bi bi-house-door-fill"></i><i className="nav-item-label"> Home</i></a>
 
 		<a style={{marginLeft: "auto"}} className="nav-item" href="#about"><i className="bi bi-person"></i><i className="nav-item-label"> About me</i></a>
