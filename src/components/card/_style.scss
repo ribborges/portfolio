@@ -58,6 +58,14 @@
             justify-content: space-evenly;
         }
     }
+
+    .button {
+        color: $light-color;
+
+        &:hover, &:focus {
+            color: $dark-color;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {

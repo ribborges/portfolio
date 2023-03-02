@@ -13,7 +13,7 @@
     cursor: pointer;
 
     &:hover, &:focus {
-        color: $light-color;
+        color: $dark-color;
         background-color: $light-color;
         text-shadow: 1px 1px 10px $light-color;
 	    box-shadow: 0 0 2px 0 $dark-color;
@@ -25,6 +25,14 @@
     padding: 20px;
     margin: 5px;
     flex: 0 1 20%;
+}
+
+.accent {
+    border: 2px solid $primary-accent-color;
+
+    &:hover, &:focus {
+        background-color: $primary-accent-color;
+    }
 }
 
 .email {
@@ -74,5 +82,9 @@
 @media (prefers-color-scheme: light) {
     .button {
         color: $dark-color;
+
+        &:hover, &:focus {
+            color: $light-color;
+        }
     }
 }

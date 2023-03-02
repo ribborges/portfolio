@@ -1,3 +1,5 @@
+@import "../../styles/abstract/var";
+
 #about {
     p {
         display: inline-block;
@@ -17,7 +19,15 @@
     transition: 1s;
 
     &:hover {
-        filter: drop-shadow(0 0 30px #ffffff5a);
+        filter: drop-shadow(0 0 30px rgba($light-color, 0.2));
         scale: 1.1;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .icon {
+        &:hover {
+            filter: drop-shadow(0 0 30px $dark-color);
+        }
     }
 }

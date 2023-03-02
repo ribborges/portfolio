@@ -2,8 +2,8 @@
 @import "../../styles/abstract/mixin";
 
 .navbar {
-	color: $light-color;
-	background-color: rgba($light-color, 0.2);
+	color: $dark-color;
+	background-color: rgba($light-color, 0.3);
 	height: 12vw;
 	max-height: 10vh;
 	width: auto;
@@ -19,7 +19,7 @@
 	@include acrylic();
 
 	.nav-item {
-		color: $light-color;
+		color: $dark-color;
 		background-color: transparent;
 		padding: 30px;
 		text-decoration: none;
@@ -48,11 +48,11 @@
 
 @media (prefers-color-scheme: light) {
 	.navbar {
-		color: $dark-color;
-		background-color: rgba($dark-color, 0.2);
+		color: $light-color;
+		background-color: rgba($dark-color, 0.5);
 
 		.nav-item {
-			color: $dark-color;
+			color: $light-color;
 
 			&:hover, &:focus {
 				text-shadow: 1px 1px 10px $dark-color;
