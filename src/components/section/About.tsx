@@ -17,13 +17,13 @@ export default function About() {
 		</p>
 		<Blanckspace/>
 		<div>
-			<img className="icon" src="/public/static/img/icons/JS.png"/>
-			<img className="icon" src="/public/static/img/icons/TS.png"/>
-			<img className="icon" src="/public/static/img/icons/SASS.png"/>
-			<img className="icon" src="/public/static/img/icons/Node.png"/>
-			<img className="icon" src="/public/static/img/icons/React.png"/>
-			<img className="icon" src="/public/static/img/icons/Mongo.png"/>
-			<img className="icon" src="/public/static/img/icons/Unreal.png"/>
+			<img className="icon" src="/static/img/icons/JS.png"/>
+			<img className="icon" src="/static/img/icons/TS.png"/>
+			<img className="icon" src="/static/img/icons/SASS.png"/>
+			<img className="icon" src="/static/img/icons/Node.png"/>
+			<img className="icon" src="/static/img/icons/React.png"/>
+			<img className="icon" src="/static/img/icons/Mongo.png"/>
+			<img className="icon" src="/static/img/icons/Unreal.png"/>
 		</div>
 	</section>
   )
