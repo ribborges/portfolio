@@ -1,15 +1,25 @@
+import { displayText } from '../../data/lang';
+import { Input } from '../input/Input';
 import './_style.scss';
 
-export default function Nav() {
-  return (
-    <nav id="navbar" className="navbar">
-		<a className="nav-item" href="index.html"><i className="bi bi-house-door-fill"></i><i className="nav-item-label"> Home</i></a>
+interface navProps {
+	onChange: any,
+	lang?: displayText,
+}
 
-		<a style={{marginLeft: "auto"}} className="nav-item" href="#about"><i className="bi bi-person"></i><i className="nav-item-label"> About me</i></a>
+export default function Nav(props: navProps) {
+	return (
+		<nav id="navbar" className="navbar">
+			<a className="nav-item" href="index.html"><i className="bi bi-house-door-fill" /><i className="nav-item-label">{props.lang?.nav.home}</i></a>
 
-		<a className="nav-item" href="#portfolio"><i className="bi bi-briefcase"></i><i className="nav-item-label"> Portfolio</i></a>
+			<a style={{ marginLeft: "auto" }} className="nav-item" href="#about"><i className="bi bi-person-fill" /><i className="nav-item-label">{props.lang?.nav.about}</i></a>
 
-		<a className="nav-item" href="#contact"><i className="bi bi-card-list"></i><i className="nav-item-label"> Contact</i></a>
-	</nav>
-  )
+			<a className="nav-item" href="#portfolio"><i className="bi bi-briefcase-fill" /><i className="nav-item-label">{props.lang?.nav.portfolio}</i></a>
+
+			<p><Input icon="bi bi-translate" type="option" onChange={props.onChange}>
+				<option value="en">English</option>
+				<option value="pt">Português</option>
+			</Input></p>
+		</nav>
+	)
 }

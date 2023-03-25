@@ -1,35 +1,40 @@
-@import "../../styles/abstract/var";
-@import "../../styles/abstract/mixin";
+@import "../../style/abstract/var";
+@import "../../style/abstract/mixin";
 
 .navbar {
-	color: $dark-color;
-	background-color: rgba($light-color, 0.3);
-	height: 12vw;
-	max-height: 10vh;
+	color: $light-color;
+	background-color: rgba($dark-grey-color, 0.3);
+	height: 14vw;
+	max-height: 14vh;
 	width: auto;
 	position: fixed;
 	z-index: 9;
-	margin: 1vw;
 	transition: 1s;
 	display: flex;
-  	align-items: center;
-	border-radius: $border-radius;
-	border: 1px solid rgba($light-color, 0.3);
-	box-shadow: 0 0 10px rgba($light-color, 0.3);
+	align-items: center;
+	border-bottom: 2px solid rgba($light-grey-color, 0.2);
 	@include acrylic();
 
 	.nav-item {
-		color: $dark-color;
-		background-color: transparent;
-		padding: 30px;
+		display: flex;
+		color: $light-color;
+		padding: 15px;
 		text-decoration: none;
 		margin: 10px;
+		border: 2px solid transparent;
+		border-radius: $border-radius;
 		transition: 1s;
 		cursor: pointer;
 
-		&:hover, &:focus {
-			scale: 1.1;
-			text-shadow: 1px 1px 10px $light-color;
+		i {
+			font-style: normal;
+			padding: 5px;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: rgba($light-grey-color, 0.3);
+			border: 2px solid rgba($light-color, 0.1);
 		}
 	}
 }
@@ -49,16 +54,17 @@
 
 @media (prefers-color-scheme: light) {
 	.navbar {
-		color: $light-color;
-		background-color: rgba($dark-color, 0.5);
-		border: 1px solid rgba($dark-color, 0.3);
-		box-shadow: 0 0 10px rgba($dark-color, 0.3);
+		color: $dark-color;
+		background-color: rgba($light-color, 0.5);
+		border: 1px solid rgba($light-grey-color, 0.7);
 
 		.nav-item {
-			color: $light-color;
+			color: $dark-color;
 
-			&:hover, &:focus {
-				text-shadow: 1px 1px 10px $dark-color;
+			&:hover,
+			&:focus {
+				background-color: rgba($dark-grey-color, 0.1);
+				border: 2px solid rgba($dark-color, 0.05);
 			}
 		}
 	}
