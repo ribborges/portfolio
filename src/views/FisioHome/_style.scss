@@ -1,0 +1,384 @@
+.container {
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.panel {
+    height: 100vh;
+    width: 100vw;
+    padding: 10vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    scroll-snap-align: start;
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        margin: 15px;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .content {
+        display: flex;
+        text-align: center;
+        width: 65%;
+        height: 80%;
+        gap: 20px;
+
+        .content-div {
+            flex: 1;
+        }
+    }
+
+    * {
+        z-index: 1;
+    }
+}
+
+.one {
+    color: #54ff77;
+    background-color: #54ff77;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 45vw;
+        height: 45vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    * {
+        color: #54ff77;
+    }
+}
+
+.two {
+    background-color: #54ff77;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -15vw;
+        left: -15vw;
+        width: 30vw;
+        height: 30vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -15vw;
+        right: -15vw;
+        width: 30vw;
+        height: 30vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+}
+
+.three {
+    background-color: #54ff77;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -5vw;
+        left: -5vw;
+        width: 15vw;
+        height: 15vw;
+        background-color: black;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -5vw;
+        right: -5vw;
+        width: 15vw;
+        height: 15vw;
+        background-color: black;
+        transform: rotate(45deg);
+    }
+}
+
+.four {
+    background: linear-gradient(to right, #54ff77 50%, black 50%);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        background: linear-gradient(to right, black 50%, #54ff77 50%);
+        position: absolute;
+        width: 40vw;
+        height: 40vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        background: linear-gradient(to right, #54ff77 50%, black 50%);
+        position: absolute;
+        width: 20vw;
+        height: 20vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .text {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.5);
+    }
+
+    .content {
+        gap: 10%;
+
+        .image {
+            flex: 1;
+            height: 100%;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.five {
+    background-color: #54ff77;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -15vw;
+        width: 30vw;
+        height: 30vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -15vw;
+        width: 30vw;
+        height: 30vw;
+        background-color: black;
+        border-radius: 50%;
+    }
+}
+
+.six {
+    background-color: #54ff77;
+    position: relative;
+    overflow: hidden;
+
+    .content {
+        width: 75%;
+    }
+
+    a {
+        color: #54ff77;
+        background-color: black;
+        padding: 10px;
+        border-radius: 15px;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .panel {
+        padding: 5vw;
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 10px;
+            font-size: 1rem;
+        }
+
+        .content {
+            width: 75%;
+            height: 80%;
+            gap: 10px;
+        }
+    }
+
+    .one {
+        &::after {
+            width: 70vw;
+            height: 70vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .panel {
+        padding: 5vw;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 15px;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .content {
+            width: 95%;
+            gap: 10px;
+            flex-direction: column;
+        }
+    }
+
+    .one {
+        &::after {
+            width: 85vw;
+            height: 85vw;
+        }
+    }
+
+    .two {
+        &::before {
+            top: -15vw;
+            left: -15vw;
+            width: 50vw;
+            height: 50vw;
+        }
+
+        &::after {
+            bottom: -20vw;
+            right: -20vw;
+            width: 50vw;
+            height: 50vw;
+        }
+    }
+
+    .three {
+        &::before {
+            bottom: -10vw;
+            left: -10vw;
+            width: 30vw;
+            height: 30vw;
+        }
+
+        &::after {
+            top: -10vw;
+            right: -10vw;
+            width: 30vw;
+            height: 30vw;
+        }
+    }
+
+    .four {
+        &::before {
+            width: 90vw;
+            height: 90vw;
+        }
+
+        &::after {
+            width: 45vw;
+            height: 45vw;
+        }
+
+        .content {
+            .image {
+                height: 50vh;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .five {
+        &::before {
+            left: auto;
+            top: -15vw;
+            width: 30vw;
+            height: 30vw;
+        }
+
+        &::after {
+            right: auto;
+            bottom: -15vw;
+            width: 30vw;
+            height: 30vw;
+        }
+    }
+
+    .six {
+        background-color: #54ff77;
+        position: relative;
+        overflow: hidden;
+
+        .content {
+            width: 100%;
+            gap: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

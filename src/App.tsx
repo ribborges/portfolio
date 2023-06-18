@@ -1,14 +1,12 @@
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import Nav from "./components/navbar/Nav";
-import About from "./components/section/About";
-//import Contact from "./components/section/Contact";
-import Portfolio from "./components/section/Portfolio";
-import Spacer from "./components/separator/Spacer";
 import { useState } from "react";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
 import { displayText, en, pt } from "./data/lang";
 
 import './style/_app.scss';
+import Contact from "./components/section/Contact";
+import Home from "./views/Home";
+import FisioHome from "./views/FisioHome";
 
 export default function App() {
   const [lang, setLang] = useState<displayText>(en);
@@ -28,16 +26,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <Nav onChange={handleLanguageChange} lang={lang} />
-      <Header lang={lang} />
-
-      <main className="content">
-        <About lang={lang} />
-        <Spacer />
-        <Portfolio lang={lang} />
-      </main>
-
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home languageChange={handleLanguageChange} lang={lang} />} />
+          <Route path="/fisio-home" element={<FisioHome lang={lang} />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

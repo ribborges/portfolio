@@ -1,8 +1,12 @@
-import Card from "../card/Card";
+import { displayText } from "../../data/lang";
 import ButtonLink from "../input/ButtonLink";
 import Blanckspace from "../separator/Blackspace";
 
-export default function Contact() {
+interface contactProps {
+	lang?: displayText,
+}
+
+export default function Contact(props: contactProps) {
   return (
     <section id="contact">
       <h1><i className="bi bi-list-task"></i> CONTACT ME</h1>
@@ -13,5 +17,5 @@ export default function Contact() {
         <ButtonLink href="https://github.com/ribborges" className="accent big"><i className="bi bi-github" /> Github</ButtonLink>
       </div>
     </section>
-  )
+  );
 }

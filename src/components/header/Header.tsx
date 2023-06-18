@@ -9,7 +9,7 @@ interface headerProps {
 
 export default function Header(props: headerProps) {
 	return (
-		<header className="header">
+		<header id="header" className="header">
 			<div>
 				<h3>{props.lang?.header.h3}</h3>
 				<h1>{props.lang?.header.h1}</h1>

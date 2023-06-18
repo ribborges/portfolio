@@ -10,7 +10,7 @@ interface navProps {
 export default function Nav(props: navProps) {
 	return (
 		<nav id="navbar" className="navbar">
-			<a className="nav-item" href="index.html"><i className="bi bi-house-door-fill" /><i className="nav-item-label">{props.lang?.nav.home}</i></a>
+			<a className="nav-item" href="#header"><i className="bi bi-house-door-fill" /><i className="nav-item-label">{props.lang?.nav.home}</i></a>
 
 			<a style={{ marginLeft: "auto" }} className="nav-item" href="#about"><i className="bi bi-person-fill" /><i className="nav-item-label">{props.lang?.nav.about}</i></a>
 

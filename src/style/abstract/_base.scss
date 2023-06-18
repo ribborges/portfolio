@@ -74,6 +74,10 @@ a {
     flex-direction: column;
 }
 
+.flex-center {
+    align-items: center;
+}
+
 @media (prefers-color-scheme: light) {
     body {
         // Color scheme
