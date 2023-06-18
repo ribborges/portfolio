@@ -73,7 +73,7 @@ export default function FisioHome(props: fisioHomeProps) {
                         <p>{props.lang?.pages?.fisioHome.four.text}</p>
                     </div>
                     <div className="image">
-                        <img src="/public/static/img/fisio-home/phone.png" alt="User interface" />
+                        <img src="/static/img/fisio-home/phone.png" alt="User interface" />
                     </div>
                 </div>
             </section>

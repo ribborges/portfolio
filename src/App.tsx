@@ -4,12 +4,11 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { displayText, en, pt } from "./data/lang";
 
 import './style/_app.scss';
-import Contact from "./components/section/Contact";
 import Home from "./views/Home";
 import FisioHome from "./views/FisioHome";
 
 export default function App() {
-  const [lang, setLang] = useState<displayText>(en);
+  const [lang, setLang] = useState<displayText>(pt);
 
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const lang = event.target.value;
