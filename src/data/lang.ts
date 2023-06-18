@@ -109,21 +109,6 @@ export const en: displayText = {
             btn: ["Demo", "Code"]
         }],
     }, {
-        title: "Unreal Engine",
-        project: [{
-            title: "Platform Game Engine",
-            text: "'Platform Game Engine' is a complete platform game kit with full gameplay, enemy AI, save game, power up system, interactive environment and more...",
-            btn: ["Unreal Marketplace"]
-        }, {
-            title: "Interactive Objects System V2",
-            text: "'Interactive Objects' System V2 is a fully customizable and modular system for interaction with objects, triggers, doors, windows, items, furniture, physics and more...",
-            btn: ["Unreal Marketplace"]
-        }, {
-            title: "Tower Defense Starter Sample",
-            text: "A very modular and easy to customize 'Tower Defense' project made with blueprint that provides functionalities for towers, enemys, rounds and UI selection...",
-            btn: ["Unreal Marketplace"]
-        }],
-    }, {
         title: "Mobile",
         project: [{
             title: "Fisio Home",
@@ -233,21 +218,6 @@ export const pt: displayText = {
             text: "Registro de alunos desenvolvida para a matéria de 'Tópicos especiais em computação I'",
             btn: ["Demo", "Código"]
         }],
-    }, {
-        title: "Unreal Engine",
-        project: [{
-            title: "Platform Game Engine",
-            text: "'Platform Game Engine' é um kit completo de jogo de plataforma com jogabilidade completa, inteligência artificial para inimigos, sistema de salvamento de jogo, sistema de power-ups, ambiente interativo e muito mais...",
-            btn: ["Unreal Marketplace"]
-        }, {
-            title: "Interactive Objects System",
-            text: "'Interactive Objects System' é um sistema totalmente personalizável e modular para interação com objetos, gatilhos, portas, janelas, itens, móveis, física e muito mais...",
-            btn: ["Unreal Marketplace"]
-        }, {
-            title: "Tower Defense Starter Sample",
-            text: "Um projeto de 'Tower Defense' muito modular e fácil de personalizar feito com blueprints que oferece funcionalidades para torres, inimigos, rodadas e seleção de interface de usuário...",
-            btn: ["Unreal Marketplace"]
-        }]
     }, {
         title: "Mobile",
         project: [{
