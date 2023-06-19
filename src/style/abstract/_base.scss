@@ -78,6 +78,28 @@ a {
     align-items: center;
 }
 
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
 @media (prefers-color-scheme: light) {
     body {
         // Color scheme

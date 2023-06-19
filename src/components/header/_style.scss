@@ -1,23 +1,61 @@
 @import "../../style/abstract/var";
 
 .header {
-    background-color: $dark-color;
-    background-image:  linear-gradient($dark-grey-color 1px, transparent 1px), linear-gradient(to right, $dark-grey-color 1px, $dark-color 1px);
-    background-size: 20px 20px;
+    background:
+        linear-gradient(90deg, $dark-color (
+            25px - 2px),
+        transparent 1%) center,
+        linear-gradient($dark-color (
+            25px - 2px),
+        transparent 1%) center,
+        $dark-grey-color;
+    background-size: 25px 25px;
+    animation: move-it 10s linear infinite;
     min-height: 65vh;
     padding: 10vw;
-    z-index: 8;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-flow: row wrap;
 
-    div {
-        margin: 10px;
+    .header-info, .header-pic {
+        margin: 5vw;
+    }
+
+    .social-btns {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-pic {
+        display: flex;
+        overflow: hidden;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        transition: 1s;
+
+        &:hover {
+            border-radius: $border-radius;
+        }
     }
 
     h1 {
         color: $primary-accent-color;
+    }
+
+    * {
+        z-index: 2;
+    }
+}
+
+@keyframes move-it {
+    0% {
+        background-position: initial;
+    }
+
+    100% {
+        background-position: 100px 100px;
     }
 }
 
@@ -29,15 +67,16 @@
     border-radius: 50%;
     overflow: hidden;
     margin-top: auto;
-	transition: 1s;
-    
+    transition: 1s;
+
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         border-radius: 10px;
     }
 }
@@ -51,9 +90,12 @@
 @media screen and (max-width: 700px) {
     .header {
         padding-top: 40%;
+        min-height: 70vh;
+        flex-direction: column;
 
-        div {
-            margin: 0;
+        .header-pic {
+            width: 50vw;
+            height: 50vw;
         }
     }
 
@@ -65,6 +107,8 @@
 @media (prefers-color-scheme: light) {
     .header {
         background-color: $light-color;
-        background-image:  linear-gradient($light-grey-color 1px, transparent 1px), linear-gradient(to right, $light-grey-color 1px, $light-color 1px);
-    }
+        background-image: linear-gradient($light-grey-color 1px, transparent 1px),
+            linear-gradient(to right, $light-grey-color 1px, $light-color 1px
+        );
+}
 }

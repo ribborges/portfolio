@@ -1,52 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "../../style/abstract/var";
 @import "../../style/abstract/mixin";
 
 .navbar {
 	color: $light-color;
 	background-color: rgba($dark-grey-color, 0.3);
-	height: 14vw;
-	max-height: 14vh;
+	height: 11vw;
+	max-height: 11vh;
 	width: auto;
 	position: fixed;
+	margin: 5px;
 	z-index: 999;
 	transition: 1s;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	border-bottom: 2px solid rgba($light-grey-color, 0.2);
+	border-radius: $border-radius;
+	border-bottom: 1px solid rgba($light-grey-color, 0.2);
 	@include acrylic();
 
-	.nav-item {
-		display: flex;
+	.title {
 		color: $light-color;
-		padding: 15px;
-		text-decoration: none;
-		margin: 10px;
-		border: 2px solid transparent;
+		background-color: $primary-accent-color;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		width: 3.5vw;
+		height: 3.5vw;
+		margin: 1vw;
 		border-radius: $border-radius;
-		transition: 1s;
-		cursor: pointer;
 
-		i {
-			font-style: normal;
-			padding: 5px;
+		.title-text {
+			flex: 1;
+			font-family: 'Playfair Display', serif;
+			text-align: center;
+			font-size: 55%;
 		}
+	}
 
-		&:hover,
-		&:focus {
-			background-color: rgba($light-grey-color, 0.3);
-			border: 2px solid rgba($light-color, 0.1);
+	.items {
+		display: flex;
+
+		.nav-item {
+			color: $light-color;
+			display: flex;
+			align-items: center;
+			align-content: center;
+			gap: 5px;
+			padding: 1vw;
+			text-decoration: none;
+			margin: 1vw;
+			border: 2px solid transparent;
+			border-radius: $border-radius;
+			transition: 1s;
+			cursor: pointer;
+
+			i {
+				font-style: normal;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: rgba($light-grey-color, 0.3);
+				border: 2px solid rgba($light-color, 0.1);
+			}
 		}
 	}
 }
 
 @media screen and (max-width: 800px) {
 	.navbar {
-		.nav-item {
-			padding: 10px;
-			font-size: 120%;
+		.title {
+			border-radius: $small-border-radius;
+			margin: 1.5vw;
+			width: 6.5vw;
+			height: 6.5vw;
+		}
 
-			.nav-item-label {
-				display: none;
+		.items {
+			.nav-item {
+				.nav-item-label {
+					display: none;
+				}
 			}
 		}
 	}

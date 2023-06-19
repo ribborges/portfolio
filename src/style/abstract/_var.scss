@@ -3,8 +3,9 @@ $primary-font: 'Ubuntu', sans-serif;
 $primary-font-size: large;
 
 //Color
-$primary-accent-color: #9500ff;
-$secondary-accent-color: #ea00ff;
+$primary-accent-color: #4a01ff;
+$secondary-accent-color: #d04cff;
+$tertiary-accent-color: #ff4197;
 $dark-color: #1a1a1a;
 $dark-grey-color: #333333;
 $light-grey-color: #dddddd;
@@ -20,5 +21,5 @@ $cv-color: #86005e;
 $text-font-size: 100%;
 
 //Radius
-$border-radius: 15px;
-$hover-border-radius: 20px;
+$border-radius: 10px;
+$small-border-radius: 5px;

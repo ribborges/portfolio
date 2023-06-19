@@ -4,7 +4,11 @@
     color: $light-color;
     background-color: transparent;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+    flex-basis: max-content;
     border-radius: $border-radius;
     border: 2px solid $primary-accent-color;
     padding: 15px;
