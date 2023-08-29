@@ -69,8 +69,8 @@ export default function FisioHome(props: fisioHomeProps) {
             <section className="panel four">
                 <div className="content">
                     <div className="text">
-                        <h2>{props.lang?.pages?.fisioHome.four.title}</h2>
-                        <p>{props.lang?.pages?.fisioHome.four.text}</p>
+                        <h2><span>{props.lang?.pages?.fisioHome.four.title}</span></h2>
+                        <p><span>{props.lang?.pages?.fisioHome.four.text}</span></p>
                     </div>
                     <div className="image">
                         <img src="/static/img/fisio-home/phone.png" alt="User interface" />

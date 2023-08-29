@@ -159,11 +159,13 @@
     .text {
         flex: 1;
         box-sizing: border-box;
-        padding: 20px;
-        background-color: rgba($color: #fff, $alpha: 0.5);
-        border-radius: 15px;
-        backdrop-filter: blur(10px);
-        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.5);
+
+        h2, p {
+            span {
+                color: #54ff77;
+                background-color: #000000;
+            }
+        }
     }
 
     .content {
