@@ -2,12 +2,12 @@
 
 .toggle {
     display: flex;
+    gap: 10px;
     margin: 15px;
     border-radius: $border-radius;
     border: 2px solid rgba($light-grey-color, 0.2);
 
     .toggle-btn {
-        margin: 5px;
         padding: 10px;
         border-radius: $border-radius;
         transition: 1s;

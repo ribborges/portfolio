@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import "../../style/abstract/var";
 @import "../../style/abstract/mixin";
@@ -6,8 +6,8 @@
 .navbar {
 	color: $light-color;
 	background-color: rgba($dark-grey-color, 0.3);
-	height: 11vw;
-	max-height: 11vh;
+	height: 8vw;
+	max-height: 8vh;
 	width: auto;
 	position: fixed;
 	margin: 5px;
@@ -26,16 +26,16 @@
 		display: flex;
 		align-items: center;
 		align-content: center;
-		width: 3.5vw;
-		height: 3.5vw;
-		margin: 1vw;
+		width: 3vw;
+		height: 3vw;
+		margin: .5vw;
 		border-radius: $border-radius;
 
 		.title-text {
 			flex: 1;
-			font-family: 'Playfair Display', serif;
+			font-family: "Playfair Display", serif;
 			text-align: center;
-			font-size: 55%;
+			font-size: 50%;
 		}
 	}
 
@@ -50,7 +50,7 @@
 			gap: 5px;
 			padding: 1vw;
 			text-decoration: none;
-			margin: 1vw;
+			margin: .5vw;
 			border: 2px solid transparent;
 			border-radius: $border-radius;
 			transition: 1s;
@@ -94,13 +94,15 @@
 		background-color: rgba($light-color, 0.5);
 		border: 1px solid rgba($light-grey-color, 0.7);
 
-		.nav-item {
-			color: $dark-color;
+		.items {
+			.nav-item {
+				color: $dark-color;
 
-			&:hover,
-			&:focus {
-				background-color: rgba($dark-grey-color, 0.1);
-				border: 2px solid rgba($dark-color, 0.05);
+				&:hover,
+				&:focus {
+					background-color: rgba($dark-grey-color, 0.1);
+					border: 2px solid rgba($dark-color, 0.05);
+				}
 			}
 		}
 	}

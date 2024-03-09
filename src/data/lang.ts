@@ -174,10 +174,11 @@ export const pt: displayText = {
     header: {
         h3: "Olá",
         h1: "Sou Richard Borges",
-        h2: "Desenvolvedor Full Stack",
+        h2: "Desenvolvedor Full Stack e Engenheiro de Software",
     },
     about: {
-        text: "Sou desenvolvedor Front-end, tenho um perfil comunicativo e me considero extremamente criativo. Sou apaixonado por tecnologia desde pequeno. Iniciei meus estudos na área com o curso de técnico de informática na ETEC e, logo em seguida, para o curso de ciência da computação na PUC Minas. Minhas principais habilidades são voltadas ao desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Também tenho profundo conhecimento em bases de dados não relacionais, como MongoDB e sou grande entusiasta no desenvolvimento de jogos com Unreal (C++).",
+        text: `Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas).
+        Minhas principais habilidades são voltadas para o desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Possuo um perfil comunicativo, calmo e ágil, com uma grande facilidade para trabalho em equipe.`,
     },
     portfolio: [{
         title: "Web",

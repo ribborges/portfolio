@@ -3,7 +3,7 @@
 .footer {
 	padding: 2vw;
 	margin: 2vw;
-	background-color: $dark-grey-color;
+	background-color: rgba($light-grey-color, 0.1);
 	border-radius: $border-radius;
 	left: 0;
 	bottom: 0;
@@ -22,6 +22,6 @@
 
 @media (prefers-color-scheme: light) {
 	.footer {
-		background-color: $light-grey-color;
+		background-color: rgba($dark-grey-color, 0.1);
 	}
 }

@@ -1,14 +1,7 @@
 @import "../../style/abstract/var";
 
 .header {
-    background:
-        linear-gradient(90deg, $dark-color (
-            25px - 2px),
-        transparent 1%) center,
-        linear-gradient($dark-color (
-            25px - 2px),
-        transparent 1%) center,
-        $dark-grey-color;
+    background-image: radial-gradient(rgba($light-color, 0.2) 1px, transparent 0);
     background-size: 25px 25px;
     animation: move-it 10s linear infinite;
     min-height: 65vh;
@@ -16,9 +9,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row;
 
-    .header-info, .header-pic {
+    .header-info,
+    .header-pic {
+        flex: 1;
         margin: 5vw;
     }
 
@@ -28,10 +23,11 @@
     }
 
     .header-pic {
+        background-color: red;
         display: flex;
         overflow: hidden;
-        width: 20vw;
-        height: 20vw;
+        max-width: 20vw;
+        max-height: 20vw;
         border-radius: 50%;
         transition: 1s;
 
@@ -59,28 +55,6 @@
     }
 }
 
-.avatar {
-    background-color: #ffffff;
-    position: relative;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: auto;
-    transition: 1s;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &:hover,
-    &:focus {
-        border-radius: 10px;
-    }
-}
-
 .title {
     font-size: 5rem;
     text-align: justify;
@@ -89,13 +63,14 @@
 
 @media screen and (max-width: 700px) {
     .header {
+        padding: 5vw;
         padding-top: 40%;
         min-height: 70vh;
         flex-direction: column;
 
         .header-pic {
-            width: 50vw;
-            height: 50vw;
+            max-width: 70vw;
+            max-height: 70vw;
         }
     }
 
@@ -106,9 +81,6 @@
 
 @media (prefers-color-scheme: light) {
     .header {
-        background-color: $light-color;
-        background-image: linear-gradient($light-grey-color 1px, transparent 1px),
-            linear-gradient(to right, $light-grey-color 1px, $light-color 1px
-        );
-}
+        background-image: radial-gradient(rgba($dark-color, 0.2) 1px, transparent 0);
+    }
 }

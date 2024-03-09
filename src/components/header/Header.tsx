@@ -27,7 +27,7 @@ export default function Header(props: headerProps) {
 				</div>
 			</div>
 			<div className="header-pic">
-				<img src="https://avatars.githubusercontent.com/u/46366493?s=400&u=bbff0de6c5a3c5d0e73cbf89de1ee910c8604192&v=4" />
+				<img src="/static/img/avatar.png" />
 			</div>
 		</header>
 	)

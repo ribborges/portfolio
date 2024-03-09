@@ -1,7 +1,10 @@
 body {
     // Color scheme
     color: $light-color;
-    background-color: $dark-color;
+    background: $dark-color;
+    background-image: linear-gradient(135deg, rgba($primary-accent-color, 0.12) 0%, rgba($dark-color, 0) 100%),
+        linear-gradient(0deg, rgba($tertiary-accent-color, 0.08) 0%, rgba($dark-color, 0) 100%),
+        linear-gradient(180deg, rgba($secondary-accent-color, 0.1) 0%, rgba($dark-color, 0) 100%);
 
     // Font
     font-family: $primary-font;
@@ -104,6 +107,9 @@ a {
     body {
         // Color scheme
         color: $dark-color;
-        background-color: $light-color;
+        background: $light-color;
+        background-image: linear-gradient(135deg, rgba($primary-accent-color, 0.3) 0%, rgba($light-color, 0) 100%),
+            linear-gradient(0deg, rgba($tertiary-accent-color, 0.3) 0%, rgba($light-color, 0) 100%),
+            linear-gradient(180deg, rgba($secondary-accent-color, 0.3) 0%, rgba($light-color, 0) 100%);
     }
 }
