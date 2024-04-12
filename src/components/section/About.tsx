@@ -1,10 +1,10 @@
+import styled from "styled-components";
 import { PersonFill, MortarboardFill, GeoAltFill, PersonCircle, EnvelopeFill, Whatsapp } from "react-bootstrap-icons";
 
 import { displayText } from '../../data/lang';
 import { Blanckspace } from '../separator';
 import { StackContainer, StackCard } from '../Stack';
-
-import './_about.scss';
+import { radius } from "../../style/theme";
 
 interface aboutProps {
 	lang?: displayText,
@@ -12,50 +12,55 @@ interface aboutProps {
 
 export default function About(props: aboutProps) {
 	return (
-		<section id="about">
+		<AboutContainer id="about">
 			<h1><PersonFill /> {props.lang?.nav.about.toUpperCase()}</h1>
 			<Blanckspace />
 			<div className="summary">
 				<p className="paragraph">Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas).</p>
 				<p className="paragraph">Minhas principais habilidades são voltadas para o desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Possuo um perfil comunicativo, calmo e ágil, com uma grande facilidade para trabalho em equipe.</p>
 			</div>
-			<Blanckspace height="1rem"/>
-			<div className="info">
-				<div className="info-section">
-					<span className="tag"><PersonCircle className="icon" />Richard de Carvalho Borges</span>
-					<span className="tag"><MortarboardFill className="icon" />Engenheiro de Software</span>
-					<span className="tag"><EnvelopeFill className="icon" />ribborges@outlook.com</span>
-					<span className="tag"><Whatsapp className="icon" />+55 (11) 94234-7830</span>
-					<span className="tag"><GeoAltFill className="icon" />São Paulo, SP</span>
-				</div>
+			<Blanckspace height="1rem" />
+			<Info>
+				<InfoSection>
+					<StyledTag><PersonCircle className="icon" />Richard de Carvalho Borges</StyledTag>
+					<StyledTag><MortarboardFill className="icon" />Engenheiro de Software</StyledTag>
+					<StyledTag><EnvelopeFill className="icon" />ribborges@outlook.com</StyledTag>
+					<StyledTag><Whatsapp className="icon" />+55 (11) 94234-7830</StyledTag>
+					<StyledTag><GeoAltFill className="icon" />São Paulo, SP</StyledTag>
+				</InfoSection>
 
-				<div className="info-section">
-					<span className="tag">
-						<img className="icon" src="/static/img/info/poli.jpeg" alt="Poli USP Logo" />
-						<span>MBA em Engenharia de Software <br /> <strong>Poli USP</strong></span>
-						<span>(2024 - 2025)</span>
-					</span>
-
-					<span className="tag">
-						<img className="icon" src="/static/img/info/desco.jpeg" alt="Descomplica Logo" />
-						<span>Pós-Graduação em Desenvolvimento Full Stack <br /> <strong>Descomplica Faculdade Digital</strong></span>
-						<span>(2023 - 2024)</span>
-					</span>
-
-					<span className="tag">
-						<img className="icon" src="/static/img/info/puc.jpeg" alt="PUC Minas Logo" />
-						<span>Bacharel em Ciência da Computação <br /> <strong>PUC Minas</strong></span>
-						<span>(2018 - 2023)</span>
-					</span>
-
-					<span className="tag">
-						<img className="icon" src="/static/img/info/etec.jpeg" alt="ETEC Logo" />
-						<span>Técnico em Informática <br /> <strong>ETEC</strong></span>
-						<span>(2017)</span>
-					</span>
-				</div>
-			</div>
-			<Blanckspace height="1rem"/>
+				<InfoSection>
+					<AcademicHistoryTag
+						icon="/static/img/info/poli.jpeg"
+						alt="Poli USP logo"
+						field="MBA em Engenharia de Software"
+						school="Poli USP"
+						date="2024 - 2025"
+					/>
+					<AcademicHistoryTag
+						icon="/static/img/info/desco.jpeg"
+						alt="Descomplica Logo"
+						field="Pós-Graduação em Desenvolvimento Full Stack"
+						school="Descomplica Faculdade Digital"
+						date="2023 - 2024"
+					/>
+					<AcademicHistoryTag
+						icon="/static/img/info/puc.jpeg"
+						alt="PUC Minas Logo"
+						field="Bacharel em Ciência da Computação"
+						school="PUC Minas"
+						date="2018 - 2023"
+					/>
+					<AcademicHistoryTag
+						icon="/static/img/info/etec.jpeg"
+						alt="ETEC Logo"
+						field="Técnico em Informática"
+						school="ETEC"
+						date="2017"
+					/>
+				</InfoSection>
+			</Info>
+			<Blanckspace height="1rem" />
 			<StackContainer title={"Languages"}>
 				<StackCard image="https://img.icons8.com/?size=512&id=108784&format=png" alt="JavaScript logo" name="JavaScript" />
 				<StackCard image="https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png" alt="TypeScript logo" name="TypeScript" />
@@ -88,6 +93,82 @@ export default function About(props: aboutProps) {
 				<StackCard image="https://img.icons8.com/?size=512&id=QEQQKirln6Tf&format=png" alt="Postman logo" name="Postman" />
 				<StackCard image="https://img.icons8.com/?size=512&id=34301&format=png" alt="Unreal Engine logo" name="Unreal Engine" />
 			</StackContainer>
-		</section>
+		</AboutContainer>
 	)
 }
+
+function AcademicHistoryTag(props: { icon: string, alt?: string, field?: string, school?: string, date?: string }) {
+	return (
+		<StyledTag>
+			<img className="icon" src={props.icon} alt={props.alt} />
+			<div>
+				<div>
+					<span>{props.field} | <strong>{props.school}</strong></span>
+				</div>
+
+				<span>({props.date})</span>
+			</div>
+		</StyledTag>
+	);
+}
+
+const AboutContainer = styled.section`
+	p {
+        display: inline-block;
+        text-align: justify;
+        text-justify: inter-word;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+	.summary {
+    	padding-left: 10vw;
+    	padding-right: 10vw;
+
+    	.paragraph {
+        	text-indent: 50px;
+    	}
+	}
+
+	@media screen and (max-width: 700px) {
+		.summary {
+			padding-left: 5vw;
+			padding-right: 5vw;
+		
+			.paragraph {
+				text-indent: 25px;
+			}
+		}
+	}
+`;
+
+const Info = styled.div`
+	display: flex;
+
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+		gap: 50px;
+	}
+`;
+
+const InfoSection = styled.div`
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+`;
+
+const StyledTag = styled.span`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    .icon {
+        border-radius: ${radius.small};
+        min-width: 25px;
+        min-height: 25px;
+        max-width: 35px;
+        max-height: 35px;
+    }
+`;
