@@ -8,3 +8,13 @@
 @import "./abstract/var";
 
 @import "./abstract/base";
+
+.content {
+    padding: 5vw;
+
+    section {
+        padding: 4vw;
+        padding-top: 15vw;
+        padding-bottom: 15vw;
+    }
+}
