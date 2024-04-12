@@ -1,8 +1,8 @@
 import { HouseDoorFill, PersonFill, BriefcaseFill } from "react-bootstrap-icons";
 
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-import { NavBar, NavItem } from "../../components/navbar";
+import Header from "../../components/Header";
+import { NavBar, NavItem } from "../../components/Navbar";
 import About from "../../components/section/About";
 import Portfolio from "../../components/section/Portfolio";
 import { Spacer } from "../../components/separator";

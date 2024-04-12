@@ -18,4 +18,8 @@ const radius = {
     large: "20px"
 };
 
-export { font, color, radius};
+const fx = {
+    blur: "blur(15px)",
+}
+
+export { font, color, radius, fx};
