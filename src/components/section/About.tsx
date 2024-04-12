@@ -3,6 +3,8 @@ import Blanckspace from '../separator/Blackspace';
 import { PersonFill, MortarboardFill, GeoAltFill, PersonCircle, EnvelopeFill, Whatsapp } from "react-bootstrap-icons";
 
 import './_about.scss';
+import StackContainer from '../Stack/StackContainer';
+import StackCard from '../Stack/StackCard';
 
 interface aboutProps {
 	lang?: displayText,
@@ -54,23 +56,30 @@ export default function About(props: aboutProps) {
 				</div>
 			</div>
 			<Blanckspace />
-			<div className="stack-icons">
-				<img src="https://img.icons8.com/?size=512&id=20909&format=png" alt="HTML logo" />
-				<img src="https://img.icons8.com/?size=512&id=21278&format=png" alt="CSS logo" />
-				<img src="https://img.icons8.com/?size=512&id=108784&format=png" alt="JavaScript logo" />
-				<img src="https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png" alt="TypeScript logo" />
-				<img src="https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png" alt="SASS logo" />
-				<img src="https://img.icons8.com/?size=512&id=84710&format=png" alt="Bootstrap logo" />
-				<img src="https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png" alt="TailwindCSS" />
-				<img src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png" alt="Node.js logo" />
-				<img src="https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=png" alt="express.js logo" />
-				<img src="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png" alt="React logo" />
-				<img src="https://img.icons8.com/?size=512&id=38561&format=png" alt="PostgreSQL" />
-				<img src="https://img.icons8.com/?size=512&id=74402&format=png" alt="MongoDB logo" />
-				<img src="https://img.icons8.com/?size=512&id=20906&format=png" alt="Git" />
-				<img src="https://img.icons8.com/?size=512&id=haeAxVQEIg0F&format=png" alt="Rust" />
-				<img src="https://img.icons8.com/?size=512&id=34301&format=png" alt="Unreal Engine logo" />
-			</div>
+			<StackContainer title={"Languages"}>
+				<StackCard image="https://img.icons8.com/?size=512&id=108784&format=png" alt="JavaScript logo" name="JavaScript" />
+				<StackCard image="https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png" alt="TypeScript logo" name="TypeScript" />
+				<StackCard image="https://img.icons8.com/?size=512&id=haeAxVQEIg0F&format=png" alt="Rust logo" name="Rust" />
+			</StackContainer>
+			<StackContainer title={"Back-End and Database"}>
+				<StackCard image="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png" alt="Node.js logo" name="Node.js" />
+				<StackCard image="https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=png" alt="express.js logo" name="express.js" />
+				<StackCard image="https://img.icons8.com/?size=512&id=74402&format=png" alt="MongoDB logo" name="MongoDB" />
+				<StackCard image="https://img.icons8.com/?size=512&id=38561&format=png" alt="PostgreSQL logo" name="PostgreSQL" />
+			</StackContainer>
+			<StackContainer title={"Front-End"}>
+				<StackCard image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png" alt="React logo" name="React.js" />
+				<StackCard image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png" alt="React Native logo" name="React Native" />
+				<StackCard image="https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png" alt="SASS logo" name="SASS" />
+				<StackCard image="https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png" alt="Styled Components logo" name="Styled Components" />
+				<StackCard image="https://img.icons8.com/?size=512&id=84710&format=png" alt="Bootstrap logo" name="Bootstrap" />
+				<StackCard image="https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png" alt="TailwindCSS logo" name="TailwindCSS" />
+			</StackContainer>
+			<StackContainer title={"Tools"}>
+				<StackCard image="https://img.icons8.com/?size=512&id=20906&format=png" alt="VS Code logo" name="VS Code" />
+				<StackCard image="https://img.icons8.com/?size=512&id=20906&format=png" alt="Git logo" name="Git" />
+				<StackCard image="https://img.icons8.com/?size=512&id=34301&format=png" alt="Unreal Engine logo" name="Unreal Engine" />
+			</StackContainer>
 		</section>
 	)
 }
