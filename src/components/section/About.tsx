@@ -32,7 +32,7 @@ export default function About(props: aboutProps) {
 				<div className="info-section">
 					<span className="tag">
 						<img className="icon" src="/static/img/info/poli.jpeg" alt="Poli USP Logo" />
-						<span>MBA em Engenheiro de Software <br /> <strong>Poli USP</strong></span>
+						<span>MBA em Engenharia de Software <br /> <strong>Poli USP</strong></span>
 						<span>(2024 - 2025)</span>
 					</span>
 
