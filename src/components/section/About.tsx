@@ -1,10 +1,10 @@
-import { displayText } from '../../data/lang';
-import Blanckspace from '../separator/Blackspace';
 import { PersonFill, MortarboardFill, GeoAltFill, PersonCircle, EnvelopeFill, Whatsapp } from "react-bootstrap-icons";
 
+import { displayText } from '../../data/lang';
+import Blanckspace from '../separator/Blackspace';
+import { StackContainer, StackCard} from '../Stack';
+
 import './_about.scss';
-import StackContainer from '../Stack/StackContainer';
-import StackCard from '../Stack/StackCard';
 
 interface aboutProps {
 	lang?: displayText,
