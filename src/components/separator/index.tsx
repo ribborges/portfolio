@@ -13,7 +13,11 @@ export const Spacer = styled.hr<SeparatorProps>(props => ({
     borderBottom: 'none',
     borderTopWidth: '1px',
     borderTopStyle: 'solid',
-    borderTopColor: color.dark_grey,
+    borderTopColor: color.light_grey,
+
+    "@media (prefers-color-scheme: light)": {
+        borderTopColor: color.dark_grey
+    }
 }));
 
 export const Blanckspace = styled.hr<SeparatorProps>(props => ({
