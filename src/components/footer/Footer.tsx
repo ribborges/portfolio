@@ -1,4 +1,3 @@
-import Spacer from '../separator/Spacer';
 import './_style.scss';
 
 export default function Header() {

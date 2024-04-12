@@ -1,7 +1,7 @@
 import { PersonFill, MortarboardFill, GeoAltFill, PersonCircle, EnvelopeFill, Whatsapp } from "react-bootstrap-icons";
 
 import { displayText } from '../../data/lang';
-import Blanckspace from '../separator/Blackspace';
+import { Blanckspace } from '../separator';
 import { StackContainer, StackCard} from '../Stack';
 
 import './_about.scss';

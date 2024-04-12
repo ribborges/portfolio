@@ -1,8 +1,8 @@
-import Blanckspace from "../separator/Blackspace";
+import { BriefcaseFill } from "react-bootstrap-icons";
+
+import { Blanckspace } from "../separator";
 import { displayText } from "../../data/lang";
 import { ToggleContainer } from "../input/Toggle";
-
-import { BriefcaseFill } from "react-bootstrap-icons";
 import Full from "./portfolio/Full";
 import Front from "./portfolio/Front";
 

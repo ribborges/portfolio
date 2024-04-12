@@ -1,10 +1,11 @@
+import { HouseDoorFill, PersonFill, BriefcaseFill } from "react-bootstrap-icons";
+
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import { NavBar, NavItem } from "../../components/navbar";
 import About from "../../components/section/About";
 import Portfolio from "../../components/section/Portfolio";
-import Spacer from "../../components/separator/Spacer";
-import { HouseDoorFill, PersonFill, BriefcaseFill } from "react-bootstrap-icons";
+import { Spacer } from "../../components/separator";
 import { displayText } from "../../data/lang";
 
 interface homeProps {
