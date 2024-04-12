@@ -1,8 +1,6 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-import { Blanckspace } from "../../separator";
-
 interface stackContainerProps {
     title: ReactNode,
     children?: ReactNode,
@@ -11,8 +9,7 @@ interface stackContainerProps {
 export default function StackContainer(props: stackContainerProps) {
     return (
         <StyledStackSection>
-            <h2>{ props.title }</h2>
-            <Blanckspace height="1vw"/>
+            <h3>{ props.title }</h3>
             <StyledStackContainer>
                 { props.children }
             </StyledStackContainer>
@@ -21,9 +18,10 @@ export default function StackContainer(props: stackContainerProps) {
 }
 
 const StyledStackSection = styled.div`
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
 `;
 
