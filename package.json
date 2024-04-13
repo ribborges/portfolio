@@ -4,7 +4,7 @@
   "version": "0.0.5",
   "type": "module",
   "scripts": {
-    "dev": "next dev && sass --watch --update --style=expanded styles/scss:styles/css",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },

@@ -16,7 +16,7 @@ export default function Header(props: headerProps) {
 			<HeaderInfo>
 				<div>
 					<h3>{props.lang?.header.h3}</h3>
-					<h1>{props.lang?.header.h1}</h1>
+					<Name>{props.lang?.header.h1}</Name>
 					<h2>{props.lang?.header.h2}</h2>
 				</div>
 				<Blanckspace />
@@ -101,4 +101,8 @@ const HeaderPicture = styled.div`
 		max-width: 70vw;
         max-height: 70vw;
 	}
+`;
+
+const Name = styled.h1`
+	color: ${color.accent_primary};
 `;
