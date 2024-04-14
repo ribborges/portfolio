@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { color } from '../../style/theme';
+import { color, radius } from '../../style/theme';
 
 export default function Header() {
   const currentYear = new Date().getFullYear();
@@ -16,7 +16,7 @@ const StyledFooter = styled.footer`
   padding: 2vw;
 	margin: 2vw;
 	background-color: ${color.light_grey}22;
-	border-radius: $border-radius;
+	border-radius: ${radius.medium};
 	left: 0;
 	bottom: 0;
 	transition: 1s;
