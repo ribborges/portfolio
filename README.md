@@ -1,19 +1,28 @@
-# Portfólio
+# Portfolio
 
-Meu portfólio com projetos desenvolvidos em React e React Native, com design responsivo.
+My personal portfolio to showcase my projects. It was developed with Next.js, TypeScript and Styled Components.
 
-## Como rodar o projeto:
+## How to run:
 
-Download do node.js: <a href="https://nodejs.org/en">link</a>
+Download node.js: <a href="https://nodejs.org/en">link</a>
 
-Digite o seguinte comando no terminal:
+Use the commands below to run the project in dev:
 
 ```
 npm install
 ```
+```
+npm run dev
+```
 
-E depois:
+OR use the commands below to run the project in production:
 
+```
+npm install
+```
+```
+npm build
+```
 ```
 npm start
 ```
