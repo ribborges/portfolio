@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { displayText } from "../../data/lang";
 
-import "./_style.scss";
+import "./style.scss";
 
 interface fisioHomeProps {
     lang?: displayText,

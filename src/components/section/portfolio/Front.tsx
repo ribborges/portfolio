@@ -1,7 +1,7 @@
 import { displayText } from "../../../data/lang";
-import Card from "../../card/Card";
-import Grid from "../../grid/Grid";
-import ButtonLink from "../../input/ButtonLink";
+import Card from "../../Card";
+import Grid from "../../Grid";
+import ButtonLink from "../../Input/Button";
 import { Github, BoxArrowUpRight } from "react-bootstrap-icons";
 
 interface portfolioProps {

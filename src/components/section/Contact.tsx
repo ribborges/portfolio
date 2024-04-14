@@ -1,8 +1,8 @@
 import { EnvelopeFill, Linkedin, Github } from "react-bootstrap-icons";
 
 import { displayText } from "../../data/lang";
-import ButtonLink from "../input/ButtonLink";
-import { Blanckspace } from "../separator";
+import ButtonLink from "../Input/Button";
+import { Blanckspace } from "../Separator";
 
 interface contactProps {
 	lang?: displayText,

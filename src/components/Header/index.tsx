@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
 
 import { displayText } from '../../data/lang';
-import ButtonLink from '../input/ButtonLink';
-import { Blanckspace } from '../separator';
+import ButtonLink from '../Input/Button';
+import { Blanckspace } from '../Separator';
 import { color, radius } from "../../style/theme";
 
 interface headerProps {

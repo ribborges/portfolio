@@ -1,9 +1,35 @@
-@import "../../style/abstract/var";
-@import "../../style/abstract/mixin";
+import { ReactNode } from 'react';
+import styled from 'styled-components';
 
-.card {
-	background-color: $dark-grey-color;
-    border-radius: $border-radius;
+import { color, fx, radius } from '../../style/theme';
+
+interface CardProps {
+	thumb?: string,
+	title?: string,
+	text?: string,
+	children?: ReactNode,
+}
+
+export default function Card(props: CardProps) {
+    return (
+        <StyledCard>
+			<div className="card-thumb">
+				<img src={props.thumb} alt={props.title}/>
+			</div>
+			<div className="card-caption">
+				<h4>{props.title}</h4>
+				<p>{props.text}</p>
+				<div className="card-opt">
+                    {props.children}
+				</div>
+			</div>
+		</StyledCard>
+    )
+}
+
+const StyledCard = styled.div`
+	background-color: ${color.dark_grey};
+    border-radius: ${radius.medium};
     position: relative;
     overflow: hidden;
     flex-direction: column;
@@ -22,7 +48,7 @@
     }
 
     &:hover {
-        box-shadow: 0 0 100px rgba($light-color, 0.3);
+        box-shadow: 0 0 100px ${color.light}44;
         scale: 1.05;
 
         .card-caption {
@@ -32,8 +58,8 @@
     }
 
     .card-caption {
-        @include acrylic();
-        background-color: rgba($primary-accent-color, 0.6);
+		backdrop-filter: ${fx.blur};
+        background-color: ${color.accent_primary}44;
         position: absolute;
         top: 0;
         left: 0;
@@ -61,24 +87,18 @@
             flex-flow: wrap;
         }
     }
-}
 
-@media screen and (max-width: 1000px) {
-    .card {
+	@media screen and (max-width: 1000px) {
         flex: 0 1 40%;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .card {
-        flex: 0 1 100%;
+	@media screen and (max-width: 600px) {
+    	flex: 0 1 100%;
     }
-}
 
-@media (prefers-color-scheme: light) {
-    .card {
+	@media (prefers-color-scheme: light) {
         &:hover {
-            box-shadow: 0 0 100px rgba($dark-color, 0.8);
+            box-shadow: 0 0 100px ${color.dark}88;
         }
     }
-}
+`;

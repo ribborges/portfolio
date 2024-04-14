@@ -1,6 +1,6 @@
 import { ClientOnly } from "./client";
 
-import "../../style/_style.scss";
+import "../../style/style.scss";
 
 export function generateStaticParams() {
     return [{ slug: [''] }];

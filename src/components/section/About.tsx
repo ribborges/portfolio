@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PersonFill, MortarboardFill, GeoAltFill, PersonCircle, EnvelopeFill, Whatsapp } from "react-bootstrap-icons";
 
 import { displayText } from '../../data/lang';
-import { Blanckspace } from '../separator';
+import { Blanckspace } from '../Separator';
 import { StackContainer, StackCard } from '../Stack';
 import { radius } from "../../style/theme";
 
