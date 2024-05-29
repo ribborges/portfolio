@@ -15,7 +15,7 @@ export default function Full(props: portfolioProps) {
             <Card
                 thumb="/static/img/projects/tasks.png"
                 title="Tasks"
-                text={`A simple app to trak your tasks. Developed using React, TypeScript, Vite and Styled Components for the the front-end and Node, Express and TypeScript for the back-end and MongoDB for the database.`}
+                text={`A simple app to track your tasks. Developed using React, TypeScript, Vite and Styled Components for the the front-end and Node, Express and TypeScript for the back-end and MongoDB for the database.`}
             >
                 <ButtonLink href="https://github.com/ribborges/tasks-app" target="_self"><Github /> APP</ButtonLink>
                 <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self"><Github /> API</ButtonLink>
