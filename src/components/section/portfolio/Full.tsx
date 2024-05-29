@@ -13,6 +13,15 @@ export default function Full(props: portfolioProps) {
     return (
         <Grid>
             <Card
+                thumb="/static/img/projects/tasks.png"
+                title="Tasks"
+                text={`A simple app to trak your tasks. Developed using React, TypeScript, Vite and Styled Components for the the front-end and Node, Express and TypeScript for the back-end.`}
+            >
+                <ButtonLink href="https://github.com/ribborges/tasks-app" target="_self"><Github /> APP</ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self"><Github /> API</ButtonLink>
+            </Card>
+
+            <Card
                 thumb="/static/img/projects/cookApp.png"
                 title={"Cook App"}
                 text={`
