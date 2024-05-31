@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import styled from 'styled-components';
 
-import { color, fx, radius } from '../../style/theme';
+import { color, fx, radius } from '../../styles/theme';
 
 interface CardProps {
 	thumb?: string,

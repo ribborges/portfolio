@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import styled from 'styled-components';
 
-import { color, radius } from '../../style/theme';
+import { color, radius } from '../../styles/theme';
 
 interface ButtonProps{
     href?: string,

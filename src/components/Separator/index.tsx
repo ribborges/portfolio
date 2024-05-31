@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { color } from "../../style/theme";
+import { color } from "../../styles/theme";
 
 interface SeparatorProps {
     height?: string;

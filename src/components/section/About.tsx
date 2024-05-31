@@ -4,7 +4,7 @@ import { PersonFill, MortarboardFill, GeoAltFill, PersonCircle, EnvelopeFill, Wh
 import { displayText } from '../../data/lang';
 import { Blanckspace } from '../Separator';
 import { StackContainer, StackCard } from '../Stack';
-import { radius } from "../../style/theme";
+import { radius } from "../../styles/theme";
 
 interface aboutProps {
 	lang?: displayText,

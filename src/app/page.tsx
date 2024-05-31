@@ -1,11 +1,12 @@
+'use client';
+
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { displayText, en, pt } from "./data/lang";
+import { displayText, en, pt } from "../data/lang";
 
-import './style/app.scss';
-import Home from "./views/Home";
-import FisioHome from "./views/FisioHome";
+import Home from "../pages/Home";
+import FisioHome from "../pages/FisioHome";
 
 export default function App() {
   const [lang, setLang] = useState<displayText>(pt);

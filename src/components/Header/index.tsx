@@ -4,7 +4,7 @@ import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill } from "react-boo
 import { displayText } from '../../data/lang';
 import ButtonLink from '../Input/Button';
 import { Blanckspace } from '../Separator';
-import { color, radius } from "../../style/theme";
+import { color, radius } from "../../styles/theme";
 
 interface headerProps {
 	lang?: displayText

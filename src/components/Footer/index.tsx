@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { color, radius } from '../../style/theme';
+import { color, radius } from '../../styles/theme';
 
 export default function Header() {
   const currentYear = new Date().getFullYear();

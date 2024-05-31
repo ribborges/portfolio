@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+import { Ubuntu } from 'next/font/google'
+import GlobalStyle from "../styles/globalStyles";
+ 
+const ubuntu = Ubuntu({ weight: ["300", "400", "500", "700"], subsets: ["latin"]});
 
 export const metadata: Metadata = {
     title: "Richard de Carvalho Borges",
@@ -12,7 +16,8 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body>
+            <GlobalStyle />
+            <body className={ubuntu.className}>
                 <div id="root">{children}</div>
             </body>
         </html>

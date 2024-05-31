@@ -1,5 +1,10 @@
 const font = {
-    family: "'Ubuntu', sans-serif"
+    family: "'Ubuntu', sans-serif",
+
+    size: {
+        base: "100%",
+        primary: "large",
+    }
 };
 
 const color = {

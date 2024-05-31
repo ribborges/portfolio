@@ -2,7 +2,7 @@ import React from "react";
 import { ReactNode, useState } from "react";
 import styled from "styled-components";
 
-import { color, radius } from "../../style/theme";
+import { color, radius } from "../../styles/theme";
 
 interface toggleButtonProps {
     id?: string,
