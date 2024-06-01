@@ -1,4 +1,6 @@
-.container {
+import styled from "styled-components";
+
+const Container = styled.div`
     color: black;
     width: 100vw;
     height: 100vh;
@@ -6,9 +8,9 @@
 
     overflow-x: hidden;
     overflow-y: scroll;
-}
+`;
 
-.panel {
+const Panel = styled.section`
     height: 100vh;
     width: 100vw;
     padding: 10vw;
@@ -38,6 +40,10 @@
         text-align: justify;
     }
 
+    * {
+        z-index: 1;
+    }
+
     .content {
         display: flex;
         text-align: center;
@@ -50,12 +56,63 @@
         }
     }
 
-    * {
-        z-index: 1;
-    }
-}
+    @media screen and (max-width: 1400px) {
+        padding: 5vw;
 
-.one {
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 10px;
+            font-size: 1rem;
+        }
+
+        .content {
+            width: 75%;
+            height: 80%;
+            gap: 10px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 5vw;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 15px;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .content {
+            width: 95%;
+            gap: 10px;
+            flex-direction: column;
+        }
+    }
+`;
+
+const PanelOne = styled(Panel)`
     color: #54ff77;
     background-color: #54ff77;
     position: relative;
@@ -73,9 +130,23 @@
     * {
         color: #54ff77;
     }
-}
 
-.two {
+    @media screen and (max-width: 1400px) {
+        &::after {
+            width: 70vw;
+            height: 70vw;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &::after {
+            width: 85vw;
+            height: 85vw;
+        }
+    }
+`;
+
+const PanelTwo = styled(Panel)`
     background-color: #54ff77;
     position: relative;
     overflow: hidden;
@@ -101,9 +172,25 @@
         background-color: black;
         border-radius: 50%;
     }
-}
 
-.three {
+    @media screen and (max-width: 600px) {
+        &::before {
+            top: -15vw;
+            left: -15vw;
+            width: 50vw;
+            height: 50vw;
+        }
+
+        &::after {
+            bottom: -20vw;
+            right: -20vw;
+            width: 50vw;
+            height: 50vw;
+        }
+    }
+`;
+
+const PanelThree = styled(Panel)`
     background-color: #54ff77;
     position: relative;
     overflow: hidden;
@@ -129,9 +216,25 @@
         background-color: black;
         transform: rotate(45deg);
     }
-}
 
-.four {
+    @media screen and (max-width: 600px) {
+        &::before {
+            bottom: -10vw;
+            left: -10vw;
+            width: 30vw;
+            height: 30vw;
+        }
+
+        &::after {
+            top: -10vw;
+            right: -10vw;
+            width: 30vw;
+            height: 30vw;
+        }
+    }
+`;
+
+const PanelFour = styled(Panel)`
     background: linear-gradient(to right, #54ff77 50%, black 50%);
     position: relative;
     overflow: hidden;
@@ -180,9 +283,31 @@
             }
         }
     }
-}
 
-.five {
+    @media screen and (max-width: 600px) {
+        &::before {
+            width: 90vw;
+            height: 90vw;
+        }
+
+        &::after {
+            width: 45vw;
+            height: 45vw;
+        }
+
+        .content {
+            .image {
+                height: 50vh;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+`;
+
+const PanelFive = styled(Panel)`
     background-color: #54ff77;
     position: relative;
     overflow: hidden;
@@ -206,156 +331,8 @@
         background-color: black;
         border-radius: 50%;
     }
-}
 
-.six {
-    background-color: #54ff77;
-    position: relative;
-    overflow: hidden;
-
-    .content {
-        width: 75%;
-    }
-
-    a {
-        color: #54ff77;
-        background-color: black;
-        padding: 10px;
-        border-radius: 15px;
-
-        &:hover {
-            color: white;
-        }
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .panel {
-        padding: 5vw;
-
-        h1 {
-            font-size: 6rem;
-        }
-
-        h2 {
-            font-size: 3rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            margin: 10px;
-            font-size: 1rem;
-        }
-
-        .content {
-            width: 75%;
-            height: 80%;
-            gap: 10px;
-        }
-    }
-
-    .one {
-        &::after {
-            width: 70vw;
-            height: 70vw;
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .panel {
-        padding: 5vw;
-
-        h1 {
-            font-size: 4rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            margin: 15px;
-            font-size: 1rem;
-            text-align: justify;
-        }
-
-        .content {
-            width: 95%;
-            gap: 10px;
-            flex-direction: column;
-        }
-    }
-
-    .one {
-        &::after {
-            width: 85vw;
-            height: 85vw;
-        }
-    }
-
-    .two {
-        &::before {
-            top: -15vw;
-            left: -15vw;
-            width: 50vw;
-            height: 50vw;
-        }
-
-        &::after {
-            bottom: -20vw;
-            right: -20vw;
-            width: 50vw;
-            height: 50vw;
-        }
-    }
-
-    .three {
-        &::before {
-            bottom: -10vw;
-            left: -10vw;
-            width: 30vw;
-            height: 30vw;
-        }
-
-        &::after {
-            top: -10vw;
-            right: -10vw;
-            width: 30vw;
-            height: 30vw;
-        }
-    }
-
-    .four {
-        &::before {
-            width: 90vw;
-            height: 90vw;
-        }
-
-        &::after {
-            width: 45vw;
-            height: 45vw;
-        }
-
-        .content {
-            .image {
-                height: 50vh;
-
-                img {
-                    height: 100%;
-                }
-            }
-        }
-    }
-
-    .five {
+    @media screen and (max-width: 600px) {
         &::before {
             left: auto;
             top: -15vw;
@@ -370,8 +347,29 @@
             height: 30vw;
         }
     }
+`;
 
-    .six {
+const PanelSix = styled(Panel)`
+    background-color: #54ff77;
+    position: relative;
+    overflow: hidden;
+
+    a {
+        color: #54ff77;
+        background-color: black;
+        padding: 10px;
+        border-radius: 15px;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    .content {
+        width: 75%;
+    }
+
+    @media screen and (max-width: 600px) {
         background-color: #54ff77;
         position: relative;
         overflow: hidden;
@@ -383,4 +381,6 @@
             grid-template-columns: repeat(3, 1fr);
         }
     }
-}
+`;
+
+export { Container, PanelOne, PanelTwo, PanelThree, PanelFour, PanelFive, PanelSix};

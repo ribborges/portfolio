@@ -4,7 +4,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import "./style.scss";
+import { Container, PanelFive, PanelFour, PanelOne, PanelSix, PanelThree, PanelTwo } from "./style";
 
 export default function FisioHome() {
     const el = useRef(null);
@@ -26,19 +26,19 @@ export default function FisioHome() {
     }, []);
 
     return (
-        <div id="fisio-home" ref={el} className="container">
-            <section className="panel one">
+        <Container>
+            <PanelOne>
                 <h1>Fisio Home</h1>
-            </section>
-            <section className="panel two">
+            </PanelOne>
+            <PanelTwo>
                 <div className="content">
                     <h2>Resumo</h2>
                     <p>
                         O projeto Fisio Home Pro, desenvolvido em parceria entre os cursos de Ciência da Computação e Fisioterapia da Pontifícia Universidade  Católica, campus Poços de Caldas, visa estabelecer uma conexão remota  entre pacientes em processo de recuperação pós-acidente vascular  encefálico (AVE) e os profissionais de fisioterapia presentes no campus.  Com o objetivo de dar continuidade ao projeto, foca-se na evolução do  back-end e front-end da aplicação mobile. Dessa forma, busca-se  proporcionar uma aproximação eficiente e eficaz entre os pacientes e os  especialistas em fisioterapia, por meio do uso da tecnologia.
                     </p>
                 </div>
-            </section>
-            <section className="panel three">
+            </PanelTwo>
+            <PanelThree>
                 <div className="content">
                     <div className="content-div">
                         <h2>React Native</h2>
@@ -69,8 +69,8 @@ export default function FisioHome() {
                         </ol>
                     </div>
                 </div>
-            </section>
-            <section className="panel four">
+            </PanelThree>
+            <PanelFour>
                 <div className="content">
                     <div className="text">
                         <h2><span>Interface agradável</span></h2>
@@ -82,8 +82,8 @@ export default function FisioHome() {
                         <img src="/static/img/fisio-home/phone.png" alt="User interface" />
                     </div>
                 </div>
-            </section>
-            <section className="panel five">
+            </PanelFour>
+            <PanelFive>
                 <div className="content">
                     <div className="content-div">
                         <h2>Potencializando o back-end</h2>
@@ -97,8 +97,8 @@ export default function FisioHome() {
                         <p>- Arquitetura orientada a eventos e I/O assíncrono.</p>
                     </div>
                 </div>
-            </section>
-            <section className="panel six">
+            </PanelFive>
+            <PanelSix>
                 <div className="content">
                     <div className="content-div">
                         <img src="/static/img/fisio-home/login.jpg" alt="User interface" />
@@ -120,7 +120,7 @@ export default function FisioHome() {
                     </div>
                 </div>
                 <a href="/static/docs/td_short_paper_final.pdf" target="_blank">Baixar artigo</a>
-            </section>
-        </div>
+            </PanelSix>
+        </Container>
     );
 }
