@@ -2,15 +2,9 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { displayText } from "../../data/lang";
-
 import "./style.scss";
 
-interface fisioHomeProps {
-    lang?: displayText,
-}
-
-export default function FisioHome(props: fisioHomeProps) {
+export default function FisioHome() {
     const el = useRef(null);
     const child = gsap.utils.selector(el);
 
@@ -29,38 +23,46 @@ export default function FisioHome(props: fisioHomeProps) {
         });
     }, []);
 
-    console.log(props.lang);
-
     return (
         <div id="fisio-home" ref={el} className="container">
             <section className="panel one">
-                <h1>{props.lang?.pages?.fisioHome.one.title}</h1>
+                <h1>Fisio Home</h1>
             </section>
             <section className="panel two">
                 <div className="content">
-                    <h2>{props.lang?.pages?.fisioHome.two.title}</h2>
-                    <p>{props.lang?.pages?.fisioHome.two.text}</p>
+                    <h2>Resumo</h2>
+                    <p>
+                        O projeto Fisio Home Pro, desenvolvido em parceria entre os cursos de Ciência da Computação e Fisioterapia da Pontifícia Universidade  Católica, campus Poços de Caldas, visa estabelecer uma conexão remota  entre pacientes em processo de recuperação pós-acidente vascular  encefálico (AVE) e os profissionais de fisioterapia presentes no campus.  Com o objetivo de dar continuidade ao projeto, foca-se na evolução do  back-end e front-end da aplicação mobile. Dessa forma, busca-se  proporcionar uma aproximação eficiente e eficaz entre os pacientes e os  especialistas em fisioterapia, por meio do uso da tecnologia.
+                    </p>
                 </div>
             </section>
             <section className="panel three">
                 <div className="content">
                     <div className="content-div">
-                        <h2>{props.lang?.pages?.fisioHome.three.title}</h2>
-                        <p>{props.lang?.pages?.fisioHome.three.text}</p>
+                        <h2>React Native</h2>
+                        <p>
+                            O React Native é uma framework desenvolvido pela Meta (Facebook) que permite o uso de tecnologias web (JavaScript) para o desenvolvimento de aplicações mobile nativas.
+                        </p>
                     </div>
                     <div className="content-div">
                         <ol>
                             <li>
-                                <h3>{props.lang?.pages?.fisioHome.three.itens[0].title}</h3>
-                                <p>{props.lang?.pages?.fisioHome.three.itens[0].text}</p>
+                                <h3>Desenvolvimento multiplataforma</h3>
+                                <p>
+                                    O React Native permite o desenvolvimento de aplicações para iOS e Android usando uma única base de código.
+                                </p>
                             </li>
                             <li>
-                                <h3>{props.lang?.pages?.fisioHome.three.itens[1].title}</h3>
-                                <p>{props.lang?.pages?.fisioHome.three.itens[1].text}</p>
+                                <h3>Performance nativa</h3>
+                                <p>
+                                    Componentes que são renderizados através de APIs nativas, permitindo desempenho próximo ao nativo.
+                                </p>
                             </li>
                             <li>
-                                <h3>{props.lang?.pages?.fisioHome.three.itens[2].title}</h3>
-                                <p>{props.lang?.pages?.fisioHome.three.itens[2].text}</p>
+                                <h3>Comunidade</h3>
+                                <p>
+                                    Comunidade ativa e em crescimento, além de ser mantido pela Meta.
+                                </p>
                             </li>
                         </ol>
                     </div>
@@ -69,8 +71,10 @@ export default function FisioHome(props: fisioHomeProps) {
             <section className="panel four">
                 <div className="content">
                     <div className="text">
-                        <h2><span>{props.lang?.pages?.fisioHome.four.title}</span></h2>
-                        <p><span>{props.lang?.pages?.fisioHome.four.text}</span></p>
+                        <h2><span>Interface agradável</span></h2>
+                        <p><span>
+                            A utilização de tecnologias web, como React Native, Node.js e JavaScript, permitirá explorar todo o potencial de uma interface mobile agradável e funcional, garantindo assim uma experiência de uso aprimorada para os usuários do Fisio Home Pro.
+                        </span></p>
                     </div>
                     <div className="image">
                         <img src="/static/img/fisio-home/phone.png" alt="User interface" />
@@ -80,13 +84,15 @@ export default function FisioHome(props: fisioHomeProps) {
             <section className="panel five">
                 <div className="content">
                     <div className="content-div">
-                        <h2>{props.lang?.pages?.fisioHome.five.title}</h2>
-                        <p>{props.lang?.pages?.fisioHome.five.text}</p>
+                        <h2>Potencializando o back-end</h2>
+                        <p>
+                            A fim de impulsionar a escalabilidade e promover uma integração mais fluída com o front-end desenvolvido em React Native, o back-end da aplicação foi desenvolvido utilizando o Node.js.
+                        </p>
                     </div>
                     <div className="content-div">
-                        <p>{props.lang?.pages?.fisioHome.five.itens[0].text}</p>
-                        <p>{props.lang?.pages?.fisioHome.five.itens[1].text}</p>
-                        <p>{props.lang?.pages?.fisioHome.five.itens[2].text}</p>
+                        <p>- Plataforma JavaScript baseada no V8 do Chromium.</p>
+                        <p>- Permite maior desempenho e escalabilidade.</p>
+                        <p>- Arquitetura orientada a eventos e I/O assíncrono.</p>
                     </div>
                 </div>
             </section>
@@ -111,7 +117,7 @@ export default function FisioHome(props: fisioHomeProps) {
                         </video>
                     </div>
                 </div>
-                <a href="/static/docs/td_short_paper_final.pdf" target="_blank">{props.lang?.pages?.fisioHome.six.button}</a>
+                <a href="/static/docs/td_short_paper_final.pdf" target="_blank">Baixar artigo</a>
             </section>
         </div>
     );

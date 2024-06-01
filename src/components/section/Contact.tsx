@@ -1,14 +1,9 @@
 import { EnvelopeFill, Linkedin, Github } from "react-bootstrap-icons";
 
-import { displayText } from "../../data/lang";
 import ButtonLink from "../Input/Button";
 import { Blanckspace } from "../Separator";
 
-interface contactProps {
-	lang?: displayText,
-}
-
-export default function Contact(props: contactProps) {
+export default function Contact() {
   return (
     <section id="contact">
       <h1><i className="bi bi-list-task"></i> CONTACT ME</h1>

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { color, fx, radius } from '../../styles/theme';
 
 interface navProps {
-	onChange: any,
 	title?: string,
 	children?: ReactNode
 }

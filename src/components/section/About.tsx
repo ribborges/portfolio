@@ -1,19 +1,14 @@
 import styled from "styled-components";
 import { PersonFill, MortarboardFill, GeoAltFill, PersonCircle, EnvelopeFill, Whatsapp } from "react-bootstrap-icons";
 
-import { displayText } from '../../data/lang';
 import { Blanckspace } from '../Separator';
 import { StackContainer, StackCard } from '../Stack';
 import { radius } from "../../styles/theme";
 
-interface aboutProps {
-	lang?: displayText,
-}
-
-export default function About(props: aboutProps) {
+export default function About() {
 	return (
 		<AboutContainer id="about">
-			<h1><PersonFill /> {props.lang?.nav.about.toUpperCase()}</h1>
+			<h1><PersonFill /> ABOUT ME</h1>
 			<Blanckspace />
 			<div className="summary">
 				<p className="paragraph">Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas).</p>

@@ -1,23 +1,18 @@
 import styled from "styled-components";
 import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
 
-import { displayText } from '../../data/lang';
 import ButtonLink from '../Input/Button';
 import { Blanckspace } from '../Separator';
 import { color, radius } from "../../styles/theme";
 
-interface headerProps {
-	lang?: displayText
-}
-
-export default function Header(props: headerProps) {
+export default function Header() {
 	return (
 		<StyledHeader>
 			<HeaderInfo>
 				<div>
-					<h3>{props.lang?.header.h3}</h3>
-					<Name>{props.lang?.header.h1}</Name>
-					<h2>{props.lang?.header.h2}</h2>
+					<h3>Olá</h3>
+					<Name>Sou RICHARD BORGES</Name>
+					<h2>Desenvolvedor Full Stack e Engenheiro de Software</h2>
 				</div>
 				<Blanckspace />
 				<SocialButtons>
