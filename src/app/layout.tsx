@@ -18,7 +18,7 @@ export default function RootLayout({
         <html lang="en">
             <GlobalStyle />
             <body className={ubuntu.className}>
-                <div id="root">{children}</div>
+                {children}
             </body>
         </html>
     );

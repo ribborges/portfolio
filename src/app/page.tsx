@@ -1,37 +1,31 @@
-'use client';
+"use client";
 
-//import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BriefcaseFill, HouseDoorFill, PersonFill } from "react-bootstrap-icons";
 
-import Home from "../pages/Home";
-import FisioHome from "../pages/FisioHome";
+import { NavBar, NavItem } from "../components/Navbar";
+import Header from "../components/Header";
+import About from "../components/section/About";
+import { Spacer } from "../components/Separator";
+import Portfolio from "../components/section/Portfolio";
+import Footer from "../components/Footer";
 
-export default function App() {
-  /*
-  const [lang, setLang] = useState<displayText>(pt);
-
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang = event.target.value;
-
-    switch (lang) {
-      case "en":
-        setLang(en);
-        break;
-      case "pt":
-        setLang(pt);
-        break;
-    }
-  };
-  */
-
+export default function Home() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/fisio-home" element={<FisioHome />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <NavBar title="R" >
+        <NavItem icon={<HouseDoorFill />} label="Inicio" href="#header" />
+        <NavItem icon={<PersonFill />} label="Sobre mim" href="#about" />
+        <NavItem icon={<BriefcaseFill />} label="Portfolio" href="#portfolio" />
+      </NavBar>
+      <Header />
+
+      <main className="content">
+        <About />
+        <Spacer />
+        <Portfolio />
+      </main>
+
+      <Footer />
+    </>
   );
 }
