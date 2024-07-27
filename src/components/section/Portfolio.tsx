@@ -153,5 +153,5 @@ export default function About() {
 				</Card>
 			</Grid>
 		</section>
-	)
+	);
 }
