@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Ubuntu } from 'next/font/google'
 import GlobalStyle from "../styles/globalStyles";
  
-const ubuntu = Ubuntu({ weight: ["300", "400", "500", "700"], subsets: ["latin"]});
+const ubuntu = Ubuntu({ weight: ["300", "400", "500", "700"], subsets: ["latin"], display: "swap", adjustFontFallback: false });
 
 export const metadata: Metadata = {
     title: "Richard de Carvalho Borges",

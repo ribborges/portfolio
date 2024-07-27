@@ -3,16 +3,17 @@ import styled from 'styled-components';
 
 import { color, radius } from '../../styles/theme';
 
-interface ButtonProps{
+interface ButtonProps {
     href?: string,
     className?: string,
-    children?: ReactNode,
+    icon?: ReactNode,
+    label?: string,
     target?: React.HTMLAttributeAnchorTarget | undefined
 }
 
 export default function Button(props: ButtonProps) {
     return (
-        <StyledButton className={props.className} href={props.href} target={props.target ? props.target : "_blank"} rel="noopener noreferrer">{props.children}</StyledButton>
+        <StyledButton className={props.className} href={props.href} target={props.target ? props.target : "_blank"} rel="noopener noreferrer">{props.icon} <span>{props.label}</span></StyledButton>
     )
 }
 
@@ -30,7 +31,6 @@ const StyledButton = styled.a`
     padding: 15px;
     margin: 15px;
     transition: 1s;
-
     &:hover, &:focus {
         color: unset;
         background-color: ${color.accent_primary};

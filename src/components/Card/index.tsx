@@ -7,6 +7,7 @@ interface CardProps {
 	thumb?: string,
 	title?: string,
 	text?: string,
+    tags?: ReactNode,
 	children?: ReactNode,
 }
 
@@ -17,6 +18,7 @@ export default function Card(props: CardProps) {
 				<img src={props.thumb} alt={props.title}/>
 			</div>
 			<div className="card-caption">
+                { props.tags! }
 				<h4>{props.title}</h4>
 				<p>{props.text}</p>
 				<div className="card-opt">
@@ -28,17 +30,17 @@ export default function Card(props: CardProps) {
 }
 
 const StyledCard = styled.div`
-	background-color: ${color.dark_grey};
+	background-color: ${color.dark_grey}77;
     border-radius: ${radius.medium};
-    position: relative;
+    border: 1px solid ${color.light}22;
     overflow: hidden;
     flex-direction: column;
-    flex: 0 1 30%;
-	transition: 1s;
+	transition: 0.5s;
+    display: flex;
 
     .card-thumb {
         width: 100%;
-        height: 100%;
+        border-bottom: 1px solid ${color.light}22;
         
         img {
             width: 100%;
@@ -52,24 +54,19 @@ const StyledCard = styled.div`
         scale: 1.05;
 
         .card-caption {
-            overflow-y: scroll;
-            opacity: 1;
+            background-color: ${color.accent_primary}44;
         }
     }
 
     .card-caption {
 		backdrop-filter: ${fx.blur};
-        background-color: ${color.accent_primary}44;
-        position: absolute;
-        top: 0;
-        left: 0;
         z-index: 100;
-        padding: 10px;
+        padding: 20px;
         display: flex;
+        flex: 1;
         flex-direction: column;
 
-        transition: all 1s ease;
-        opacity: 0;
+        transition: all 0.5s ease;
 
         h4 {
             margin-bottom: 10px;

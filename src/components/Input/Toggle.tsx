@@ -13,8 +13,10 @@ interface toggleButtonProps {
 
 interface toggleContainerProps {
     id: string,
-    labels: Array<string>,
-    children: ReactNode;
+    items: Array<{
+        label: string,
+        content: ReactNode
+    }>
 }
 
 export function ToggleButton(props: toggleButtonProps) {
@@ -29,19 +31,17 @@ export function ToggleButton(props: toggleButtonProps) {
 export function ToggleContainer(props: toggleContainerProps) {
     const [active, setActive] = useState(0);
 
-    const childrenArray = React.Children.toArray(props.children);
-
     return (
         <div id={props.id} className="flex-container flex-col flex-center">
             <StyledToggleContainer>
                 {
-                    childrenArray?.map((value, index) => (
-                        <ToggleButton key={index} id={props.id + "_btn" + index} onClick={() => setActive(index)} className={active === index? "active" : ""}>{props.labels[index]}</ToggleButton>
+                    props.items?.map((value, index) => (
+                        <ToggleButton key={index} id={props.id + "_btn" + index} onClick={() => setActive(index)} className={active === index? "active" : ""}>{props.items[index].label}</ToggleButton>
                     ))
                 }
             </StyledToggleContainer>
             {
-                childrenArray[active]
+                props.items[active].content
             }
         </div>
     );

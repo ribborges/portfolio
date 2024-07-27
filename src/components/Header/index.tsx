@@ -16,10 +16,10 @@ export default function Header() {
 				</div>
 				<Blanckspace />
 				<SocialButtons>
-					<ButtonLink href="mailto:ribborges@outlook.com" className="accent big"><EnvelopeFill /></ButtonLink>
-					<ButtonLink href="https://linkedin.com/in/ribborges" className="accent big"><Linkedin /></ButtonLink>
-					<ButtonLink href="https://github.com/ribborges" className="accent big"><Github /></ButtonLink>
-					<ButtonLink href="/cv/cv-richard-borges.pdf" className="accent big"><FileEarmarkPersonFill /></ButtonLink>
+					<ButtonLink href="mailto:ribborges@outlook.com" className="accent big" icon={<EnvelopeFill />} label="Email"/>
+					<ButtonLink href="https://linkedin.com/in/ribborges" className="accent big" icon={<Linkedin />} label="Linkedin"/>
+					<ButtonLink href="https://github.com/ribborges" className="accent big" icon={<Github />} label="Github"/>
+					<ButtonLink href="/cv/cv-richard-borges.pdf" className="accent big" icon={<FileEarmarkPersonFill />} label="CV"/>
 				</SocialButtons>
 			</HeaderInfo>
 			<HeaderPicture>

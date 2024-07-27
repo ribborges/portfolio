@@ -23,19 +23,24 @@ const StyledStackCard = styled.div`
     align-items: center;
     background-color: ${color.dark_grey};
     border-radius: 10px;
-    padding: 0.5rem;
-    transition: 1s;
+    padding: 0.4rem;
+    transition: 0.5s;
+
     img {
-        width: 2rem;
-        height: 2rem;
+        width: 1.6rem;
+        height: 1.6rem;
     };
+
     p {
         color: ${color.light};
+        font-size: 1rem;
     };
+
     &:hover {
         transform: scale(1.1);
         filter: drop-shadow(0 0 30px ${color.light}44);
     }
+    
     @media (prefers-color-scheme: light) {
         background-color: ${color.light_grey};
 

@@ -11,50 +11,10 @@ export default function About() {
 			<h1><PersonFill /> ABOUT ME</h1>
 			<Blanckspace />
 			<div className="summary">
-				<p className="paragraph">Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas).</p>
+				<p className="paragraph">Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. </p>
 				<p className="paragraph">Minhas principais habilidades são voltadas para o desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Possuo um perfil comunicativo, calmo e ágil, com uma grande facilidade para trabalho em equipe.</p>
+				<p className="paragraph">Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas).</p>
 			</div>
-			<Blanckspace height="1rem" />
-			<Info>
-				<InfoSection>
-					<StyledTag><PersonCircle className="icon" />Richard de Carvalho Borges</StyledTag>
-					<StyledTag><MortarboardFill className="icon" />Engenheiro de Software</StyledTag>
-					<StyledTag><EnvelopeFill className="icon" />ribborges@outlook.com</StyledTag>
-					<StyledTag><Whatsapp className="icon" />+55 (11) 94234-7830</StyledTag>
-					<StyledTag><GeoAltFill className="icon" />São Paulo, SP</StyledTag>
-				</InfoSection>
-
-				<InfoSection>
-					<AcademicHistoryTag
-						icon="/static/img/info/poli.jpeg"
-						alt="Poli USP logo"
-						field="MBA em Engenharia de Software"
-						school="Poli USP"
-						date="2024 - 2025"
-					/>
-					<AcademicHistoryTag
-						icon="/static/img/info/desco.jpeg"
-						alt="Descomplica Logo"
-						field="Pós-Graduação em Desenvolvimento Full Stack"
-						school="Descomplica Faculdade Digital"
-						date="2023 - 2024"
-					/>
-					<AcademicHistoryTag
-						icon="/static/img/info/puc.jpeg"
-						alt="PUC Minas Logo"
-						field="Bacharel em Ciência da Computação"
-						school="PUC Minas"
-						date="2018 - 2023"
-					/>
-					<AcademicHistoryTag
-						icon="/static/img/info/etec.jpeg"
-						alt="ETEC Logo"
-						field="Técnico em Informática"
-						school="ETEC"
-						date="2017"
-					/>
-				</InfoSection>
-			</Info>
 			<Blanckspace height="1rem" />
 			<StackContainer title={"Languages"}>
 				<StackCard image="https://img.icons8.com/?size=512&id=108784&format=png" alt="JavaScript logo" name="JavaScript" />
@@ -121,6 +81,7 @@ const AboutContainer = styled.section`
     	padding-right: 10vw;
 
     	.paragraph {
+			font-size: 1.4rem;
         	text-indent: 50px;
     	}
 	}
