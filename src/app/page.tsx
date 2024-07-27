@@ -1,5 +1,3 @@
-"use client";
-
 import { BriefcaseFill, HouseDoorFill, PersonFill } from "react-bootstrap-icons";
 
 import { NavBar, NavItem } from "../components/Navbar";
