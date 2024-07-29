@@ -53,6 +53,7 @@ const StyledCard = styled.div`
 
         .card-opt {
             margin-top: auto;
+            padding-top: 10px;
             display: flex;
             flex-direction: row;
             flex-flow: wrap;

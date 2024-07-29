@@ -55,8 +55,8 @@ const StyledNavbar = styled.nav`
 		.title {
 			border-radius: ${radius.small};
 			margin: 1.5vw;
-			width: 6.5vw;
-			height: 6.5vw;
+			width: 12vw;
+			height: 12vw;
 		}
 	}
 
