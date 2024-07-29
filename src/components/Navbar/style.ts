@@ -8,11 +8,13 @@ const StyledNavbar = styled.nav`
 
 	color: ${color.light};
 	background-color: ${color.dark_grey}44;
+	font-size: 1rem;
 	height: 8vw;
 	max-height: 8vh;
 	width: auto;
 	position: fixed;
 	margin: 5px;
+	padding: 10px;
 	z-index: 999;
 	transition: 1s;
 	display: flex;
@@ -28,9 +30,9 @@ const StyledNavbar = styled.nav`
 		display: flex;
 		align-items: center;
 		align-content: center;
-		width: 3vw;
-		height: 3vw;
-		margin: 0.5vw;
+		font-size: 1.6rem;
+		width: 3.5vw;
+		height: 3.5vw;
 		border-radius: ${radius.medium};
 
 		.title-text {
@@ -43,9 +45,13 @@ const StyledNavbar = styled.nav`
 
 	.items {
 		display: flex;
+		gap: 1rem;
 	}
 
 	@media screen and (max-width: 800px) {
+		height: 12vw;
+		font-size: 1.2rem;
+
 		.title {
 			border-radius: ${radius.small};
 			margin: 1.5vw;
@@ -67,9 +73,8 @@ const StyledNavItem = styled.a`
 	align-items: center;
 	align-content: center;
 	gap: 5px;
-	padding: 1vw;
+	padding: 20px;
 	text-decoration: none;
-	margin: .5vw;
 	border: 2px solid transparent;
 	border-radius: ${radius.medium};
 	transition: 1s;

@@ -17,6 +17,11 @@ const StyledButton = styled.a`
     padding: 15px;
     margin: 15px;
     transition: 1s;
+
+    span {
+        font-size: 1.2rem;
+    }
+
     &:hover, &:focus {
         color: unset;
         background-color: ${color.accent_primary};
@@ -37,6 +42,10 @@ const StyledButton = styled.a`
     @media screen and (max-width: 700px) {
         padding: 10px;
         margin: 5px;
+
+        span {
+            font-size: 0.8rem;
+        }
     }
 
     @media (prefers-color-scheme: light) {
