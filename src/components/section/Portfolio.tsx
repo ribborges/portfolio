@@ -24,7 +24,9 @@ export default function About() {
 						<Tag text="Authentication" color="#000000" />
 					</TagContainer>}
 					title="REST API with Authentication"
-					text={`This project is a REST API built with TypeScript and Express. It includes authentication features to secure the endpoints.`}
+					text={`
+						Uma API REST com autenticação e recursos de segurança para endpoints.
+					`}
 				>
 					<ButtonLink href="https://github.com/ribborges/api-with-auth" target="_self" icon={<Github />} label="APP" />
 				</Card>
@@ -42,7 +44,9 @@ export default function About() {
 						<Tag text="REST API" color="#000000" />
 					</TagContainer>}
 					title="Tasks"
-					text={`A simple app to track your tasks. Developed using React, TypeScript, Vite and Styled Components for the the front-end and Node, Express and TypeScript for the back-end and MongoDB for the database.`}
+					text={`
+						Um app simples para registrar suas tarefas diárias.
+					`}
 				>
 					<ButtonLink href="https://github.com/ribborges/tasks-app" target="_self" icon={<Github />} label="APP" />
 					<ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="API" />
@@ -62,10 +66,9 @@ export default function About() {
 					}
 					title="Cook App"
 					text={`
-                    Projeto desenvolvido durante o evento "React Native na prática" da Rocketseat. Aplicação 
-                    que sugere receitas conforme os ingredientes selecionados pelo usuário usando React Native, Expo, Expo router, 
-                    Supabase e React Native reanimated.
-                `}
+						Projeto desenvolvido durante o evento "React Native na prática" da Rocketseat. Aplicação 
+						que sugere receitas conforme os ingredientes selecionados pelo usuário.
+					`}
 				>
 					<ButtonLink href="https://github.com/ribborges/cook-app/tree/master" icon={<Github />} label="Código" />
 				</Card>
@@ -84,10 +87,11 @@ export default function About() {
 					}
 					title="Fisio Home"
 					text={`
-                    A aplicação desenvolvida durante a disciplina de 'Trabalho de Diplomação'.Foi densenvolvida em 
-                    React Native (Expo) no front-end e Node.js no back-end em conjunto com alguns pacotes como: 
-                    Express.js, Mongoose, Axios e outros. A base de dados foi desenvolvida em MongoDB.
-                `}
+						Aplicação desenvolvida durante a disciplina de "Trabalho de Diplomação" em parceria
+						entre os cursos de Ciência da Computação e Fisioterapia da Pontifícia Universidade Católica, campus
+						Poços de Caldas, visa estabelecer uma conexão remota entre pacientes em processo de recuperação
+						pós-acidente vascular encefálico (AVE) e os profissionais de fisioterapia presentes no campus.
+					`}
 				>
 					<ButtonLink href="/fisio-home" target="_self" icon={<ThreeDotsVertical />} label="Detalhes" />
 				</Card>
@@ -104,8 +108,8 @@ export default function About() {
 					}
 					title="Cat Fact App"
 					text={`
-                    Veja fatos aleatórios sobre gatos junto de uma imagem fofinha :3 Desenvolvido com React Native.
-                `}
+						Veja fatos aleatórios sobre gatos junto de uma imagem fofinha :3
+					`}
 				>
 					<ButtonLink href="https://github.com/ribborges/cat-fact-app" icon={<Github />} label="Código" />
 				</Card>
@@ -123,8 +127,9 @@ export default function About() {
 					}
 					title="Criador de CV"
 					text={`
-                    Crie seu currículo com essa ferramenta simples que gera o PDF dinamicamente com as suas informações e permite exportar os dados em formato .json para futuras alterações. Desenvolvido em React, TypeScript, Vite, SCSS e ReactPDF. 
-                `}
+						Crie seu currículo com essa ferramenta simples que gera o PDF dinamicamente com as suas informações
+						e permite exportar os dados em formato .json para futuras alterações.
+					`}
 				>
 					<ButtonLink href="https://cv-creator-ten.vercel.app/" icon={<BoxArrowUpRight />} label="Demo" />
 					<ButtonLink href="https://github.com/ribborges/cv-creator/" icon={<Github />} label="Código" />
@@ -145,8 +150,8 @@ export default function About() {
 					}
 					title="Habits"
 					text={`
-                    Rocketseat NLW Setup - Ignite.
-                `}
+						Projeto desenvolvido durante o evento NLW Setup - Ignite da Rocketseat.
+					`}
 				>
 					<ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/" icon={<Github />} label="Código" />
 				</Card>
@@ -162,7 +167,9 @@ export default function About() {
 						</TagContainer>
 					}
 					title="Social tree"
-					text="Minha Social Tree com links para as minhas redes sociais. Desenvolvido em React."
+					text={`
+						Minha Social Tree com links para as minhas redes sociais.
+					`}
 				>
 					<ButtonLink href="https://socialtree-richardborges.vercel.app/" icon={<BoxArrowUpRight />} label="Demo" />
 					<ButtonLink href="https://github.com/ribborges/social-tree/" icon={<Github />} label="Código" />
