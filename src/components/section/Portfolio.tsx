@@ -14,6 +14,22 @@ export default function About() {
 			<Blanckspace />
 			<Grid>
 				<Card
+					thumb="https://imgs.search.brave.com/aKNaDsFYkmoVkVhGb4p5QHRCwDy9RXamzQW2OTBPq7U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bW9uZ29kYi5jb20v/ZG9jcy9kcml2ZXJz/L25vZGUvY3VycmVu/dC9zdGF0aWMvYjNh/ZGRkMGViNDI0NGE4/MDJmYjY0MzUyNjA4/NWI0Y2EvOGU3Njgv/Tm9kZV9DYXRhbG9n/LndlYnA"
+					tags={<TagContainer>
+						<Tag text="TypeScript" color="#1475dd" />
+						<Tag text="Node" color="#259221" />
+						<Tag text="Express" color="#000000" />
+						<Tag text="MongoDB" color="#28831a" />
+						<Tag text="REST API" color="#000000" />
+						<Tag text="Authentication" color="#000000" />
+					</TagContainer>}
+					title="REST API with Authentication"
+					text={`This project is a REST API built with TypeScript and Express. It includes authentication features to secure the endpoints.`}
+				>
+					<ButtonLink href="https://github.com/ribborges/api-with-auth" target="_self" icon={<Github />} label="APP" />
+				</Card>
+
+				<Card
 					thumb="/static/img/projects/tasks.png"
 					tags={<TagContainer>
 						<Tag text="React" color="#7ae2ff" />
@@ -28,8 +44,8 @@ export default function About() {
 					title="Tasks"
 					text={`A simple app to track your tasks. Developed using React, TypeScript, Vite and Styled Components for the the front-end and Node, Express and TypeScript for the back-end and MongoDB for the database.`}
 				>
-					<ButtonLink href="https://github.com/ribborges/tasks-app" target="_self" icon={<Github />} label="APP"/>
-					<ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="API"/>
+					<ButtonLink href="https://github.com/ribborges/tasks-app" target="_self" icon={<Github />} label="APP" />
+					<ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="API" />
 				</Card>
 
 				<Card
@@ -51,7 +67,7 @@ export default function About() {
                     Supabase e React Native reanimated.
                 `}
 				>
-					<ButtonLink href="https://github.com/ribborges/cook-app/tree/master" icon={<Github/>} label="Código"/>
+					<ButtonLink href="https://github.com/ribborges/cook-app/tree/master" icon={<Github />} label="Código" />
 				</Card>
 
 				<Card
@@ -73,7 +89,7 @@ export default function About() {
                     Express.js, Mongoose, Axios e outros. A base de dados foi desenvolvida em MongoDB.
                 `}
 				>
-					<ButtonLink href="/fisio-home" target="_self" icon={<ThreeDotsVertical/>} label="Detalhes"/>
+					<ButtonLink href="/fisio-home" target="_self" icon={<ThreeDotsVertical />} label="Detalhes" />
 				</Card>
 
 				<Card
@@ -91,7 +107,7 @@ export default function About() {
                     Veja fatos aleatórios sobre gatos junto de uma imagem fofinha :3 Desenvolvido com React Native.
                 `}
 				>
-					<ButtonLink href="https://github.com/ribborges/cat-fact-app" icon={<Github/>} label="Código"/>
+					<ButtonLink href="https://github.com/ribborges/cat-fact-app" icon={<Github />} label="Código" />
 				</Card>
 
 				<Card
@@ -110,8 +126,8 @@ export default function About() {
                     Crie seu currículo com essa ferramenta simples que gera o PDF dinamicamente com as suas informações e permite exportar os dados em formato .json para futuras alterações. Desenvolvido em React, TypeScript, Vite, SCSS e ReactPDF. 
                 `}
 				>
-					<ButtonLink href="https://cv-creator-ten.vercel.app/" icon={<BoxArrowUpRight/>} label="Demo"/>
-					<ButtonLink href="https://github.com/ribborges/cv-creator/" icon={<Github/>} label="Código"/>
+					<ButtonLink href="https://cv-creator-ten.vercel.app/" icon={<BoxArrowUpRight />} label="Demo" />
+					<ButtonLink href="https://github.com/ribborges/cv-creator/" icon={<Github />} label="Código" />
 				</Card>
 
 				<Card
@@ -132,7 +148,7 @@ export default function About() {
                     Rocketseat NLW Setup - Ignite.
                 `}
 				>
-					<ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/" icon={<Github/>} label="Código"/>
+					<ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/" icon={<Github />} label="Código" />
 				</Card>
 
 				<Card
@@ -148,8 +164,8 @@ export default function About() {
 					title="Social tree"
 					text="Minha Social Tree com links para as minhas redes sociais. Desenvolvido em React."
 				>
-					<ButtonLink href="https://socialtree-richardborges.vercel.app/" icon={<BoxArrowUpRight/>} label="Demo"/>
-					<ButtonLink href="https://github.com/ribborges/social-tree/" icon={<Github/>} label="Código"/>
+					<ButtonLink href="https://socialtree-richardborges.vercel.app/" icon={<BoxArrowUpRight />} label="Demo" />
+					<ButtonLink href="https://github.com/ribborges/social-tree/" icon={<Github />} label="Código" />
 				</Card>
 			</Grid>
 		</section>
