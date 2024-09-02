@@ -65,11 +65,16 @@ const StyledButton = styled.a`
 const StyledToggleButton = styled.button`
     padding: 10px;
     border-radius: ${radius.medium};
-    transition: 1s;
+
+    span {
+        padding: 5px;
+        border-radius: ${radius.medium};
+        transition: ease-in-out .5s;
+    }
 
     &::after {
         content: "";
-        margin-top: 2px;
+        margin-top: 10px;
         display: block;
         width: 100%;
         height: 4px;
@@ -80,7 +85,9 @@ const StyledToggleButton = styled.button`
     }
 
     &:hover {
-        background-color: ${color.accent_primary};
+        span {
+            background-color: ${color.accent_primary};
+        }
     }
 
     &.active {

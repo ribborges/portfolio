@@ -1,7 +1,7 @@
 import { BriefcaseFill } from "react-bootstrap-icons";
 
 import { Blanckspace } from "../Separator";
-import { ToggleContainer } from "../Input";
+import { Toggle } from "../Input";
 import Dev from "./Portfolio/Dev";
 import Unreal from "./Portfolio/Unreal";
 import Design from "./Portfolio/Design";
@@ -13,7 +13,7 @@ export default function About() {
 		<section id="portfolio">
 			<Title icon={<BriefcaseFill />} title="PORTFÓLIO" />
 			<Blanckspace />
-			<ToggleContainer id="portfolio" items={[
+			<Toggle id="portfolio" items={[
 				{
 					label: "Desenvolvimento",
 					content: <Dev />

@@ -21,12 +21,12 @@ interface toggleContainerProps {
 export function ToggleButton(props: toggleButtonProps) {
     return (
         <StyledToggleButton id={props.id} onClick={props.onClick} className={props.className}>
-            {props.children}
+            <span>{props.children}</span>
         </StyledToggleButton>
     );
 }
 
-export function ToggleContainer(props: toggleContainerProps) {
+export function Toggle(props: toggleContainerProps) {
     const [active, setActive] = useState(0);
 
     return (
