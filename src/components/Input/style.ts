@@ -67,12 +67,26 @@ const StyledToggleButton = styled.button`
     border-radius: ${radius.medium};
     transition: 1s;
 
+    &::after {
+        content: "";
+        margin-top: 2px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: transparent;
+        border-radius: ${radius.medium};
+
+        transition: ease-in-out .5s;
+    }
+
     &:hover {
         background-color: ${color.accent_primary};
     }
 
     &.active {
-        background-color: ${color.accent_secondary};
+        &::after {
+            background-color: ${color.accent_secondary};
+        }
     }
 `;
 
@@ -80,12 +94,6 @@ const StyledToggleContainer = styled.div`
     display: flex;
     gap: 10px;
     margin: 15px;
-    border-radius: ${radius.medium};
-    border: 2px solid ${color.light_grey}22;
-
-    @media (prefers-color-scheme: light) {
-        border: 2px solid ${color.dark_grey}22;
-    }
 `;
 
 export { StyledButton, StyledToggleButton, StyledToggleContainer };

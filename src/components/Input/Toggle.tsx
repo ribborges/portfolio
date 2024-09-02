@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+
 import { ReactNode, useState } from "react";
 import { StyledToggleButton, StyledToggleContainer } from "./style";
 
@@ -18,7 +19,6 @@ interface toggleContainerProps {
 }
 
 export function ToggleButton(props: toggleButtonProps) {
-
     return (
         <StyledToggleButton id={props.id} onClick={props.onClick} className={props.className}>
             {props.children}

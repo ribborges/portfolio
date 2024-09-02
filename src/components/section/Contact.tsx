@@ -1,12 +1,13 @@
-import { EnvelopeFill, Linkedin, Github } from "react-bootstrap-icons";
+import { SendFill, EnvelopeFill, Linkedin, Github } from "react-bootstrap-icons";
 
 import ButtonLink from "../Input/Button";
 import { Blanckspace } from "../Separator";
+import Title from "./Title";
 
 export default function Contact() {
   return (
     <section id="contact">
-      <h1><i className="bi bi-list-task"></i> CONTACT ME</h1>
+      <Title icon={<SendFill />} title="CONTATO" />
       <Blanckspace />
       <div className="flex-container flex-col">
         <ButtonLink href="mailto:ribborges@outlook.com" className="accent big" icon={<EnvelopeFill/>} label="Email"/>
