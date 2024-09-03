@@ -17,12 +17,10 @@ const GlobalStyle = createGlobalStyle`
         border: 0 none;
         vertical-align: baseline;
         font-size: unset;
-        overflow: hidden;
     }
     
     html, body {
         min-height: 100vh;
-        overflow-y: auto;
     }
     
     body, div, header, main, footer, nav {

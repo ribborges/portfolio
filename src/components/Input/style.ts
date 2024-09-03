@@ -105,9 +105,9 @@ const StyledToggleContainer = styled.div`
     overflow-x: scroll;
     white-space: nowrap;
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar { display: none; }
 `;
 
 export { StyledButton, StyledToggleButton, StyledToggleContainer };
