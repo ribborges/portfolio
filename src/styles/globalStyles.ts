@@ -17,10 +17,12 @@ const GlobalStyle = createGlobalStyle`
         border: 0 none;
         vertical-align: baseline;
         font-size: unset;
+        overflow: hidden;
     }
     
     html, body {
         min-height: 100vh;
+        overflow-y: auto;
     }
     
     body, div, header, main, footer, nav {
@@ -95,41 +97,6 @@ const GlobalStyle = createGlobalStyle`
             text-shadow: 0 0 20px #ffffff82;
             text-decoration: underline;
         }
-    }
-
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .flex-1 {
-            flex: 1;
-        }
-
-        .flex-2 {
-            flex: 2;
-        }
-
-        .flex-3 {
-            flex: 3;
-        }
-
-        .flex-4 {
-            flex: 4;
-        }
-
-        .flex-5 {
-            flex: 5;
-        }
-    }
-
-    .flex-col {
-        flex-direction: column;
-    }
-
-    .flex-center {
-        align-items: center;
     }
 
     @media screen and (max-width: 800px) {

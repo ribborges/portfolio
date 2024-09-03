@@ -2,6 +2,7 @@
 
 import { ReactNode, useState } from "react";
 import { StyledToggleButton, StyledToggleContainer } from "./style";
+import { FlexContainer } from "../Flex";
 
 interface toggleButtonProps {
     id?: string,
@@ -30,7 +31,7 @@ export function Toggle(props: toggleContainerProps) {
     const [active, setActive] = useState(0);
 
     return (
-        <div id={props.id} className="flex-container flex-col flex-center">
+        <FlexContainer id={props.id} direction="column" align="center">
             <StyledToggleContainer>
                 {
                     props.items?.map((value, index) => (
@@ -41,6 +42,6 @@ export function Toggle(props: toggleContainerProps) {
             {
                 props.items[active].content
             }
-        </div>
+        </FlexContainer>
     );
 }

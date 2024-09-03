@@ -63,12 +63,14 @@ const StyledButton = styled.a`
 `;
 
 const StyledToggleButton = styled.button`
+    display: inline-block;
     padding: 10px;
     border-radius: ${radius.medium};
 
     span {
         padding: 5px;
         border-radius: ${radius.medium};
+        
         transition: ease-in-out .5s;
     }
 
@@ -98,9 +100,14 @@ const StyledToggleButton = styled.button`
 `;
 
 const StyledToggleContainer = styled.div`
-    display: flex;
-    gap: 10px;
+    width: 90%;
     margin: 15px;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 `;
 
 export { StyledButton, StyledToggleButton, StyledToggleContainer };
