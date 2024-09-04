@@ -69,6 +69,13 @@ const StyledCard = styled.div`
     }
 
 	@media (prefers-color-scheme: light) {
+        background-color: ${color.light_grey}77;
+        border: 1px solid ${color.dark}22;
+
+        .card-thumb {
+            border-bottom: 1px solid ${color.dark}22;
+        }
+
         &:hover {
             box-shadow: 0 0 100px ${color.dark}88;
         }
