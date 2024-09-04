@@ -6,7 +6,7 @@ import { color, fx, radius } from '../../styles/theme';
 const StyledCard = styled.div`
 	background-color: ${color.dark_grey}77;
     border-radius: ${radius.medium};
-    border: 1px solid ${color.light}22;
+    border: 1px solid ${color.light}11;
     overflow: hidden;
     flex-direction: column;
 	transition: 0.5s;
@@ -14,7 +14,7 @@ const StyledCard = styled.div`
 
     .card-thumb {
         width: 100%;
-        border-bottom: 1px solid ${color.light}22;
+        border-bottom: 1px solid ${color.light}11;
         
         img {
             width: 100%;
@@ -70,10 +70,10 @@ const StyledCard = styled.div`
 
 	@media (prefers-color-scheme: light) {
         background-color: ${color.light_grey}77;
-        border: 1px solid ${color.dark}22;
+        border: 1px solid ${color.dark}33;
 
         .card-thumb {
-            border-bottom: 1px solid ${color.dark}22;
+            border-bottom: 1px solid ${color.dark}33;
         }
 
         &:hover {

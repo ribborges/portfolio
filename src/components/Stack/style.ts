@@ -8,7 +8,7 @@ const StyledStackCard = styled.div`
     gap: 0.5rem;
     align-items: center;
     background-color: ${color.dark_grey}bb;
-    border: 1px solid ${color.light}33;
+    border: 1px solid ${color.light}11;
     border-radius: 10px;
     padding: 0.4rem;
     transition: 0.5s;
