@@ -24,25 +24,6 @@ const StyledNavbar = styled.nav`
 	border-bottom: 1px solid ${color.light_grey}22;
 	backdrop-filter: ${fx.blur};
 
-	.title {
-		color: ${color.light};
-		background-color: ${color.accent_primary};
-		display: flex;
-		align-items: center;
-		align-content: center;
-		font-size: 1.6rem;
-		width: 3.5vw;
-		height: 3.5vw;
-		border-radius: ${radius.medium};
-
-		.title-text {
-			flex: 1;
-			font-family: "Playfair Display", serif;
-			text-align: center;
-			font-size: 100%;
-		}
-	}
-
 	.items {
 		display: flex;
 		gap: 1rem;
@@ -51,13 +32,6 @@ const StyledNavbar = styled.nav`
 	@media screen and (max-width: 800px) {
 		height: 12vw;
 		font-size: 1.2rem;
-
-		.title {
-			border-radius: ${radius.small};
-			margin: 1.5vw;
-			width: 12vw;
-			height: 12vw;
-		}
 	}
 
 	@media (prefers-color-scheme: light) {
@@ -110,4 +84,31 @@ const StyledNavItem = styled.a`
 	}
 `;
 
-export { StyledNavbar, StyledNavItem };
+const StyledLogo = styled.div`
+	color: ${color.light};
+	display: flex;
+	align-items: center;
+	align-content: center;
+	font-size: 1.6rem;
+	width: 3.5vw;
+	height: 3.5vw;
+	border-radius: ${radius.medium};
+	transition: 0.3s;
+
+	&:hover, &:focus {
+		color: ${color.accent_primary};
+	}
+
+	@media screen and (max-width: 800px) {
+		border-radius: ${radius.small};
+		margin: 1.5vw;
+		width: 12vw;
+		height: 12vw;
+	}
+
+	@media (prefers-color-scheme: light) {
+		color: ${color.dark};
+	}
+`;
+
+export { StyledNavbar, StyledNavItem, StyledLogo };

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
-import { StyledNavbar, StyledNavItem } from './style';
+import Logo from './logo';
+import { StyledLogo, StyledNavbar, StyledNavItem } from './style';
 
 interface navProps {
 	title?: string,
@@ -16,9 +17,10 @@ interface navItemProps {
 export function NavBar(props: navProps) {
 	return (
 		<StyledNavbar>
-			<div className="title">
-				<span className="title-text">{props.title}</span>
-			</div>
+			<StyledLogo>
+				{/*<span className="title-text">{props.title}</span>*/}
+				<Logo />
+			</StyledLogo>
 			<div className="items">
 				{props.children}
 			</div>
