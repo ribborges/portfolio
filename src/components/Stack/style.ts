@@ -7,7 +7,8 @@ const StyledStackCard = styled.div`
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    background-color: ${color.dark_grey};
+    background-color: ${color.dark_grey}bb;
+    border: 1px solid ${color.light}33;
     border-radius: 10px;
     padding: 0.4rem;
     transition: 0.5s;
@@ -28,7 +29,8 @@ const StyledStackCard = styled.div`
     }
     
     @media (prefers-color-scheme: light) {
-        background-color: ${color.light_grey};
+        background-color: ${color.light_grey}bb;
+        border: 1px solid ${color.dark}33;
 
         p {
             color: ${color.dark};
