@@ -7,6 +7,7 @@ const StyledFooter = styled.footer`
   	padding: 3vw;
 	margin: 2vw;
 	background-color: ${color.light_grey}11;
+	border: 1px solid ${color.light}11;
 	border-radius: ${radius.medium};
 	left: 0;
 	bottom: 0;
@@ -24,6 +25,7 @@ const StyledFooter = styled.footer`
 
   	@media (prefers-color-scheme: light) {
 		background-color: ${color.dark_grey}22;
+		border: 1px solid ${color.dark}33;
 	}
 
 	@media screen and (max-width: 800px) {

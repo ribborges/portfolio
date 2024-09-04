@@ -21,7 +21,8 @@ const StyledNavbar = styled.nav`
 	justify-content: space-between;
 	align-items: center;
 	border-radius: ${radius.medium};
-	border-bottom: 1px solid ${color.light_grey}22;
+	border: 1px solid ${color.light_grey}11;
+	border-bottom: 2px solid ${color.light_grey}22;
 	backdrop-filter: ${fx.blur};
 
 	.items {
@@ -37,6 +38,7 @@ const StyledNavbar = styled.nav`
 	@media (prefers-color-scheme: light) {
 		color: ${color.dark};
 		background-color: ${color.light_grey}44;
+		border: 1px solid ${color.dark_grey}11;
 		border-bottom: 1px solid ${color.dark_grey}44;
 	}
 `;
