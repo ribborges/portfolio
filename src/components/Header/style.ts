@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { color, radius } from "../../styles/theme";
 
 const StyledHeader = styled.header`
-	background-image: radial-gradient(${color.light}44 1px, transparent 0);
+	background-image: radial-gradient(${color.light}22 1px, transparent 0);
     background-size: 25px 25px;
     animation: move-it 10s linear infinite;
     min-height: 65vh;
@@ -40,7 +40,7 @@ const StyledHeader = styled.header`
 	}
 
 	@media (prefers-color-scheme: light) {
-		background-image: radial-gradient(${color.dark}44 1px, transparent 0);
+		background-image: radial-gradient(${color.dark}33 1px, transparent 0);
 	}
 `;
 
