@@ -15,7 +15,7 @@ export default function Home() {
         <NavItem icon={<PersonFill />} label="Sobre mim" href="#about" />
         <NavItem icon={<BriefcaseFill />} label="Portfolio" href="#portfolio" />
       </NavBar>
-      <Header />
+      <Header/>
 
       <main className="content">
         <About />

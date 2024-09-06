@@ -6,7 +6,7 @@ import { StyledHeader, HeaderInfo, Name, SocialButtons, HeaderPicture } from "./
 
 export default function Header() {
 	return (
-		<StyledHeader>
+		<StyledHeader id="header">
 			<HeaderInfo>
 				<div>
 					<h3>Olá</h3>
