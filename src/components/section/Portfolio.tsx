@@ -3,7 +3,6 @@ import { BriefcaseFill } from "react-bootstrap-icons";
 import { Blanckspace } from "../Separator";
 import { Toggle } from "../Input";
 import Dev from "./Portfolio/Dev";
-import Unreal from "./Portfolio/Unreal";
 import Design from "./Portfolio/Design";
 import Title from "./Title";
 
@@ -20,9 +19,6 @@ export default function About() {
 				}, {
 					label: "Design",
 					content: <Design />
-				}, {
-					label: "Unreal Engine",
-					content: <Unreal />
 				}
 			]} />
 		</section>
