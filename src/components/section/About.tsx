@@ -2,20 +2,19 @@ import { PersonFill} from "react-bootstrap-icons";
 
 import { Blanckspace } from '../Separator';
 import { StackContainer, StackCard } from '../Stack';
-import { AboutContainer, StyledTag } from "./style";
 import Title from "./Title";
 
 export default function About() {
 	return (
-		<AboutContainer id="about">
+		<section id="about">
 			<Title icon={<PersonFill />} title="SOBRE MIM" />
 			<Blanckspace />
-			<div className="summary">
-				<p className="paragraph">Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. </p>
-				<p className="paragraph">Minhas principais habilidades são voltadas para o desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Possuo um perfil comunicativo, calmo e ágil, com uma grande facilidade para trabalho em equipe.</p>
-				<p className="paragraph">Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas).</p>
+			<div className="pl-2 pr-2 md:pl-32 md:pr-32 lg:pl-64 ld:pr-64">
+				<Paragraph>Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. </Paragraph>
+				<Paragraph>Minhas principais habilidades são voltadas para o desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Possuo um perfil comunicativo, calmo e ágil, com uma grande facilidade para trabalho em equipe.</Paragraph>
+				<Paragraph>Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas).</Paragraph>
 			</div>
-			<Blanckspace height="1rem" />
+			<Blanckspace />
 			<StackContainer title={"Languages"}>
 				<StackCard image="https://img.icons8.com/?size=512&id=108784&format=png" alt="JavaScript logo" name="JavaScript" />
 				<StackCard image="https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png" alt="TypeScript logo" name="TypeScript" />
@@ -50,10 +49,17 @@ export default function About() {
 				<StackCard image="https://img.icons8.com/?size=512&id=QEQQKirln6Tf&format=png" alt="Postman logo" name="Postman" />
 				<StackCard image="https://img.icons8.com/?size=512&id=34301&format=png" alt="Unreal Engine logo" name="Unreal Engine" />
 			</StackContainer>
-		</AboutContainer>
+		</section>
 	)
 }
 
+function Paragraph(props: { children: React.ReactNode }) {
+	return (
+		<p className="inline-block text-justify text-xl mt-2 mb-2 indent-5 md:indent-10">{props.children}</p>
+	);
+}
+
+/*
 function AcademicHistoryTag(props: { icon: string, alt?: string, field?: string, school?: string, date?: string }) {
 	return (
 		<StyledTag>
@@ -68,3 +74,19 @@ function AcademicHistoryTag(props: { icon: string, alt?: string, field?: string,
 		</StyledTag>
 	);
 }
+
+const StyledTag = styled.span`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    .icon {
+        border-radius: ${radius.small};
+        min-width: 25px;
+        min-height: 25px;
+        max-width: 35px;
+        max-height: 35px;
+    }
+`;
+*/

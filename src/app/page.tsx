@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <NavBar title="R" >
+      <NavBar>
         <NavItem icon={<HouseDoorFill />} label="Inicio" href="#header" />
         <NavItem icon={<PersonFill />} label="Sobre mim" href="#about" />
         <NavItem icon={<BriefcaseFill />} label="Portfolio" href="#portfolio" />

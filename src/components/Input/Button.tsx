@@ -1,7 +1,5 @@
 import { ReactNode } from 'react';
 
-import { StyledButton } from './style';
-
 interface ButtonProps {
     href?: string,
     className?: string,
@@ -12,6 +10,23 @@ interface ButtonProps {
 
 export default function Button(props: ButtonProps) {
     return (
-        <StyledButton className={props.className} href={props.href} target={props.target ? props.target : "_blank"} rel="noopener noreferrer">{props.icon} <span>{props.label}</span></StyledButton>
+        <a
+            className="
+                flex basis-[max-content] items-center justify-center content-center gap-2 
+                p-3 m-3
+                text-zinc-950 hover:text-zinc-950 dark:text-zinc-100 dark:hover:text-zinc-100
+                hover:bg-indigo-700
+                hover:no-underline
+                border-2 border-solid rounded-lg hover:border-indigo-700
+                transition duration-500
+                select-none
+            "
+            href={props.href}
+            target={props.target ? props.target : "_blank"}
+            rel="noopener noreferrer"
+        >
+            {props.icon}
+            <span>{props.label}</span>
+        </a>
     );
 }

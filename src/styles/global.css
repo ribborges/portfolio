@@ -1,12 +1,8 @@
-'use client';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-import { createGlobalStyle } from 'styled-components';
-
-import { color, font } from './theme';
-import hexToRgb from '../lib/hexToRgb';
-
-const GlobalStyle = createGlobalStyle`
-    // Reset CSS
+/* Reset CSS */
     * {
         color: unset;
         background-color: unset;
@@ -49,19 +45,12 @@ const GlobalStyle = createGlobalStyle`
         font-weight: normal;
     }
 
-    // Global styles
+    /* Global styles */
     body {
-        // Color scheme
-        color: ${color.light};
-        background: ${color.dark};
-        background-image: linear-gradient(135deg, rgba(${hexToRgb(color.accent_primary)}, 0.12) 0%, rgba(${hexToRgb(color.dark)}, 0) 100%),
-            linear-gradient(0deg, rgba(${hexToRgb(color.accent_tertiary)}, 0.08) 0%, rgba(${hexToRgb(color.dark)}, 0) 100%),
-            linear-gradient(180deg, rgba(${hexToRgb(color.accent_secondary)}, 0.1) 0%, rgba(${hexToRgb(color.dark)}, 0) 100%);
+        /* Font */
+        font-size: 100%;
 
-        // Font
-        font-size: ${font.size.base};
-
-        // Scrollbar
+        /* Scrollbar */
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
@@ -87,11 +76,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        color: ${color.accent_primary};
+        color: #6d28d9;
         transition: 1s;
 
         &:hover {
-            color: ${color.accent_secondary};
+            color: #be185d;
             text-shadow: 0 0 20px #ffffff82;
             text-decoration: underline;
         }
@@ -119,17 +108,6 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
-    @media (prefers-color-scheme: light) {
-        body {
-            // Color scheme
-            color: ${color.dark};
-            background: ${color.light};
-            background-image: linear-gradient(135deg, rgba(${hexToRgb(color.accent_primary)}, 0.3) 0%, rgba(${hexToRgb(color.light)}, 0) 100%),
-                linear-gradient(0deg, rgba(${hexToRgb(color.accent_tertiary)}, 0.3) 0%, rgba(${hexToRgb(color.light)}, 0) 100%),
-                linear-gradient(180deg, rgba(${hexToRgb(color.accent_secondary)}, 0.3) 0%, rgba(${hexToRgb(color.light)}, 0) 100%);
-        }
-    }
-
     .content {
         padding: 5vw;
 
@@ -139,6 +117,3 @@ const GlobalStyle = createGlobalStyle`
             padding-bottom: 15vw;
         }
     }
-`;
-
-export default GlobalStyle;

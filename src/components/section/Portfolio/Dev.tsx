@@ -1,21 +1,23 @@
+import { Github, ThreeDotsVertical, BoxArrowUpRight } from "react-bootstrap-icons";
+
 import Card from "../../Card";
-import Grid from "../../Grid";
 import { Tag, TagContainer } from "../../Tag";
 import ButtonLink from "../../Input/Button";
-import { Github, ThreeDotsVertical, BoxArrowUpRight } from "react-bootstrap-icons";
+import { GridContainer } from "../../Container";
 
 export default function Dev() {
     return (
-        <Grid>
+        <GridContainer>
             <Card
+                key={"dev-0"}
                 thumb="https://imgs.search.brave.com/aKNaDsFYkmoVkVhGb4p5QHRCwDy9RXamzQW2OTBPq7U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bW9uZ29kYi5jb20v/ZG9jcy9kcml2ZXJz/L25vZGUvY3VycmVu/dC9zdGF0aWMvYjNh/ZGRkMGViNDI0NGE4/MDJmYjY0MzUyNjA4/NWI0Y2EvOGU3Njgv/Tm9kZV9DYXRhbG9n/LndlYnA"
                 tags={<TagContainer>
-                    <Tag text="TypeScript" color="#1475dd" />
-                    <Tag text="Node" color="#259221" />
-                    <Tag text="Express" color="#000000" />
-                    <Tag text="MongoDB" color="#28831a" />
-                    <Tag text="REST API" color="#000000" />
-                    <Tag text="Authentication" color="#000000" />
+                    <Tag text="TypeScript" className="bg-blue-700" />
+                    <Tag text="Node" className="bg-lime-500" />
+                    <Tag text="Express" className="bg-black" />
+                    <Tag text="MongoDB" className="bg-emerald-500" />
+                    <Tag text="REST API" className="bg-black" />
+                    <Tag text="Authentication" className="bg-black" />
                 </TagContainer>}
                 title="REST API com autenticação"
                 text={`
@@ -26,16 +28,17 @@ export default function Dev() {
             </Card>
 
             <Card
+                key={"dev-1"}
                 thumb="/static/img/projects/tasks.png"
                 tags={<TagContainer>
-                    <Tag text="React" color="#7ae2ff" />
-                    <Tag text="TypeScript" color="#1475dd" />
-                    <Tag text="Vite" color="#4c54fa" />
-                    <Tag text="Styled Components" color="#f33d7a" />
-                    <Tag text="Node" color="#259221" />
-                    <Tag text="Express" color="#000000" />
-                    <Tag text="MongoDB" color="#28831a" />
-                    <Tag text="REST API" color="#000000" />
+                    <Tag text="React" className="bg-sky-400" />
+                    <Tag text="TypeScript" className="bg-blue-500" />
+                    <Tag text="Vite" className="bg-blue-900" />
+                    <Tag text="Styled Components" className="bg-rose-700" />
+                    <Tag text="Node" className="bg-lime-500" />
+                    <Tag text="Express" className="bg-black" />
+                    <Tag text="MongoDB" className="bg-emerald-500" />
+                    <Tag text="REST API" className="bg-black" />
                 </TagContainer>}
                 title="Tasks"
                 text={`
@@ -47,15 +50,16 @@ export default function Dev() {
             </Card>
 
             <Card
+                key={"dev-2"}
                 thumb="/static/img/projects/cookApp.png"
                 tags={
                     <TagContainer>
-                        <Tag text="React Native" color="#61dafb" />
-                        <Tag text="Expo" color="#000020" />
-                        <Tag text="Expo Router" color="#000020" />
-                        <Tag text="Supabase" color="#4f46e5" />
-                        <Tag text="React Native Reanimated" color="#61dafb" />
-                        <Tag text="REST API" color="#000000" />
+                        <Tag text="React Native" className="bg-sky-400" />
+                        <Tag text="Expo" className="bg-indigo-950" />
+                        <Tag text="Expo Router" className="bg-indigo-950" />
+                        <Tag text="Supabase" className="bg-violet-800" />
+                        <Tag text="React Native Reanimated" className="bg-sky-400" />
+                        <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
                 title="Cook App"
@@ -68,15 +72,16 @@ export default function Dev() {
             </Card>
 
             <Card
+                key={"dev-3"}
                 thumb="/static/img/projects/fisioHome.png"
                 tags={
                     <TagContainer>
-                        <Tag text="React Native" color="#61dafb" />
-                        <Tag text="Expo" color="#000020" />
-                        <Tag text="Node" color="#259221" />
-                        <Tag text="Express" color="#000000" />
-                        <Tag text="MongoDB" color="#28831a" />
-                        <Tag text="REST API" color="#000000" />
+                        <Tag text="React Native" className="bg-sky-400" />
+                        <Tag text="Expo" className="bg-indigo-950" />
+                        <Tag text="Node" className="bg-lime-500" />
+                        <Tag text="Express" className="bg-black" />
+                        <Tag text="MongoDB" className="bg-emerald-500" />
+                        <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
                 title="Fisio Home"
@@ -91,13 +96,14 @@ export default function Dev() {
             </Card>
 
             <Card
+                key={"dev-4"}
                 thumb="/static/img/projects/catFact.png"
                 tags={
                     <TagContainer>
-                        <Tag text="React Native" color="#61dafb" />
-                        <Tag text="Expo" color="#000020" />
-                        <Tag text="Axios" color="#000000" />
-                        <Tag text="REST API" color="#000000" />
+                        <Tag text="React Native" className="bg-sky-400" />
+                        <Tag text="Expo" className="bg-indigo-950" />
+                        <Tag text="Axios" className="bg-black" />
+                        <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
                 title="Cat Fact App"
@@ -109,14 +115,15 @@ export default function Dev() {
             </Card>
 
             <Card
+                key={"dev-5"}
                 thumb="/static/img/projects/cv-creator.png"
                 tags={
                     <TagContainer>
-                        <Tag text="React" color="#61dafb" />
-                        <Tag text="TypeScript" color="#1475dd" />
-                        <Tag text="Vite" color="#4c54fa" />
-                        <Tag text="SCSS" color="#c00060" />
-                        <Tag text="ReactPDF" color="#da0000" />
+                        <Tag text="React" className="bg-sky-400" />
+                        <Tag text="TypeScript" className="bg-blue-500" />
+                        <Tag text="Vite" className="bg-blue-900" />
+                        <Tag text="SCSS" className="bg-pink-500" />
+                        <Tag text="ReactPDF" className="bg-red-600" />
                     </TagContainer>
                 }
                 title="Criador de CV"
@@ -130,16 +137,17 @@ export default function Dev() {
             </Card>
 
             <Card
+                key={"dev-6"}
                 thumb="/static/img/projects/habits.png"
                 tags={
                     <TagContainer>
-                        <Tag text="React" color="#61dafb" />
-                        <Tag text="TypeScript" color="#1475dd" />
-                        <Tag text="Vite" color="#4c54fa" />
-                        <Tag text="TailwindCSS" color="#06b6d4" />
-                        <Tag text="Node" color="#259221" />
-                        <Tag text="SQLite" color="#000000" />
-                        <Tag text="REST API" color="#000000" />
+                        <Tag text="React" className="bg-sky-400" />
+                        <Tag text="TypeScript" className="bg-blue-500" />
+                        <Tag text="Vite" className="bg-blue-900" />
+                        <Tag text="TailwindCSS" className="bg-sky-300" />
+                        <Tag text="Node" className="bg-lime-500" />
+                        <Tag text="SQLite" className="bg-black" />
+                        <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
                 title="Habits"
@@ -151,13 +159,14 @@ export default function Dev() {
             </Card>
 
             <Card
+                key={"dev-7"}
                 thumb="/static/img/projects/socialTree.png"
                 tags={
                     <TagContainer>
-                        <Tag text="React" color="#61dafb" />
-                        <Tag text="TypeScript" color="#1475dd" />
-                        <Tag text="Vite" color="#4c54fa" />
-                        <Tag text="SCSS" color="#c00060" />
+                        <Tag text="React" className="bg-sky-400" />
+                        <Tag text="TypeScript" className="bg-blue-500" />
+                        <Tag text="Vite" className="bg-blue-900" />
+                        <Tag text="SCSS" className="bg-pink-500" />
                     </TagContainer>
                 }
                 title="Social tree"
@@ -168,6 +177,6 @@ export default function Dev() {
                 <ButtonLink href="https://linktree.richardborges.dev" icon={<BoxArrowUpRight />} label="Demo" />
                 <ButtonLink href="https://github.com/ribborges/social-tree/" icon={<Github />} label="Código" />
             </Card>
-        </Grid>
+        </GridContainer>
     );
 }

@@ -1,0 +1,17 @@
+.header-bg {
+    background-image: radial-gradient(rgba(85, 85, 85, 0.5) 1px, transparent 0);
+    background-size: 25px 25px;
+    animation: move-it 10s linear infinite;
+    min-height: 65vh;
+    padding: 10vw;
+}
+
+@keyframes move-it {
+    0% {
+        background-position: initial;
+    }
+
+    100% {
+        background-position: 100px 100px;
+    }
+}

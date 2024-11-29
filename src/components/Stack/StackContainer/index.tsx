@@ -1,7 +1,5 @@
 import { ReactNode } from "react";
 
-import { StyledStackSection, StyledStackContainer } from "../style";
-
 interface stackContainerProps {
     title: ReactNode,
     children?: ReactNode,
@@ -9,11 +7,14 @@ interface stackContainerProps {
 
 export default function StackContainer(props: stackContainerProps) {
     return (
-        <StyledStackSection>
+        <div className="
+            flex flex-col gap-4
+            mt-6 mb-6
+        ">
             <h3>{ props.title }</h3>
-            <StyledStackContainer>
+            <div className="flex flex-wrap gap-4">
                 { props.children }
-            </StyledStackContainer>
-        </StyledStackSection>
+            </div>
+        </div>
     );
 }

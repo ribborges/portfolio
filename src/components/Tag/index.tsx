@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { StyledTag, StyledTagContainer } from "./style";
+import classConcat from "../../utils/classConcat";
 
 interface TagContainerProps {
     children?: ReactNode,
@@ -7,21 +7,35 @@ interface TagContainerProps {
 
 interface TagProps {
     text?: string,
-    color?: string,
+    className?: string,
 }
 
 export function TagContainer(props: TagContainerProps) {
     return (
-        <StyledTagContainer>
-            { props.children }
-        </StyledTagContainer>
+        <div className="
+            flex flex-wrap content-center
+        ">
+            {props.children}
+        </div>
     );
 }
 
-export function Tag(props: TagProps) {
+export function Tag({
+    text,
+    className,
+}: TagProps) {
     return (
-        <StyledTag color={ props.color }>
-            <span>{ props.text }</span>
-        </StyledTag>
+        <div className={classConcat(
+            `
+                inline-block
+                p-1 pr-2 pl-2 m-1
+                rounded-full
+                bg-violet-700
+                text-white text-xs
+            `,
+            className || ""
+        )}>
+            <span>{text}</span>
+        </div>
     );
 }

@@ -1,7 +1,6 @@
 'use client';
 
 import { ReactNode } from "react";
-import styled from "styled-components";
 
 interface TitleProps {
     icon: ReactNode,
@@ -11,16 +10,9 @@ interface TitleProps {
 export default function Title(props: TitleProps) {
 
     return (
-        <StyledTitle>{props.icon} <span>{props.title}</span></StyledTitle>
+        <h1 className="flex items-center gap-6">
+            {props.icon}
+            <span className="font-bold">{props.title}</span>
+        </h1>
     );
 }
-
-const StyledTitle = styled.h1`
-    display: flex;
-    gap: 20px;
-    align-items: center;
-
-    span {
-        font-weight: bold;
-    }
-`;
