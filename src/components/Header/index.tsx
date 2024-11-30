@@ -25,7 +25,7 @@ export default function Header() {
 					<h2>Desenvolvedor Full Stack e Engenheiro de Software</h2>
 				</div>
 				<Blanckspace />
-				<div className="flex">
+				<div className="flex flex-wrap">
 					<ButtonLink href="mailto:ribborges@outlook.com" icon={<EnvelopeFill />} label="Email" />
 					<ButtonLink href="https://linkedin.com/in/ribborges" icon={<Linkedin />} label="Linkedin" />
 					<ButtonLink href="https://github.com/ribborges" icon={<Github />} label="Github" />
