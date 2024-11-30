@@ -12,8 +12,8 @@ export default function Card(props: CardProps) {
 	return (
 		<div className="
 			flex flex-col
-			backdrop-blur-md bg-zinc-900 bg-opacity-60 hover:bg-violet-700 hover:bg-opacity-60
-			border border-solid border-zinc-800
+			backdrop-blur-md bg-zinc-400 dark:bg-zinc-800 bg-opacity-60 hover:bg-violet-700 hover:bg-opacity-60
+			border border-solid border-zinc-400 dark:border-zinc-800
 			hover:shadow-2xl hover:shadow-zinc-200/20
 			rounded-2xl
 			overflow-hidden
@@ -22,7 +22,7 @@ export default function Card(props: CardProps) {
 		">
 			<div className="
 				w-full
-				border-b border-solid border-zinc-800
+				border-b border-solid border-zinc-400 dark:border-zinc-800
 			">
 				<img src={props.thumb} alt={props.title} className="
 					w-full

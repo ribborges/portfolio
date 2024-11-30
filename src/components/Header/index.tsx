@@ -8,9 +8,11 @@ export default function Header() {
 	return (
 		<header className="
 			header-bg
-			flex items-center justify-between flex-row
+			flex items-center justify-between flex-col-reverse
+			md:flex-row
 		"
-			id="header">
+			id="header"
+		>
 			<div className="flex-1 m-5">
 				<div>
 					<h3>Olá</h3>
@@ -36,6 +38,7 @@ export default function Header() {
 				max-w-96 max-h-96
 				border-2 border-solid border-zinc-500 border-opacity-50
 				rounded-[50%] hover:rounded-3xl
+				mt-24 md:mt-0
 				transition-all duration-1000
 			">
 				<img className="grayscale hover:grayscale-0 transition duration-1000" src="/static/img/avatar.png" />
