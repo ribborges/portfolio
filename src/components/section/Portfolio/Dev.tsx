@@ -92,7 +92,7 @@ export default function Dev() {
 						pós-acidente vascular encefálico (AVE) e os profissionais de fisioterapia presentes no campus.
 					`}
             >
-                <ButtonLink href="/fisio-home" target="_self" icon={<ThreeDotsVertical />} label="Detalhes" />
+                <ButtonLink href="https://fisiohome.richardborges.dev/" target="_self" icon={<ThreeDotsVertical />} label="Detalhes" />
             </Card>
 
             <Card
