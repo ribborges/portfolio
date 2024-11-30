@@ -30,7 +30,6 @@ export function Tag({
                 inline-block
                 p-1 pr-2 pl-2 m-1
                 rounded-full
-                bg-violet-700
                 text-white text-xs
             `,
             className || ""
