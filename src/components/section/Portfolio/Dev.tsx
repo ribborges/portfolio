@@ -10,7 +10,7 @@ export default function Dev() {
         <GridContainer>
             <Card
                 key={"dev-0"}
-                thumb="https://imgs.search.brave.com/aKNaDsFYkmoVkVhGb4p5QHRCwDy9RXamzQW2OTBPq7U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bW9uZ29kYi5jb20v/ZG9jcy9kcml2ZXJz/L25vZGUvY3VycmVu/dC9zdGF0aWMvYjNh/ZGRkMGViNDI0NGE4/MDJmYjY0MzUyNjA4/NWI0Y2EvOGU3Njgv/Tm9kZV9DYXRhbG9n/LndlYnA"
+                thumb="/static/img/projects/node.webp"
                 tags={<TagContainer>
                     <Tag text="TypeScript" className="bg-blue-700" />
                     <Tag text="Node" className="bg-lime-500" />
@@ -29,7 +29,7 @@ export default function Dev() {
 
             <Card
                 key={"dev-1"}
-                thumb="/static/img/projects/tasks.png"
+                thumb="/static/img/projects/tasks.webp"
                 tags={<TagContainer>
                     <Tag text="React" className="bg-sky-400" />
                     <Tag text="TypeScript" className="bg-blue-500" />
@@ -51,7 +51,7 @@ export default function Dev() {
 
             <Card
                 key={"dev-2"}
-                thumb="/static/img/projects/cookApp.png"
+                thumb="/static/img/projects/cook-app.webp"
                 tags={
                     <TagContainer>
                         <Tag text="React Native" className="bg-sky-400" />
@@ -73,7 +73,7 @@ export default function Dev() {
 
             <Card
                 key={"dev-3"}
-                thumb="/static/img/projects/fisioHome.png"
+                thumb="/static/img/projects/fisio-home.webp"
                 tags={
                     <TagContainer>
                         <Tag text="React Native" className="bg-sky-400" />
@@ -97,7 +97,7 @@ export default function Dev() {
 
             <Card
                 key={"dev-4"}
-                thumb="/static/img/projects/catFact.png"
+                thumb="/static/img/projects/cat-fact.webp"
                 tags={
                     <TagContainer>
                         <Tag text="React Native" className="bg-sky-400" />
@@ -116,7 +116,7 @@ export default function Dev() {
 
             <Card
                 key={"dev-5"}
-                thumb="/static/img/projects/cv-creator.png"
+                thumb="/static/img/projects/cv-creator.webp"
                 tags={
                     <TagContainer>
                         <Tag text="React" className="bg-sky-400" />
@@ -138,7 +138,7 @@ export default function Dev() {
 
             <Card
                 key={"dev-6"}
-                thumb="/static/img/projects/habits.png"
+                thumb="/static/img/projects/habits.webp"
                 tags={
                     <TagContainer>
                         <Tag text="React" className="bg-sky-400" />
@@ -160,7 +160,7 @@ export default function Dev() {
 
             <Card
                 key={"dev-7"}
-                thumb="/static/img/projects/socialTree.png"
+                thumb="/static/img/projects/social-tree.webp"
                 tags={
                     <TagContainer>
                         <Tag text="React" className="bg-sky-400" />

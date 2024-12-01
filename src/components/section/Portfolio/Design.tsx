@@ -10,7 +10,7 @@ export default function Unreal() {
         <GridContainer>
             <Card
                 key={"design-0"}
-                thumb="https://s3-alpha.figma.com/hub/file/6539758802/44203e98-ebf2-45a2-ac4f-3cac5bac65c6-cover.png"
+                thumb="/static/img/projects/charity-app.webp"
                 tags={<TagContainer>
                     <Tag text="Figma" className="bg-rose-900" />
                     <Tag text="UX/UI" className="bg-zinc-700" />
