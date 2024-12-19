@@ -19,7 +19,7 @@ export default function Dev() {
                     <Tag text="Zustand" className="bg-purple-500" />
                     <Tag text="SQLite" className="bg-white" />
                 </TagContainer>}
-                title="REST API com autenticação"
+                title="Kakebo"
                 text={`
 						Kakebo é um simples app para controlar suas despesas inspirado pelo método japonês para poupar dinheiro.
 					`}
