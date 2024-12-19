@@ -17,7 +17,7 @@ export default function Dev() {
                     <Tag text="Expo" className="bg-indigo-950" />
                     <Tag text="Expo Router" className="bg-indigo-950" />
                     <Tag text="Zustand" className="bg-purple-500" />
-                    <Tag text="SQLite" className="bg-white" />
+                    <Tag text="SQLite" className="bg-zinc-600" />
                 </TagContainer>}
                 title="Kakebo"
                 text={`
