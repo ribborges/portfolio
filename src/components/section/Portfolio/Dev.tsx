@@ -10,6 +10,25 @@ export default function Dev() {
         <GridContainer>
             <Card
                 key={"dev-0"}
+                thumb="/static/img/projects/kakebo.webp"
+                tags={<TagContainer>
+                    <Tag text="TypeScript" className="bg-blue-700" />
+                    <Tag text="React Native" className="bg-sky-400" />
+                    <Tag text="Expo" className="bg-indigo-950" />
+                    <Tag text="Expo Router" className="bg-indigo-950" />
+                    <Tag text="Zustand" className="bg-purple-500" />
+                    <Tag text="SQLite" className="bg-white" />
+                </TagContainer>}
+                title="REST API com autenticação"
+                text={`
+						Kakebo é um simples app para controlar suas despesas inspirado pelo método japonês para poupar dinheiro.
+					`}
+            >
+                <ButtonLink href="https://github.com/ribborges/kakebo" target="_self" icon={<Github />} label="APP" />
+            </Card>
+
+            <Card
+                key={"dev-0"}
                 thumb="/static/img/projects/node.webp"
                 tags={<TagContainer>
                     <Tag text="TypeScript" className="bg-blue-700" />
