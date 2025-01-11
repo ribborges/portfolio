@@ -23,7 +23,7 @@ export default function Dev() {
 						Kakebo é um simples app para controlar despesas inspirado no método japonês para poupar dinheiro.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/kakebo" target="_self" icon={<Github />} label="APP" />
+                <ButtonLink href="https://github.com/ribborges/kakebo" target="_self" icon={<Github />} label="Código" />
             </Card>
 
             <Card
@@ -85,7 +85,7 @@ export default function Dev() {
 						Uma API REST com autenticação e recursos de segurança para endpoints.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/api-with-auth" target="_self" icon={<Github />} label="APP" />
+                <ButtonLink href="https://github.com/ribborges/api-with-auth" target="_self" icon={<Github />} label="Código" />
             </Card>
 
             <Card
@@ -105,8 +105,8 @@ export default function Dev() {
 						Um app simples para registrar suas tarefas diárias.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/tasks-app" target="_self" icon={<Github />} label="APP" />
-                <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="API" />
+                <ButtonLink href="https://github.com/ribborges/tasks-app" target="_self" icon={<Github />} label="Código App" />
+                <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="Código API" />
             </Card>
 
             <Card
