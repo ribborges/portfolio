@@ -33,7 +33,9 @@ export default function Dev() {
                         <Tag text="React" className="bg-sky-400" />
                         <Tag text="TypeScript" className="bg-blue-500" />
                         <Tag text="Vite" className="bg-blue-900" />
-                        <Tag text="SCSS" className="bg-pink-500" />
+                        <Tag text="TailwindCSS" className="bg-sky-300" />
+                        <Tag text="i18next" className="bg-zinc-600" />
+                        <Tag text="Zustand" className="bg-purple-500" />
                         <Tag text="ReactPDF" className="bg-red-600" />
                     </TagContainer>
                 }
