@@ -26,7 +26,7 @@ export default function Header() {
 				</div>
 				<Blanckspace />
 				<div className="flex flex-wrap">
-					<ButtonLink href="mailto:ribborges@outlook.com" icon={<EnvelopeFill />} label="Email" />
+					<ButtonLink href="mailto:contato@richardborges.dev" icon={<EnvelopeFill />} label="Email" />
 					<ButtonLink href="https://linkedin.com/in/ribborges" icon={<Linkedin />} label="Linkedin" />
 					<ButtonLink href="https://github.com/ribborges" icon={<Github />} label="Github" />
 					<ButtonLink href="/static/docs/cv-richard-borges.pdf" icon={<FileEarmarkPersonFill />} label="CV" />
