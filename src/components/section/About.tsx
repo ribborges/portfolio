@@ -29,7 +29,9 @@ export default function About() {
 			<StackContainer title={"Front-End"}>
 				<StackCard image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png" alt="React logo" name="React.js" />
 				<StackCard image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png" alt="React Native logo" name="React Native" />
+				<StackCard image="https://zustand-demo.pmnd.rs/favicon.ico" alt="Zustand logo" name="Zustand" />
 				<StackCard image="https://img.icons8.com/?size=512&id=MWiBjkuHeMVq&format=png" alt="Next logo" name="Next.js" />
+				<StackCard image="https://img.icons8.com/?size=512&id=dJjTWMogzFzg&format=png" alt="Vite logo" name="Vite" />
 				<StackCard image="https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png" alt="SASS logo" name="SASS" />
 				<StackCard image="https://img.icons8.com/?size=512&id=aVf5vRtxZGEY&format=png" alt="Styled Components logo" name="Styled Components" />
 				<StackCard image="https://img.icons8.com/?size=512&id=84710&format=png" alt="Bootstrap logo" name="Bootstrap" />
