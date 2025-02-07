@@ -15,6 +15,7 @@ export default function Dev() {
                     <Tag text="React Native" className="bg-sky-400" />
                     <Tag text="Expo" className="bg-indigo-950" />
                     <Tag text="Expo Router" className="bg-indigo-950" />
+                    <Tag text="Nativewind" className="bg-teal-300" />
                     <Tag text="Zustand" className="bg-purple-500" />
                     <Tag text="SQLite" className="bg-zinc-600" />
                 </TagContainer>}
