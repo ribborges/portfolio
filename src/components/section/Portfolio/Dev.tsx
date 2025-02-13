@@ -75,8 +75,8 @@ export default function Dev() {
 						Um app simples para registrar e organizar suas tarefas diárias com categorias, prioridades e datas.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/tasks-web" target="_self" icon={<Github />} label="Código App Web" />
-                <ButtonLink href="https://github.com/ribborges/tasks-mobile" target="_self" icon={<Github />} label="Código App Mobile" />
+                <ButtonLink href="https://github.com/ribborges/tasks-web" target="_self" icon={<Github />} label="Código Web" />
+                <ButtonLink href="https://github.com/ribborges/tasks-mobile" target="_self" icon={<Github />} label="Código Mobile" />
                 <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="Código API" />
                 <ButtonLink href="https://tasks.richardborges.dev/" icon={<BoxArrowUpRight />} label="Demo" />
             </Card>
