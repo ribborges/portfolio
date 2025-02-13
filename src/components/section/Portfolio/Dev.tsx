@@ -17,6 +17,7 @@ export default function Dev() {
                     <Tag text="Expo Router" className="bg-indigo-950" />
                     <Tag text="Nativewind" className="bg-teal-300" />
                     <Tag text="Zustand" className="bg-purple-500" />
+                    <Tag text="Axios" className="bg-indigo-500" />
                     <Tag text="SQLite" className="bg-zinc-600" />
                 </TagContainer>}
                 title="Kakebo"
@@ -51,6 +52,36 @@ export default function Dev() {
             </Card>
 
             <Card
+                thumb="/static/img/projects/tasks.webp"
+                tags={<TagContainer>
+                    <Tag text="Node" className="bg-lime-500" />
+                    <Tag text="Express" className="bg-black" />
+                    <Tag text="TypeScript" className="bg-blue-500" />
+                    <Tag text="React" className="bg-sky-400" />
+                    <Tag text="Next.js" className="bg-zinc-800" />
+                    <Tag text="React Native" className="bg-sky-400" />
+                    <Tag text="Expo" className="bg-indigo-950" />
+                    <Tag text="Zustand" className="bg-purple-500" />
+                    <Tag text="Axios" className="bg-indigo-500" />
+                    <Tag text="JWT" className="bg-rose-600" />
+                    <Tag text="TailwindCSS" className="bg-sky-300" />
+                    <Tag text="Nativewind" className="bg-teal-300" />
+                    <Tag text="MongoDB" className="bg-emerald-500" />
+                    <Tag text="REST API" className="bg-black" />
+                    <Tag text="Authentication" className="bg-black" />
+                </TagContainer>}
+                title="Tasks"
+                text={`
+						Um app simples para registrar e organizar suas tarefas diárias com categorias, prioridades e datas.
+					`}
+            >
+                <ButtonLink href="https://github.com/ribborges/tasks-web" target="_self" icon={<Github />} label="Código App Web" />
+                <ButtonLink href="https://github.com/ribborges/tasks-mobile" target="_self" icon={<Github />} label="Código App Mobile" />
+                <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="Código API" />
+                <ButtonLink href="https://tasks.richardborges.dev/" icon={<BoxArrowUpRight />} label="Demo" />
+            </Card>
+
+            <Card
                 thumb="/static/img/projects/fisio-home.webp"
                 tags={
                     <TagContainer>
@@ -80,6 +111,7 @@ export default function Dev() {
                     <Tag text="Node" className="bg-lime-500" />
                     <Tag text="Express" className="bg-black" />
                     <Tag text="MongoDB" className="bg-emerald-500" />
+                    <Tag text="JWT" className="bg-rose-600" />
                     <Tag text="REST API" className="bg-black" />
                     <Tag text="Authentication" className="bg-black" />
                 </TagContainer>}
@@ -89,27 +121,6 @@ export default function Dev() {
 					`}
             >
                 <ButtonLink href="https://github.com/ribborges/api-with-auth" target="_self" icon={<Github />} label="Código" />
-            </Card>
-
-            <Card
-                thumb="/static/img/projects/tasks.webp"
-                tags={<TagContainer>
-                    <Tag text="React" className="bg-sky-400" />
-                    <Tag text="TypeScript" className="bg-blue-500" />
-                    <Tag text="Vite" className="bg-blue-900" />
-                    <Tag text="Styled Components" className="bg-rose-700" />
-                    <Tag text="Node" className="bg-lime-500" />
-                    <Tag text="Express" className="bg-black" />
-                    <Tag text="MongoDB" className="bg-emerald-500" />
-                    <Tag text="REST API" className="bg-black" />
-                </TagContainer>}
-                title="Tasks"
-                text={`
-						Um app simples para registrar suas tarefas diárias.
-					`}
-            >
-                <ButtonLink href="https://github.com/ribborges/tasks-app" target="_self" icon={<Github />} label="Código App" />
-                <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="Código API" />
             </Card>
 
             <Card
