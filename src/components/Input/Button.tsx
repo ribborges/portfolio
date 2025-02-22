@@ -13,7 +13,7 @@ export default function Button(props: ButtonProps) {
         <a
             className="
                 flex basis-[max-content] items-center justify-center content-center gap-2 
-                p-3 m-3
+                p-3 m-2
                 text-zinc-950 hover:text-zinc-950 dark:text-zinc-100 dark:hover:text-zinc-100
                 hover:bg-indigo-700
                 hover:no-underline
