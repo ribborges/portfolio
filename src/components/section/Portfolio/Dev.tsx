@@ -51,6 +51,7 @@ export default function Dev() {
             >
                 <ButtonLink href="https://cvcreator.richardborges.dev/" icon={<BoxArrowUpRight />} label="Demo" />
                 <ButtonLink href="https://github.com/ribborges/cv-creator/" icon={<Github />} label="Código" />
+                <ButtonLink href="https://github.com/ribborges/cv-creator-ai/" icon={<Github />} label="Código API AI" />
             </Card>
 
             <Card
