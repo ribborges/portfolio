@@ -1,8 +1,16 @@
 {
   "name": "portfolio",
+  "description": "My personal portfolio",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.2.4",
   "type": "module",
+  "license": "MPL-2.0",
+  "repository": "https://github.com/ribborges/portfolio",
+  "author": {
+    "name": "Richard Borges",
+    "email": "contato@richardborges.dev",
+    "url": "https://richardborges.dev"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
