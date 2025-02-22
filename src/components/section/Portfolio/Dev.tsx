@@ -46,7 +46,7 @@ export default function Dev() {
 						Crie seu currículo com essa ferramenta simples que gera o PDF dinamicamente com as suas informações.
                         Além disso, a aplicação possui tradução para inglês e português, um sistema de inteligência artificial
                         que permite importar os seus dados de um currículo em formato .pdf e também um sistema de exportação
-                        que permite exportar os dados em formato .json para futuras alterações.
+                        que permite salvar os dados em formato .json para futuras alterações.
 					`}
             >
                 <ButtonLink href="https://cvcreator.richardborges.dev/" icon={<BoxArrowUpRight />} label="Demo" />
