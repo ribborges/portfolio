@@ -44,7 +44,7 @@ export default function Dev() {
                 title="Criador de CV"
                 text={`
 						Crie seu currículo com essa ferramenta simples que gera o PDF dinamicamente com as suas informações.
-                        Além disso, a aplicação possui para inglês e português, um sistema de inteligência artificial
+                        Além disso, a aplicação possui tradução para inglês e português, um sistema de inteligência artificial
                         que permite importar os seus dados de um currículo em formato .pdf e também um sistema de exportação
                         que permite exportar os dados em formato .json para futuras alterações.
 					`}
