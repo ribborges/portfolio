@@ -1,8 +1,9 @@
 'use client';
 
 import { ReactNode, useState } from "react";
-import { FlexContainer } from "../Container";
-import classConcat from "../../utils/classConcat";
+import clsx from "clsx";
+
+import { FlexContainer } from "@/components/Container";
 
 interface toggleButtonProps {
     id?: string,
@@ -26,7 +27,7 @@ export function ToggleButton(props: toggleButtonProps) {
             id={props.id}
             onClick={props.onClick}
             className={
-                classConcat(
+                clsx(
                     props.className || '', 
                     "inline-block p-2 rounded-lg",
                     "after:content-[\"\"] after:block after:mt-2 after:w-full after:h-1 after:rounded-lg after:transiton after:duration-500",

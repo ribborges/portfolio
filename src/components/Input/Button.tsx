@@ -17,7 +17,7 @@ export default function Button(props: ButtonProps) {
                 text-zinc-950 hover:text-zinc-950 dark:text-zinc-100 dark:hover:text-zinc-100
                 hover:bg-indigo-700
                 hover:no-underline
-                border-2 border-solid rounded-lg hover:border-indigo-700
+                border-2 border-solid rounded-2xl hover:border-indigo-700
                 transition duration-500
                 select-none
             "
