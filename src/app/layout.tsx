@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import { Ubuntu } from 'next/font/google';
-import AnimBackground from "../components/AnimBackground";
-//import GlobalStyle from "../styles/globalStyles";
+import { Noto_Sans } from 'next/font/google';
 
-const ubuntu = Ubuntu({ weight: ["300", "400", "500", "700"], subsets: ["latin"], display: "swap", adjustFontFallback: false });
+import AnimBackground from "@/components/AnimBackground";
+
+import "@/styles/global.css";
+
+const notoSans = Noto_Sans({
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    subsets: ["latin"],
+    display: "swap",
+    adjustFontFallback: false
+});
 
 export const metadata: Metadata = {
     title: "Richard de Carvalho Borges",
     description: "Meu portfólio de projetos desenvolvido com Next.js",
 }
-
-import "../styles/global.css";
 
 export default function RootLayout({
     children,
@@ -19,8 +24,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            {/*<GlobalStyle />*/}
-            <body className={`text-zinc-950 dark:text-zinc-100 ${ubuntu.className}`}>
+            <body className={`text-zinc-950 dark:text-zinc-100 ${notoSans.className}`}>
                 <AnimBackground />
                 {children}
             </body>

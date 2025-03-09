@@ -1,9 +1,9 @@
 import { ArrowUpRightCircleFill } from "react-bootstrap-icons";
 
-import Card from "../../Card";
-import { Tag, TagContainer } from "../../Tag";
-import ButtonLink from "../../Input/Button";
-import { GridContainer } from "../../Container";
+import Card from "@/components/Card";
+import { Tag, TagContainer } from "@/components/Tag";
+import ButtonLink from "@/components/Input/Button";
+import { GridContainer } from "@/components/Container";
 
 export default function Unreal() {
     return (

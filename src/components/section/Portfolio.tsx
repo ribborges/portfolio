@@ -1,7 +1,8 @@
 import { BriefcaseFill } from "react-bootstrap-icons";
 
-import { Blanckspace } from "../Separator";
-import { Toggle } from "../Input";
+import { Blanckspace } from "@/components/Separator";
+import { Toggle } from "@/components/Input";
+
 import Dev from "./Portfolio/Dev";
 import Design from "./Portfolio/Design";
 import Title from "./Title";

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import classConcat from "../../utils/classConcat";
+import clsx from "clsx";
 
 interface TagContainerProps {
     children?: ReactNode,
@@ -25,7 +25,7 @@ export function Tag({
     className,
 }: TagProps) {
     return (
-        <div className={classConcat(
+        <div className={clsx(
             `
                 inline-block
                 p-1 pr-2 pl-2 m-1

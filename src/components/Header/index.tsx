@@ -1,12 +1,14 @@
 import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
-import ButtonLink from '../Input/Button';
-import { Blanckspace } from '../Separator';
+
+import ButtonLink from '@/components/Input/Button';
+import { Blanckspace } from '@/components/Separator';
 
 import "./style.css";
 
 export default function Header() {
 	return (
 		<header className="
+			h-screen
 			header-bg
 			flex items-center justify-between flex-col-reverse
 			md:flex-row
@@ -19,7 +21,7 @@ export default function Header() {
 					<h1>Sou <span className="
 						font-bold
 						p-1
-						bg-zinc-950 text-zinc-100 dark:bg-zinc-100 dark:text-zinc-950 hover:bg-violet-700
+						bg-zinc-950 text-zinc-100 dark:bg-zinc-100 dark:text-zinc-950 hover:bg-indigo-700
 						transition duration-500
 					">RICHARD BORGES</span></h1>
 					<h2>Desenvolvedor Full Stack e Engenheiro de Software</h2>
@@ -36,7 +38,7 @@ export default function Header() {
 				flex
 				overflow-hidden
 				max-w-96 max-h-96
-				border-2 border-solid border-zinc-500 border-opacity-50
+				border-2 border-solid border-zinc-300 dark:border-zinc-800 border-opacity-50
 				rounded-[50%] hover:rounded-3xl
 				mt-24 md:mt-0
 				transition-all duration-1000

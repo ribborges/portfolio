@@ -1,5 +1,5 @@
 import { ReactNode, HTMLAttributes } from 'react';
-import classConcat from '../../utils/classConcat';
+import clsx from 'clsx';
 
 interface FlexContainerProps extends HTMLAttributes<HTMLDivElement> {
     direction?: "row" | "col";
@@ -26,7 +26,7 @@ function FlexContainer({
     ...props
 }: FlexContainerProps) {
     return <div className={
-        classConcat("flex", props.className || '', `flex-${direction} justify-${justify} items-${items} flex-wrap-${wrap} gap-${gap}`)
+        clsx("flex", props.className || '', `flex-${direction} justify-${justify} items-${items} flex-wrap-${wrap} gap-${gap}`)
     } {...props}>{children}</div>;
 }
 
@@ -37,7 +37,7 @@ function GridContainer({
     ...props
 }: GridContainerProps) {
     return <div className={
-        classConcat("grid", props.className || '', `gap-${gap}`, template)
+        clsx("grid", props.className || '', `gap-${gap}`, template)
     } {...props}>{children}</div>;
 }
 

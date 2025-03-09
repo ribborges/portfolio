@@ -1,7 +1,8 @@
 import { PersonFill} from "react-bootstrap-icons";
 
-import { Blanckspace } from '../Separator';
-import { StackContainer, StackCard } from '../Stack';
+import { Blanckspace } from '@/components/Separator';
+import { StackContainer, StackCard } from '@/components/Stack';
+
 import Title from "./Title";
 
 export default function About() {

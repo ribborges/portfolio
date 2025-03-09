@@ -1,9 +1,17 @@
 "use client"
 
 import { ReactNode, useState } from 'react';
-import { X, ThreeDots } from 'react-bootstrap-icons';
+import { X, List } from 'react-bootstrap-icons';
+import clsx from 'clsx';
+
+import { MenuButton } from '@/components/Input';
 
 import Logo from './Logo';
+
+interface ItemContainerProps {
+	className?: string;
+	children?: ReactNode;
+}
 
 export function NavBar(props: { children: ReactNode }) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,38 +20,36 @@ export function NavBar(props: { children: ReactNode }) {
 	return (
 		<>
 			<nav className="
-				flex items-center content-center justify-between
+				top-0 left-0 right-0 bottom-0
+				flex items-center content-center justify-between self-start
 				fixed
-				backdrop-blur-md bg-zinc-100 dark:bg-zinc-950 bg-opacity-50 dark:bg-opacity-50 h-16
-				top-0 z-50 p-5 m-2
-				border border-b-2 border-solid border-zinc-400 dark:border-zinc-800 border-opacity-40 dark:border-opacity-40 rounded-2xl
+				backdrop-blur-md bg-zinc-100/50 dark:bg-zinc-950/50
+				z-50 p-4 m-2
+				border border-b-2 border-solid rounded-4xl
+                border-zinc-400/40 dark:border-zinc-800/40
 				shadow-xl
 				select-none
 			">
-				<div className="flex items-center content-center gap-5">
+				<div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16">
 					<div className="
-						flex items-center content-center
 						text-zinc-950 dark:text-zinc-200 hover:text-indigo-700
-						w-16 h-16
 						transition duration-500
 					">
 						<Logo />
 					</div>
 				</div>
-				<div className="flex items-center content-center gap-5">
-					<div className="flex lg:hidden">
-						<NavButton onClick={toggleMenu} icon={
-							isMenuOpen ? <X /> : <ThreeDots />
-						} />
-					</div>
-					<div className="hidden lg:flex items-center content-center gap-5">
-						{props.children}
-					</div>
-				</div>
+				<NavItemContainer className="justify-end hidden lg:flex">
+					{props.children}
+				</NavItemContainer>
+				<NavItemContainer className="justify-end lg:hidden">
+					<MenuButton onClick={toggleMenu} icon={
+						isMenuOpen ? <X /> : <List />
+					} />
+				</NavItemContainer>
 			</nav>
 			{isMenuOpen && (
-				<div className="lg:hidden fixed inset-0 z-40 bg-white dark:bg-black bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm">
-					<div className="flex flex-col items-center justify-center h-full space-y-8">
+				<div className="lg:hidden fixed inset-0 z-40 bg-white/90 dark:bg-black/90 dark:bg-opacity-90 backdrop-blur-sm pt-32 p-4">
+					<div className="flex flex-col items-stretch h-full gap-2">
 						{props.children}
 					</div>
 				</div>
@@ -52,58 +58,10 @@ export function NavBar(props: { children: ReactNode }) {
 	);
 }
 
-export function NavItemContainer(props: { children: ReactNode }) {
+export function NavItemContainer(props: ItemContainerProps) {
 	return (
-		<div className="flex items-center content-center gap-5">
+		<div className={clsx("flex-1 flex items-center content-center gap-1", props.className)}>
 			{props.children}
 		</div>
-	);
-}
-
-export function NavItem(props: { label?: string, icon: any, href?: string }) {
-	return (
-		<a className="
-			flex items-center content-center gap-2
-			text-xl
-			p-2
-			hover:bg-zinc-400 dark:hover:bg-zinc-800
-			text-zinc-900 hover:text-zinc-900 dark:text-zinc-200 dark:hover:text-zinc-200 hover:no-underline
-			border border-solid border-transparent rounded-2xl hover:border-zinc-500 dark:hover:border-zinc-700
-			transition duration-500
-			cursor-pointer
-		"
-			href={props.href}>
-			{props.icon}
-			{
-				props.label ?
-					<i className="text-zinc-900 dark:text-zinc-200 not-italic text-lg">{props.label}</i>
-					:
-					<></>
-			}
-		</a>
-	);
-}
-
-export function NavButton(props: { label?: string, icon: any, onClick?: () => void }) {
-	return (
-		<button className="
-			flex items-center content-center gap-2
-			text-xl
-			p-2
-			hover:bg-zinc-400 dark:hover:bg-zinc-800
-			text-zinc-900 hover:text-zinc-900 dark:text-zinc-200 dark:hover:text-zinc-200 hover:no-underline
-			border border-solid border-transparent rounded-2xl hover:border-zinc-500 dark:hover:border-zinc-700
-			transition duration-500
-			cursor-pointer
-		"
-			onClick={props.onClick}>
-			{props.icon}
-			{
-				props.label ?
-					<i className="text-zinc-900 dark:text-zinc-200 not-italic text-lg">{props.label}</i>
-					:
-					<></>
-			}
-		</button>
 	);
 }
