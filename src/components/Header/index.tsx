@@ -11,11 +11,11 @@ export default function Header() {
 		<header className="
 			h-screen
 			header-bg
-			flex items-center justify-between flex-col-reverse
+			flex items-center justify-center md:justify-between flex-col-reverse
 			md:flex-row
 			p-6 md:p-12 lg:p-24
 		" id="header">
-			<div className="flex-1">
+			<div className="md:flex-1">
 				<div>
 					<span className="font-bold text-lg md:text-xl lg:text-2xl">Olá</span>
 					<H1 className="justify-start flex-wrap">
