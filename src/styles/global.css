@@ -7,11 +7,11 @@
 
 html,
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
 }
 
 body,
@@ -40,14 +40,4 @@ body {
     /* Scrollbar */
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-.content {
-    padding: 5vw;
-
-    section {
-        padding: 4vw;
-        padding-top: 15vw;
-        padding-bottom: 15vw;
-    }
 }
