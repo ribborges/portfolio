@@ -33,7 +33,7 @@ export default function Card(props: CardProps) {
 				<h4 className="mb-2">{props.title}</h4>
 				<p className="text-justify">{props.text}</p>
 				<div className="
-					flex flex-row flex-wrap
+					flex flex-row flex-wrap gap-2
 					mt-auto pt-2
 				">
 					{props.children}
