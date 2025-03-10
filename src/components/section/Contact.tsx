@@ -3,13 +3,12 @@ import { SendFill, EnvelopeFill, Linkedin, Github } from "react-bootstrap-icons"
 import { Button } from "@/components/Input";
 import { Blanckspace } from "@/components/Separator";
 import { FlexContainer } from "@/components/Container";
-
-import Title from "./Title";
+import { H3 } from "@/components/Heading";
 
 export default function Contact() {
   return (
-    <section id="contact">
-      <Title icon={<SendFill />} title="CONTATO" />
+    <section className="p-2 md:p-4 lg:p-16" id="contact">
+      <H3><SendFill /><span>CONTATO</span></H3>
       <Blanckspace />
       <FlexContainer direction="col">
         <Button href="mailto:ribborges@outlook.com" className="accent big" icon={<EnvelopeFill />} label="Email" />

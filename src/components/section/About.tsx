@@ -2,13 +2,12 @@ import { PersonFill} from "react-bootstrap-icons";
 
 import { Blanckspace } from '@/components/Separator';
 import { StackContainer, StackCard } from '@/components/Stack';
-
-import Title from "./Title";
+import { H3 } from "@/components/Heading";
 
 export default function About() {
 	return (
-		<section id="about">
-			<Title icon={<PersonFill />} title="SOBRE MIM" />
+		<section className="p-2 md:p-4 lg:p-16" id="about">
+			<H3><PersonFill /><span>SOBRE MIM</span></H3>
 			<Blanckspace />
 			<div className="pl-2 pr-2 md:pl-32 md:pr-32 lg:pl-64 ld:pr-64">
 				<Paragraph>Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP. </Paragraph>
