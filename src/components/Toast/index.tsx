@@ -18,9 +18,8 @@ export default function Toast(props: ToastProps) {
                         p-4
                         border border-solid rounded-xl
                         transition duration-500
-                        pointer-events-auto
                     `,
-                    props.visible ? 'opacity-100' : 'opacity-0',
+                    props.visible ? 'opacity-100 pointer-events-auto' : 'opacity-0',
                     props.type === 'success' ? 'border-green-800' :
                         props.type === 'error' ? 'border-red-800' :
                             props.type === 'warning' ? 'border-yellow-800' :
