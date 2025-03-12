@@ -3,8 +3,10 @@ import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill, Whatsapp } from 
 import { ButtonLink } from '@/components/Input';
 import { Blanckspace } from '@/components/Separator';
 import { H1, H2 } from "@/components/Heading";
+import Translator from "@/components/Translator";
 
 import "./style.css";
+
 
 export default function Header() {
 	return (
@@ -17,9 +19,9 @@ export default function Header() {
 		" id="header">
 			<div className="md:flex-1">
 				<div>
-					<span className="font-bold text-lg md:text-xl lg:text-2xl">Olá</span>
+					<span className="font-bold text-lg md:text-xl lg:text-2xl"><Translator path="home.greeting" /></span>
 					<H1 className="justify-start flex-wrap">
-						<span>Sou</span>
+						<span><Translator path="home.name" /></span>
 						<span className="
 							font-bold
 							px-1
@@ -27,15 +29,15 @@ export default function Header() {
 							transition duration-500
 						">RICHARD BORGES</span>
 					</H1>
-					<H2>Engenheiro de Software</H2>
+					<H2><Translator path="home.title" /></H2>
 				</div>
 				<Blanckspace />
 				<div className="flex flex-wrap justify-center md:justify-start gap-2">
-					<ButtonLink href="mailto:contato@richardborges.dev"><EnvelopeFill /><span className="hidden md:block">Email</span></ButtonLink>
-					<ButtonLink href="https://wa.me/5511942347830"><Whatsapp /><span className="hidden md:block">Whatsapp</span></ButtonLink>
-					<ButtonLink href="https://linkedin.com/in/ribborges"><Linkedin /><span className="hidden md:block">LinkedIn</span></ButtonLink>
-					<ButtonLink href="https://github.com/ribborges"><Github /><span className="hidden md:block">Github</span></ButtonLink>
-					<ButtonLink href="/static/docs/cv-richard-borges.pdf"><FileEarmarkPersonFill /><span className="hidden md:block">CV</span></ButtonLink>
+					<ButtonLink href="mailto:contato@richardborges.dev"><EnvelopeFill /><span className="hidden md:block"><Translator path="home.email" /></span></ButtonLink>
+					<ButtonLink href="https://wa.me/5511942347830"><Whatsapp /><span className="hidden md:block"><Translator path="home.whatsapp" /></span></ButtonLink>
+					<ButtonLink href="https://linkedin.com/in/ribborges"><Linkedin /><span className="hidden md:block"><Translator path="home.linkedin" /></span></ButtonLink>
+					<ButtonLink href="https://github.com/ribborges"><Github /><span className="hidden md:block"><Translator path="home.github" /></span></ButtonLink>
+					<ButtonLink href="/static/docs/cv-richard-borges.pdf"><FileEarmarkPersonFill /><span className="hidden md:block"><Translator path="home.cv" /></span></ButtonLink>
 				</div>
 			</div>
 			<div className="

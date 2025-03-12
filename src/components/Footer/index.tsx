@@ -1,4 +1,5 @@
 import Anchor from "@/components/Anchor";
+import Translator from "@/components/Translator";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,13 +15,13 @@ export default function Footer() {
       "
     >
       <p>
-        {`Developed by: `}
+        <Translator path="footer.title" />{` `}
         <Anchor href='https://www.linkedin.com/in/ribborges/' target={'_blank'}>Richard de Carvalho Borges</Anchor>
-        {` with `}
+        {` `}<Translator path="footer.with" />{` `}
         <Anchor href='https://nextjs.org/' target={'_blank'}>Next.js</Anchor>
         {`, `}
         <Anchor href="https://www.typescriptlang.org/" target={'_blank'}>TypeScript</Anchor>
-        {` and `}
+        {` `}<Translator path="footer.and" />{` `}
         <Anchor href='https://tailwindcss.com/' target={'_blank'}>TailwindCSS</Anchor>
         {` | `}
         {currentYear}

@@ -1,0 +1,115 @@
+{
+    "nav": {
+        "home": "Início",
+        "about": "Sobre mim",
+        "portfolio": "Portfólio",
+        "contact": "Contato"
+    },
+    "home": {
+        "greeting": "Olá",
+        "name": "Sou",
+        "title": "Engenheiro de Software",
+        "email": "E-mail",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "cv": "Currículo"
+    },
+    "about": {
+        "title": "SOBRE MIM",
+        "description": {
+            "p1": "Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP.",
+            "p2": "Minhas principais habilidades são voltadas para o desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Possuo um perfil comunicativo, calmo e ágil, com uma grande facilidade para trabalho em equipe.",
+            "p3": "Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas)."
+        },
+        "languages": "Linguagens",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "cloudDB": "Banco de Dados na Nuvem",
+        "tools": "Ferramentas"
+    },
+    "portfolio": {
+        "title": "PORTFÓLIO",
+        "dev": "Desenvolvimento",
+        "design": "Design",
+        "kakebo": {
+            "title": "Kakebo",
+            "description": "Kakebo é um simples app para controlar despesas inspirado no método japonês para poupar dinheiro.",
+            "code": "Código"
+        },
+        "cvCreator": {
+            "title": "Criador de CV",
+            "description": "Crie seu currículo com essa ferramenta simples que gera o PDF dinamicamente com as suas informações. Além disso, a aplicação possui tradução para inglês e português, um sistema de inteligência artificial que permite importar os seus dados de um currículo em formato .pdf e também um sistema de exportação que permite salvar os dados em formato .json para futuras alterações. ",
+            "demo": "Demo",
+            "code": "Código",
+            "aiCode": "Código API IA"
+        },
+        "tasks": {
+            "title": "Tasks",
+            "description": "Um app simples para registrar e organizar suas tarefas diárias com categorias, prioridades e datas.",
+            "demo": "Demo",
+            "webCode": "Código Web",
+            "mobileCode": "Código Mobile",
+            "apiCode": "Código API"
+        },
+        "fisioHome": {
+            "title": "Fisio Home",
+            "description": "Aplicação desenvolvida durante a disciplina de Trabalho de Diplomação em parceria entre os cursos de Ciência da Computação e Fisioterapia da Pontifícia Universidade Católica, campus Poços de Caldas, visa estabelecer uma conexão remota entre pacientes em processo de recuperação pós-acidente vascular encefálico (AVE) e os profissionais de fisioterapia presentes no campus.",
+            "details": "Detalhes"
+        },
+        "REST": {
+            "title": "REST API com autenticação",
+            "description": "Uma API REST com autenticação e recursos de segurança para endpoints.",
+            "code": "Código"
+        },
+        "habits": {
+            "title": "Habits",
+            "description": "Habits é um aplicativo de controle de hábitos diários desenvolvido durante o evento NLW Setup - Ignite da Rocketseat.",
+            "code": "Código"
+        },
+        "cookApp": {
+            "title": "Cook App",
+            "description": "Projeto desenvolvido durante o evento React Native na prática da Rocketseat. Aplicação que sugere receitas conforme os ingredientes selecionados pelo usuário.",
+            "code": "Código"
+        },
+        "catFact": {
+            "title": "Cat Fact App",
+            "description": "Veja fatos aleatórios sobre gatos junto de uma imagem fofinha :3",
+            "code": "Código"
+        },
+        "socialTree": {
+            "title": "Social Tree",
+            "description": "Minha Social Tree com links para as minhas redes sociais.",
+            "demo": "Demo",
+            "code": "Código"
+        },
+        "charityApp": {
+            "title": "Charity App",
+            "description": "Design de um aplicativo de doações para caridade, criado como uma tarefa para a matéria de Experiência de Usuário da pós-graduação em Engenharia de Software na USP (Universidade de São Paulo).",
+            "figma": "Figma"
+        }
+    },
+    "contact": {
+        "title": "CONTATO",
+        "form": {
+            "title": "Me mande uma mensagem",
+            "name": "Nome",
+            "email": "E-mail",
+            "message": "Mensagem",
+            "send": "Enviar"
+        },
+        "social": {
+            "title": "Ou me encontre também por",
+            "email": "E-mail",
+            "whatsapp": "WhatsApp",
+            "linkedin": "LinkedIn",
+            "github": "GitHub",
+            "cv": "Currículo"
+        }
+    },
+    "footer": {
+        "title": "Desenvolvido por",
+        "with": "com",
+        "and": "e"
+    }
+}

@@ -4,6 +4,7 @@ import Card from "@/components/Card";
 import { Tag, TagContainer } from "@/components/Tag";
 import { ButtonLink } from "@/components/Input";
 import { GridContainer } from "@/components/Container";
+import Translator from "@/components/Translator";
 
 export default function Dev() {
     return (
@@ -19,12 +20,10 @@ export default function Dev() {
                     <Tag text="Zustand" className="bg-purple-500" />
                     <Tag text="SQLite" className="bg-zinc-600" />
                 </TagContainer>}
-                title="Kakebo"
-                text={`
-						Kakebo é um simples app para controlar despesas inspirado no método japonês para poupar dinheiro.
-					`}
+                title={Translator({ path: "portfolio.kakebo.title" })}
+                text={Translator({ path: "portfolio.kakebo.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/kakebo"><Github /><span>Código</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/kakebo"><Github /><span><Translator path="portfolio.kakebo.code" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -41,17 +40,12 @@ export default function Dev() {
                         <Tag text="AI" className="bg-blue-900" />
                     </TagContainer>
                 }
-                title="Criador de CV"
-                text={`
-						Crie seu currículo com essa ferramenta simples que gera o PDF dinamicamente com as suas informações.
-                        Além disso, a aplicação possui tradução para inglês e português, um sistema de inteligência artificial
-                        que permite importar os seus dados de um currículo em formato .pdf e também um sistema de exportação
-                        que permite salvar os dados em formato .json para futuras alterações.
-					`}
+                title={Translator({ path: "portfolio.cvCreator.title" })}
+                text={Translator({ path: "portfolio.cvCreator.description" })}
             >
-                <ButtonLink href="https://cvcreator.richardborges.dev/"><BoxArrowUpRight /><span>Site</span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/cv-creator/"><Github /><span>Código</span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/cv-creator-ai/"><Github /><span>Código API AI</span></ButtonLink>
+                <ButtonLink href="https://cvcreator.richardborges.dev/"><BoxArrowUpRight /><span><Translator path="portfolio.cvCreator.demo" /></span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/cv-creator/"><Github /><span><Translator path="portfolio.cvCreator.code" /></span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/cv-creator-ai/"><Github /><span><Translator path="portfolio.cvCreator.aiCode" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -73,15 +67,13 @@ export default function Dev() {
                     <Tag text="REST API" className="bg-black" />
                     <Tag text="Authentication" className="bg-black" />
                 </TagContainer>}
-                title="Tasks"
-                text={`
-						Um app simples para registrar e organizar suas tarefas diárias com categorias, prioridades e datas.
-					`}
+                title={Translator({ path: "portfolio.tasks.title" })}
+                text={Translator({ path: "portfolio.tasks.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/tasks-web"><Github /><span>Código Web</span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/tasks-mobile"><Github /><span>Código Mobile</span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/tasks-api"><Github /><span>Código API</span></ButtonLink>
-                <ButtonLink href="https://tasks.richardborges.dev/"><BoxArrowUpRight /><span>Demo</span></ButtonLink>
+                <ButtonLink href="https://tasks.richardborges.dev/"><BoxArrowUpRight /><span><Translator path="portfolio.tasks.demo" /></span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/tasks-web"><Github /><span><Translator path="portfolio.tasks.webCode" /></span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/tasks-mobile"><Github /><span><Translator path="portfolio.tasks.mobileCode" /></span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/tasks-api"><Github /><span><Translator path="portfolio.tasks.apiCode" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -96,15 +88,10 @@ export default function Dev() {
                         <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
-                title="Fisio Home"
-                text={`
-						Aplicação desenvolvida durante a disciplina de "Trabalho de Diplomação" em parceria
-						entre os cursos de Ciência da Computação e Fisioterapia da Pontifícia Universidade Católica, campus
-						Poços de Caldas, visa estabelecer uma conexão remota entre pacientes em processo de recuperação
-						pós-acidente vascular encefálico (AVE) e os profissionais de fisioterapia presentes no campus.
-					`}
+                title={Translator({ path: "portfolio.fisioHome.title" })}
+                text={Translator({ path: "portfolio.fisioHome.description" })}
             >
-                <ButtonLink href="https://fisiohome.richardborges.dev/"><ThreeDotsVertical /><span>Detalhes</span></ButtonLink>
+                <ButtonLink href="https://fisiohome.richardborges.dev/"><ThreeDotsVertical /><span><Translator path="portfolio.fisioHome.details" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -118,12 +105,10 @@ export default function Dev() {
                     <Tag text="REST API" className="bg-black" />
                     <Tag text="Authentication" className="bg-black" />
                 </TagContainer>}
-                title="REST API com autenticação"
-                text={`
-						Uma API REST com autenticação e recursos de segurança para endpoints.
-					`}
+                title={Translator({ path: "portfolio.REST.title" })}
+                text={Translator({ path: "portfolio.REST.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/api-with-auth"><Github /><span>Código</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/api-with-auth"><Github /><span><Translator path="portfolio.REST.code" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -139,12 +124,10 @@ export default function Dev() {
                         <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
-                title="Habits"
-                text={`
-						Projeto desenvolvido durante o evento NLW Setup - Ignite da Rocketseat.
-					`}
+                title={Translator({ path: "portfolio.habits.title" })}
+                text={Translator({ path: "portfolio.habits.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/"><Github /><span>Código</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/"><Github /><span><Translator path="portfolio.habits.code" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -159,13 +142,10 @@ export default function Dev() {
                         <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
-                title="Cook App"
-                text={`
-						Projeto desenvolvido durante o evento "React Native na prática" da Rocketseat. Aplicação 
-						que sugere receitas conforme os ingredientes selecionados pelo usuário.
-					`}
+                title={Translator({ path: "portfolio.cookApp.title" })}
+                text={Translator({ path: "portfolio.cookApp.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/cook-app/tree/master"><Github /><span>Código</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/cook-app/tree/master"><Github /><span><Translator path="portfolio.cookApp.code" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -178,12 +158,10 @@ export default function Dev() {
                         <Tag text="REST API" className="bg-black" />
                     </TagContainer>
                 }
-                title="Cat Fact App"
-                text={`
-						Veja fatos aleatórios sobre gatos junto de uma imagem fofinha :3
-					`}
+                title={Translator({ path: "portfolio.catFact.title" })}
+                text={Translator({ path: "portfolio.catFact.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/cat-fact-app"><Github /><span>Código</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/cat-fact-app"><Github /><span><Translator path="portfolio.catFact.code" /></span></ButtonLink>
             </Card>
 
             <Card
@@ -196,13 +174,11 @@ export default function Dev() {
                         <Tag text="SCSS" className="bg-pink-500" />
                     </TagContainer>
                 }
-                title="Social tree"
-                text={`
-						Minha Social Tree com links para as minhas redes sociais.
-					`}
+                title={Translator({ path: "portfolio.socialTree.title" })}
+                text={Translator({ path: "portfolio.socialTree.description" })}
             >
-                <ButtonLink href="https://linktree.richardborges.dev"><BoxArrowUpRight /><span>Demo</span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/social-tree/"><Github /><span>Código</span></ButtonLink>
+                <ButtonLink href="https://linktree.richardborges.dev"><BoxArrowUpRight /><span><Translator path="portfolio.socialTree.demo" /></span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/social-tree/"><Github /><span><Translator path="portfolio.socialTree.code" /></span></ButtonLink>
             </Card>
         </GridContainer>
     );

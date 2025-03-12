@@ -1,0 +1,115 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About me",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "home": {
+        "greeting": "Hello",
+        "name": "I'm",
+        "title": "Software Engineer",
+        "email": "E-mail",
+        "whatsapp": "WhatsApp",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "cv": "Currículo"
+    },
+    "about": {
+        "title": "ABOUT ME",
+        "description": {
+            "p1": "I'm a full stack developer, bachelor in computer science and currently studying MBA in Software Engineering at the Polytechnic School of USP.",
+            "p2": "My main skills are focused on Full Stack development with web technologies (MERN Stack) such as: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB and SASS. I have a communicative, calm and agile profile, with a great ease for teamwork.",
+            "p3": "Passionate about technology since early, I started my studies in the area with a technical course in computing and, soon after, for the computer science course at the Pontifical Catholic University of Minas Gerais (PUC Minas)."
+        },
+        "languages": "Languages",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "cloudDB": "Cloud and Database",
+        "tools": "Tools"
+    },
+    "portfolio": {
+        "title": "PORTFOLIO",
+        "dev": "Development",
+        "design": "Design",
+        "kakebo": {
+            "title": "Kakebo",
+            "description": "Kakebo is a simple expense tracking app inspired by the Japanese method of saving money.",
+            "code": "Code"
+        },
+        "cvCreator": {
+            "title": "CV Creator",
+            "description": "Create your resume with this simple tool that dynamically generates the PDF with your information. In addition, the application has translation for English and Portuguese, an artificial intelligence system that allows you to import your data from a resume in .pdf format and also an export system that allows you to save the data in .json format for future changes.",
+            "demo": "Demo",
+            "code": "Code",
+            "aiCode": "AI API Code"
+        },
+        "tasks": {
+            "title": "Tasks",
+            "description": "A simple app to record and organize your daily tasks with categories, priorities and dates.",
+            "demo": "Demo",
+            "webCode": "Web Code",
+            "mobileCode": "Mobile Code",
+            "apiCode": "API Code"
+        },
+        "fisioHome": {
+            "title": "Fisio Home",
+            "description": "Application developed during the Diploma Work discipline in partnership between the Computer Science and Physiotherapy courses of the Pontifical Catholic University, Poços de Caldas campus, aims to establish a remote connection between patients in the process of recovery post-stroke (AVE) and the physiotherapy professionals present on campus.",
+            "details": "Details"
+        },
+        "REST": {
+            "title": "REST API with authentication",
+            "description": "A REST API with authentication and security features for endpoints.",
+            "code": "Code"
+        },
+        "habits": {
+            "title": "Habits",
+            "description": "Habits is a daily habits control application developed during the NLW Setup - Ignite event by Rocketseat.",
+            "code": "Code"
+        },
+        "cookApp": {
+            "title": "Cook App",
+            "description": "Project developed during the Rocketseat React Native in practice event. Application that suggests recipes according to the ingredients selected by the user.",
+            "code": "Code"
+        },
+        "catFact": {
+            "title": "Cat Fact App",
+            "description": "See random facts about cats along with a cute image :3",
+            "code": "Code"
+        },
+        "socialTree": {
+            "title": "Social Tree",
+            "description": "My Social Tree with links to my social networks.",
+            "demo": "Demo",
+            "code": "Code"
+        },
+        "charityApp": {
+            "title": "Charity App",
+            "description": "Design of a charity donation app, created as a task for the User Experience subject of the postgraduate course in Software Engineering at USP (University of São Paulo).",
+            "figma": "Figma"
+        }
+    },
+    "contact": {
+        "title": "CONTACT",
+        "form": {
+            "title": "Send me a message",
+            "name": "Name",
+            "email": "E-mail",
+            "message": "Message",
+            "send": "Send"
+        },
+        "social": {
+            "title": "Or find me on social networks",
+            "email": "E-mail",
+            "whatsapp": "WhatsApp",
+            "linkedin": "LinkedIn",
+            "github": "GitHub",
+            "cv": "Resume"
+        }
+    },
+    "footer": {
+        "title": "Developed by",
+        "with": "with",
+        "and": "and"
+    }
+}
