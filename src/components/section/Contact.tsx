@@ -92,7 +92,16 @@ export default function Contact() {
               value={emailData.message}
               onChange={handleChange}
             />
-            <Button type="submit">Enviar</Button>
+            <Button
+              type="submit"
+              disabled={
+                emailData.from_email === '' ||
+                emailData.from_name === '' ||
+                emailData.message === ''
+              }
+            >
+              Enviar
+            </Button>
           </form>
         </div>
         <div className="flex flex-col gap-2">
