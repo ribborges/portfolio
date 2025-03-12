@@ -2,7 +2,7 @@ import { Github, ThreeDotsVertical, BoxArrowUpRight } from "react-bootstrap-icon
 
 import Card from "@/components/Card";
 import { Tag, TagContainer } from "@/components/Tag";
-import ButtonLink from "@/components/Input/Button";
+import { ButtonLink } from "@/components/Input";
 import { GridContainer } from "@/components/Container";
 
 export default function Dev() {
@@ -24,7 +24,7 @@ export default function Dev() {
 						Kakebo é um simples app para controlar despesas inspirado no método japonês para poupar dinheiro.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/kakebo" target="_self" icon={<Github />} label="Código" />
+                <ButtonLink href="https://github.com/ribborges/kakebo"><Github /><span>Código</span></ButtonLink>
             </Card>
 
             <Card
@@ -49,9 +49,9 @@ export default function Dev() {
                         que permite salvar os dados em formato .json para futuras alterações.
 					`}
             >
-                <ButtonLink href="https://cvcreator.richardborges.dev/" icon={<BoxArrowUpRight />} label="Demo" />
-                <ButtonLink href="https://github.com/ribborges/cv-creator/" icon={<Github />} label="Código" />
-                <ButtonLink href="https://github.com/ribborges/cv-creator-ai/" icon={<Github />} label="Código API AI" />
+                <ButtonLink href="https://cvcreator.richardborges.dev/"><BoxArrowUpRight /><span>Site</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/cv-creator/"><Github /><span>Código</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/cv-creator-ai/"><Github /><span>Código API AI</span></ButtonLink>
             </Card>
 
             <Card
@@ -78,10 +78,10 @@ export default function Dev() {
 						Um app simples para registrar e organizar suas tarefas diárias com categorias, prioridades e datas.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/tasks-web" target="_self" icon={<Github />} label="Código Web" />
-                <ButtonLink href="https://github.com/ribborges/tasks-mobile" target="_self" icon={<Github />} label="Código Mobile" />
-                <ButtonLink href="https://github.com/ribborges/tasks-api" target="_self" icon={<Github />} label="Código API" />
-                <ButtonLink href="https://tasks.richardborges.dev/" icon={<BoxArrowUpRight />} label="Demo" />
+                <ButtonLink href="https://github.com/ribborges/tasks-web"><Github /><span>Código Web</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/tasks-mobile"><Github /><span>Código Mobile</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/tasks-api"><Github /><span>Código API</span></ButtonLink>
+                <ButtonLink href="https://tasks.richardborges.dev/"><BoxArrowUpRight /><span>Demo</span></ButtonLink>
             </Card>
 
             <Card
@@ -104,7 +104,7 @@ export default function Dev() {
 						pós-acidente vascular encefálico (AVE) e os profissionais de fisioterapia presentes no campus.
 					`}
             >
-                <ButtonLink href="https://fisiohome.richardborges.dev/" target="_self" icon={<ThreeDotsVertical />} label="Detalhes" />
+                <ButtonLink href="https://fisiohome.richardborges.dev/"><ThreeDotsVertical /><span>Detalhes</span></ButtonLink>
             </Card>
 
             <Card
@@ -123,7 +123,7 @@ export default function Dev() {
 						Uma API REST com autenticação e recursos de segurança para endpoints.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/api-with-auth" target="_self" icon={<Github />} label="Código" />
+                <ButtonLink href="https://github.com/ribborges/api-with-auth"><Github /><span>Código</span></ButtonLink>
             </Card>
 
             <Card
@@ -144,7 +144,7 @@ export default function Dev() {
 						Projeto desenvolvido durante o evento NLW Setup - Ignite da Rocketseat.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/" icon={<Github />} label="Código" />
+                <ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/"><Github /><span>Código</span></ButtonLink>
             </Card>
 
             <Card
@@ -165,7 +165,7 @@ export default function Dev() {
 						que sugere receitas conforme os ingredientes selecionados pelo usuário.
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/cook-app/tree/master" icon={<Github />} label="Código" />
+                <ButtonLink href="https://github.com/ribborges/cook-app/tree/master"><Github /><span>Código</span></ButtonLink>
             </Card>
 
             <Card
@@ -183,7 +183,7 @@ export default function Dev() {
 						Veja fatos aleatórios sobre gatos junto de uma imagem fofinha :3
 					`}
             >
-                <ButtonLink href="https://github.com/ribborges/cat-fact-app" icon={<Github />} label="Código" />
+                <ButtonLink href="https://github.com/ribborges/cat-fact-app"><Github /><span>Código</span></ButtonLink>
             </Card>
 
             <Card
@@ -201,8 +201,8 @@ export default function Dev() {
 						Minha Social Tree com links para as minhas redes sociais.
 					`}
             >
-                <ButtonLink href="https://linktree.richardborges.dev" icon={<BoxArrowUpRight />} label="Demo" />
-                <ButtonLink href="https://github.com/ribborges/social-tree/" icon={<Github />} label="Código" />
+                <ButtonLink href="https://linktree.richardborges.dev"><BoxArrowUpRight /><span>Demo</span></ButtonLink>
+                <ButtonLink href="https://github.com/ribborges/social-tree/"><Github /><span>Código</span></ButtonLink>
             </Card>
         </GridContainer>
     );

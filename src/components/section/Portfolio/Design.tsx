@@ -2,10 +2,10 @@ import { ArrowUpRightCircleFill } from "react-bootstrap-icons";
 
 import Card from "@/components/Card";
 import { Tag, TagContainer } from "@/components/Tag";
-import ButtonLink from "@/components/Input/Button";
+import { ButtonLink } from "@/components/Input";
 import { GridContainer } from "@/components/Container";
 
-export default function Unreal() {
+export default function Design() {
     return (
         <GridContainer>
             <Card
@@ -22,7 +22,7 @@ export default function Unreal() {
                         em Engenharia de Software na USP
 					`}
             >
-                <ButtonLink href="https://www.figma.com/community/file/1412195434508691714/charity-app" target="_self" icon={<ArrowUpRightCircleFill />} label="Figma" />
+                <ButtonLink href="https://www.figma.com/community/file/1412195434508691714/charity-app"><ArrowUpRightCircleFill /><span>Figma</span></ButtonLink>
             </Card>
         </GridContainer>
     );

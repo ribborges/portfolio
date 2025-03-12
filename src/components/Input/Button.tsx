@@ -1,32 +1,72 @@
 import { ReactNode } from 'react';
+import clsx from 'clsx';
 
 interface ButtonProps {
-    href?: string,
+    autofocus?: boolean,
+    disabled?: boolean,
+    id?: string,
+    name?: string
+    value?: string,
     className?: string,
-    icon?: ReactNode,
-    label?: string,
-    target?: React.HTMLAttributeAnchorTarget | undefined
+    type?: "button" | "submit" | "reset" | undefined,
+    onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined,
+    children?: ReactNode,
 }
 
-export default function Button(props: ButtonProps) {
+interface ButtonLinkProps {
+    id?: string,
+    href?: string,
+    className?: string,
+    target?: React.HTMLAttributeAnchorTarget | undefined,
+    children?: ReactNode,
+}
+
+const buttonStyles = `
+    flex basis-[max-content] items-center justify-center content-center gap-2
+    p-3 lg:p-4 m-1
+    text-sm lg:text-base
+    text-zinc-800 dark:text-zinc-200 disabled:text-zinc-500/40
+    bg-transparent hover:bg-slate-600 focus:bg-slate-600
+    disabled:bg-transparent
+    rounded-2xl border border-solid
+    hover:border-slate-600 disabled:border-zinc-500/40
+    hover:shadow-2xl focus:shadow-2xl
+    disabled:hover:shadow-none disabled:focus:shadow-none
+    hover:shadow-zinc-950/20 focus:shadow-zinc-950/20
+    dark:hover:shadow-zinc-200/20 dark:focus:shadow-zinc-200/20
+    transition duration-500
+    cursor-pointer select-none
+`;
+
+function Button({ type = "button", autofocus, disabled, id, name, value, onClick, children, className }: ButtonProps) {
+    return (
+        <button
+            className={clsx(buttonStyles, className)}
+            type={type}
+            id={id}
+            name={name}
+            value={value}
+            autoFocus={autofocus}
+            disabled={disabled}
+            onClick={onClick}
+        >
+            {children}
+        </button>
+    );
+}
+
+function ButtonLink({ target = "_blank", ...props }: ButtonLinkProps) {
     return (
         <a
-            className="
-                flex basis-[max-content] items-center justify-center content-center gap-2 
-                p-3
-                text-zinc-950 hover:text-zinc-950 dark:text-zinc-100 dark:hover:text-zinc-100
-                hover:bg-indigo-700
-                hover:no-underline
-                border-2 border-solid rounded-2xl hover:border-indigo-700
-                transition duration-500
-                select-none
-            "
+            id={props.id}
+            className={clsx(buttonStyles, props.className)}
             href={props.href}
-            target={props.target ? props.target : "_blank"}
+            target={target}
             rel="noopener noreferrer"
         >
-            {props.icon}
-            <span className="hidden md:block">{props.label}</span>
+            {props.children}
         </a>
     );
 }
+
+export { Button, ButtonLink };

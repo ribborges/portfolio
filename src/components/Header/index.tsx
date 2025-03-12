@@ -1,6 +1,6 @@
 import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill, Whatsapp } from "react-bootstrap-icons";
 
-import ButtonLink from '@/components/Input/Button';
+import { ButtonLink } from '@/components/Input';
 import { Blanckspace } from '@/components/Separator';
 import { H1, H2 } from "@/components/Heading";
 
@@ -31,11 +31,11 @@ export default function Header() {
 				</div>
 				<Blanckspace />
 				<div className="flex flex-wrap justify-center md:justify-start gap-2">
-					<ButtonLink href="mailto:contato@richardborges.dev" icon={<EnvelopeFill />} label="Email" />
-					<ButtonLink href="https://wa.me/5511942347830" icon={<Whatsapp />} label="WhatsApp" />
-					<ButtonLink href="https://linkedin.com/in/ribborges" icon={<Linkedin />} label="Linkedin" />
-					<ButtonLink href="https://github.com/ribborges" icon={<Github />} label="Github" />
-					<ButtonLink href="/static/docs/cv-richard-borges.pdf" icon={<FileEarmarkPersonFill />} label="CV" />
+					<ButtonLink href="mailto:contato@richardborges.dev"><EnvelopeFill /><span className="hidden md:block">Email</span></ButtonLink>
+					<ButtonLink href="https://wa.me/5511942347830"><Whatsapp /><span className="hidden md:block">Whatsapp</span></ButtonLink>
+					<ButtonLink href="https://linkedin.com/in/ribborges"><Linkedin /><span className="hidden md:block">LinkedIn</span></ButtonLink>
+					<ButtonLink href="https://github.com/ribborges"><Github /><span className="hidden md:block">Github</span></ButtonLink>
+					<ButtonLink href="/static/docs/cv-richard-borges.pdf"><FileEarmarkPersonFill /><span className="hidden md:block">CV</span></ButtonLink>
 				</div>
 			</div>
 			<div className="
