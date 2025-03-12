@@ -12,7 +12,7 @@ export default function Card(props: CardProps) {
 	return (
 		<div className="
 			flex flex-col
-			backdrop-blur-md bg-zinc-200/60 dark:bg-zinc-900/60 hover:bg-violet-700/60
+			backdrop-blur-md bg-zinc-200/60 dark:bg-zinc-900/60 hover:bg-slate-600/60
 			border border-solid rounded-4xl border-zinc-300/60 dark:border-zinc-800/60
 			hover:shadow-2xl hover:shadow-zinc-200/20
 			overflow-hidden

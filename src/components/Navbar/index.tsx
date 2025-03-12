@@ -32,7 +32,7 @@ export function NavBar(props: { children: ReactNode }) {
 			">
 				<div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16">
 					<div className="
-						text-zinc-950 dark:text-zinc-200 hover:text-indigo-700
+						text-zinc-950 dark:text-zinc-200 hover:text-slate-600
 						transition duration-500
 					">
 						<Logo />

@@ -30,9 +30,9 @@ export function ToggleButton(props: toggleButtonProps) {
                 clsx(
                     props.className || '', 
                     "inline-block p-2 rounded-lg",
-                    "after:content-[\"\"] after:block after:mt-2 after:w-full after:h-1 after:rounded-lg after:transiton after:duration-500",
-                    props.active ? "after:bg-pink-700" : "after:bg-transparent",
-                    "hover:after:bg-violet-700",
+                    "after:content-[\"\"] after:block after:mt-1 after:w-full after:h-1 after:rounded-lg after:transiton after:duration-500",
+                    props.active ? "after:bg-slate-400" : "after:bg-transparent",
+                    "hover:after:bg-slate-800",
                     "select-none"
                 )
             }

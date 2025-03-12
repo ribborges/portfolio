@@ -23,7 +23,7 @@ export default function Header() {
 						<span className="
 							font-bold
 							px-1
-							bg-zinc-950 text-zinc-100 dark:bg-zinc-100 dark:text-zinc-950 hover:bg-indigo-700
+							bg-zinc-950 text-zinc-100 dark:bg-zinc-100 dark:text-zinc-950 hover:bg-slate-600
 							transition duration-500
 						">RICHARD BORGES</span>
 					</H1>
