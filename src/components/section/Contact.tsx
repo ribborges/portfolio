@@ -58,7 +58,7 @@ export default function Contact() {
         <div className="flex flex-col flex-1 gap-2">
           <H4>Me mande uma mensagem</H4>
           <form ref={form} onSubmit={sendEmail}>
-            <div className="flex gap-2">
+            <div className="flex flex-col md:flex-row gap-2">
               <Input
                 rootClassName="flex-1"
                 id="name"
