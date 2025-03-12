@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans } from 'next/font/google';
 
 import AnimBackground from "@/components/AnimBackground";
+import ToastProvider from "@/providers/ToastProvider";
 
 import "@/styles/global.css";
 
@@ -26,7 +27,9 @@ export default function RootLayout({
         <html lang="en">
             <body className={`text-zinc-950 dark:text-zinc-100 ${notoSans.className}`}>
                 <AnimBackground />
-                {children}
+                <ToastProvider>
+                    {children}
+                </ToastProvider>
             </body>
         </html>
     );
