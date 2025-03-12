@@ -8,15 +8,16 @@ import Portfolio from "@/components/section/Portfolio";
 import Footer from "@/components/Footer";
 import { MenuLink } from "@/components/Input";
 import Contact from "@/components/section/Contact";
+import Translator from "@/components/Translator";
 
 export default function Home() {
   return (
     <>
       <NavBar>
-        <MenuLink icon={<HouseDoorFill />} label="Inicio" href="#header" />
-        <MenuLink icon={<PersonFill />} label="Sobre mim" href="#about" />
-        <MenuLink icon={<BriefcaseFill />} label="Portfolio" href="#portfolio" />
-        <MenuLink icon={<SendFill />} label="Contato" href="#contact" />
+        <MenuLink icon={<HouseDoorFill />} label={Translator({path: "nav.home"})} href="#header" />
+        <MenuLink icon={<PersonFill />} label={Translator({path: "nav.about"})} href="#about" />
+        <MenuLink icon={<BriefcaseFill />} label={Translator({path: "nav.portfolio"})} href="#portfolio" />
+        <MenuLink icon={<SendFill />} label={Translator({path: "nav.contact"})} href="#contact" />
       </NavBar>
       
       <Header/>
