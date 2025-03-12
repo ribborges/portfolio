@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+import { H4 } from '@/components/Heading';
+
 interface CardProps {
 	thumb?: string,
 	title?: string,
@@ -30,7 +32,7 @@ export default function Card(props: CardProps) {
 			</div>
 			<div className="flex flex-1 flex-col p-6">
 				{props.tags!}
-				<h4 className="mb-2">{props.title}</h4>
+				<H4>{props.title}</H4>
 				<p className="text-justify">{props.text}</p>
 				<div className="
 					flex flex-row flex-wrap gap-2
