@@ -35,7 +35,7 @@ const buttonStyles = `
     hover:shadow-zinc-950/20 focus:shadow-zinc-950/20
     dark:hover:shadow-zinc-200/20 dark:focus:shadow-zinc-200/20
     transition duration-500
-    cursor-pointer select-none
+    cursor-pointer disabled:cursor-default select-none
 `;
 
 function Button({ type = "button", autofocus, disabled, id, name, value, onClick, children, className }: ButtonProps) {
