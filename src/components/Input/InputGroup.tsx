@@ -28,7 +28,7 @@ function InputGroup(props: inputGroupProps) {
                 flex flex-nowrap items-stretch flex-1
                 w-auto h-auto
                 box-border
-                rounded-xl border-2 border-solid border-zinc-300 dark:border-zinc-800
+                rounded-2xl border-2 border-solid border-zinc-300 dark:border-zinc-800
                 hover:shadow-2xl focus:shadow-2xl
                 hover:shadow-zinc-950/20 focus:shadow-zinc-950/20
                 dark:hover:shadow-zinc-200/20 dark:focus:shadow-zinc-200/20
