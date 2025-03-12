@@ -1,4 +1,4 @@
-import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill } from "react-bootstrap-icons";
+import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill, Whatsapp } from "react-bootstrap-icons";
 
 import ButtonLink from '@/components/Input/Button';
 import { Blanckspace } from '@/components/Separator';
@@ -32,6 +32,7 @@ export default function Header() {
 				<Blanckspace />
 				<div className="flex flex-wrap justify-center md:justify-start gap-2">
 					<ButtonLink href="mailto:contato@richardborges.dev" icon={<EnvelopeFill />} label="Email" />
+					<ButtonLink href="https://wa.me/5511942347830" icon={<Whatsapp />} label="WhatsApp" />
 					<ButtonLink href="https://linkedin.com/in/ribborges" icon={<Linkedin />} label="Linkedin" />
 					<ButtonLink href="https://github.com/ribborges" icon={<Github />} label="Github" />
 					<ButtonLink href="/static/docs/cv-richard-borges.pdf" icon={<FileEarmarkPersonFill />} label="CV" />
