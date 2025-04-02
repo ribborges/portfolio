@@ -54,7 +54,7 @@
         },
         "fisioHome": {
             "title": "Fisio Home",
-            "description": "Application developed during the Diploma Work discipline in partnership between the Computer Science and Physiotherapy courses of the Pontifical Catholic University, Poços de Caldas campus, aims to establish a remote connection between patients in the process of recovery post-stroke (AVE) and the physiotherapy professionals present on campus.",
+            "description": "Application developed as a capstone project in a partnership between the Computer Science and Physiotherapy courses of the Pontifical Catholic University, Poços de Caldas campus, aims to establish a remote connection between patients in the process of recovery post-stroke (AVE) and the physiotherapy professionals present on campus.",
             "details": "Details"
         },
         "REST": {
