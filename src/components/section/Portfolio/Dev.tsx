@@ -177,7 +177,7 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.socialTree.title" })}
                 text={Translator({ path: "portfolio.socialTree.description" })}
             >
-                <ButtonLink href="https://linktree.richardborges.dev"><BoxArrowUpRight /><span><Translator path="portfolio.socialTree.demo" /></span></ButtonLink>
+                <ButtonLink href="https://lnk.richardborges.dev"><BoxArrowUpRight /><span><Translator path="portfolio.socialTree.demo" /></span></ButtonLink>
                 <ButtonLink href="https://github.com/ribborges/social-tree/"><Github /><span><Translator path="portfolio.socialTree.code" /></span></ButtonLink>
             </Card>
         </GridContainer>
