@@ -2,7 +2,7 @@ import { Github, ThreeDotsVertical, BoxArrowUpRight } from "react-bootstrap-icon
 
 import Card from "@/components/Card";
 import { Tag, TagContainer } from "@/components/Tag";
-import { ButtonLink } from "@/components/Input";
+import { MenuLink } from "@/components/Input";
 import { GridContainer } from "@/components/Container";
 import Translator from "@/components/Translator";
 
@@ -23,7 +23,7 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.kakebo.title" })}
                 text={Translator({ path: "portfolio.kakebo.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/kakebo"><Github /><span><Translator path="portfolio.kakebo.code" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.kakebo.code" })} href="https://github.com/ribborges/kakebo" />
             </Card>
 
             <Card
@@ -43,9 +43,9 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.cvCreator.title" })}
                 text={Translator({ path: "portfolio.cvCreator.description" })}
             >
-                <ButtonLink href="https://cvcreator.richardborges.dev/"><BoxArrowUpRight /><span><Translator path="portfolio.cvCreator.demo" /></span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/cv-creator/"><Github /><span><Translator path="portfolio.cvCreator.code" /></span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/cv-creator-ai/"><Github /><span><Translator path="portfolio.cvCreator.aiCode" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<BoxArrowUpRight />} label={Translator({ path: "portfolio.cvCreator.demo" })} href="https://cvcreator.richardborges.dev/" />
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.cvCreator.code" })} href="https://github.com/ribborges/cv-creator/" />
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.cvCreator.aiCode" })} href="https://github.com/ribborges/cv-creator-ai/" />
             </Card>
 
             <Card
@@ -70,10 +70,10 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.tasks.title" })}
                 text={Translator({ path: "portfolio.tasks.description" })}
             >
-                <ButtonLink href="https://tasks.richardborges.dev/"><BoxArrowUpRight /><span><Translator path="portfolio.tasks.demo" /></span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/tasks-web"><Github /><span><Translator path="portfolio.tasks.webCode" /></span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/tasks-mobile"><Github /><span><Translator path="portfolio.tasks.mobileCode" /></span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/tasks-api"><Github /><span><Translator path="portfolio.tasks.apiCode" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<BoxArrowUpRight />} label={Translator({ path: "portfolio.tasks.demo" })} href="https://tasks.richardborges.dev/" />
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.tasks.webCode" })} href="https://github.com/ribborges/tasks-web" />
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.tasks.mobileCode" })} href="https://github.com/ribborges/tasks-mobile" />
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.tasks.apiCode" })} href="https://github.com/ribborges/tasks-api" />
             </Card>
 
             <Card
@@ -91,7 +91,7 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.fisioHome.title" })}
                 text={Translator({ path: "portfolio.fisioHome.description" })}
             >
-                <ButtonLink href="https://fisiohome.richardborges.dev/"><ThreeDotsVertical /><span><Translator path="portfolio.fisioHome.details" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<ThreeDotsVertical />} label={Translator({ path: "portfolio.fisioHome.details" })} href="https://fisiohome.richardborges.dev/" />
             </Card>
 
             <Card
@@ -108,7 +108,7 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.REST.title" })}
                 text={Translator({ path: "portfolio.REST.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/api-with-auth"><Github /><span><Translator path="portfolio.REST.code" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.REST.code" })} href="https://github.com/ribborges/api-with-auth" />
             </Card>
 
             <Card
@@ -127,7 +127,7 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.habits.title" })}
                 text={Translator({ path: "portfolio.habits.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/nlw-setup-ignite/"><Github /><span><Translator path="portfolio.habits.code" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.habits.code" })} href="https://github.com/ribborges/nlw-setup-ignite/" />
             </Card>
 
             <Card
@@ -145,7 +145,7 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.cookApp.title" })}
                 text={Translator({ path: "portfolio.cookApp.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/cook-app/tree/master"><Github /><span><Translator path="portfolio.cookApp.code" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.cookApp.code" })} href="https://github.com/ribborges/cook-app/tree/master" />
             </Card>
 
             <Card
@@ -161,7 +161,7 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.catFact.title" })}
                 text={Translator({ path: "portfolio.catFact.description" })}
             >
-                <ButtonLink href="https://github.com/ribborges/cat-fact-app"><Github /><span><Translator path="portfolio.catFact.code" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.catFact.code" })} href="https://github.com/ribborges/cat-fact-app" />
             </Card>
 
             <Card
@@ -177,8 +177,8 @@ export default function Dev() {
                 title={Translator({ path: "portfolio.socialTree.title" })}
                 text={Translator({ path: "portfolio.socialTree.description" })}
             >
-                <ButtonLink href="https://lnk.richardborges.dev"><BoxArrowUpRight /><span><Translator path="portfolio.socialTree.demo" /></span></ButtonLink>
-                <ButtonLink href="https://github.com/ribborges/social-tree/"><Github /><span><Translator path="portfolio.socialTree.code" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<BoxArrowUpRight />} label={Translator({ path: "portfolio.socialTree.demo" })} href="https://lnk.richardborges.dev" />
+                <MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.socialTree.code" })} href="https://github.com/ribborges/social-tree/" />
             </Card>
         </GridContainer>
     );

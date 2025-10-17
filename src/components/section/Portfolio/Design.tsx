@@ -2,7 +2,7 @@ import { ArrowUpRightCircleFill } from "react-bootstrap-icons";
 
 import Card from "@/components/Card";
 import { Tag, TagContainer } from "@/components/Tag";
-import { ButtonLink } from "@/components/Input";
+import { MenuLink } from "@/components/Input";
 import { GridContainer } from "@/components/Container";
 import Translator from "@/components/Translator";
 
@@ -19,7 +19,7 @@ export default function Design() {
                 title={Translator({ path: "portfolio.charityApp.title" })}
                 text={Translator({ path: "portfolio.charityApp.description" })}
             >
-                <ButtonLink href="https://www.figma.com/community/file/1412195434508691714/charity-app"><ArrowUpRightCircleFill /><span><Translator path="portfolio.charityApp.figma" /></span></ButtonLink>
+                <MenuLink className="text-sm" icon={<ArrowUpRightCircleFill />} label={Translator({ path: "portfolio.charityApp.figma" })} href="https://www.figma.com/community/file/1412195434508691714/charity-app" />
             </Card>
         </GridContainer>
     );
