@@ -1,3 +1,4 @@
+import { Literata } from "next/font/google";
 import { EnvelopeFill, Linkedin, Github, FileEarmarkPersonFill, Whatsapp } from "react-bootstrap-icons";
 
 import { ButtonLink } from '@/components/Input';
@@ -7,6 +8,12 @@ import Translator from "@/components/Translator";
 
 import "./style.css";
 
+const literata = Literata({
+    weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+    subsets: ["latin"],
+    display: "swap",
+    adjustFontFallback: false
+});
 
 export default function Header() {
 	return (
@@ -18,14 +25,15 @@ export default function Header() {
 			p-6 md:p-12 lg:p-24
 		" id="header">
 			<div className="md:flex-1">
-				<div>
-					<span className="font-bold text-lg md:text-xl lg:text-2xl"><Translator path="home.greeting" /></span>
+				<div className={literata.className}>
+					<span className="font-black text-lg md:text-xl lg:text-2xl"><Translator path="home.greeting" /></span>
 					<H1 className="justify-start flex-wrap">
 						<span><Translator path="home.name" /></span>
 						<span className="
-							font-bold
-							px-1
+							font-black
+							p-0 px-4
 							bg-zinc-950 text-zinc-100 dark:bg-zinc-100 dark:text-zinc-950 hover:bg-slate-600
+							rounded-full
 							transition duration-500
 						">RICHARD BORGES</span>
 					</H1>
