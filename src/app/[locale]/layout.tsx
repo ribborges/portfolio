@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -11,7 +11,7 @@ import ToastProvider from "@/providers/ToastProvider";
 
 import "@/styles/global.css";
 
-const notoSans = Noto_Sans({
+const inter = Inter({
     weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
     subsets: ["latin"],
     display: "swap",
@@ -42,7 +42,7 @@ export default async function RootLayout({
 
     return (
         <html lang="en">
-            <body className={`text-zinc-950 dark:text-zinc-100 ${notoSans.className}`}>
+            <body className={`text-zinc-950 dark:text-zinc-100 ${inter.className}`}>
                 <AnimBackground />
                 <NextIntlClientProvider messages={messages}>
                     <ToastProvider>
