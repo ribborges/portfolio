@@ -7,6 +7,7 @@ interface StackCardProps {
 export default function StackCard(props: StackCardProps) {
     return (
         <div className="
+            min-w-max
             flex gap-2 items-center
             backdrop-blur-md bg-zinc-200/60 dark:bg-zinc-900/60
             border border-solid rounded-2xl border-zinc-300/60 dark:border-zinc-800/60
@@ -16,7 +17,7 @@ export default function StackCard(props: StackCardProps) {
             transition duration-500
         ">
             <img className="w-6 text-md" src={ props.image } alt={props.alt} />
-            <p>{ props.name }</p>
+            <p className="text-nowrap">{ props.name }</p>
         </div>
     );
 }

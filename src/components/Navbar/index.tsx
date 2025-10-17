@@ -13,7 +13,7 @@ interface ItemContainerProps {
 	children?: ReactNode;
 }
 
-export function NavBar(props: { children: ReactNode }) {
+function NavBar(props: { children: ReactNode }) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -30,7 +30,15 @@ export function NavBar(props: { children: ReactNode }) {
 				shadow-xl
 				select-none
 			">
-				<div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16">
+				<NavItemContainer className="justify-start lg:hidden">
+					<MenuButton onClick={toggleMenu} icon={
+						isMenuOpen ? <X /> : <List />
+					} />
+				</NavItemContainer>
+				<NavItemContainer className="justify-start hidden lg:flex">
+					{props.children}
+				</NavItemContainer>
+				<div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12">
 					<div className="
 						text-zinc-950 dark:text-zinc-200 hover:text-slate-600
 						transition duration-500
@@ -38,30 +46,33 @@ export function NavBar(props: { children: ReactNode }) {
 						<Logo />
 					</div>
 				</div>
-				<NavItemContainer className="justify-end hidden lg:flex">
-					{props.children}
-				</NavItemContainer>
-				<NavItemContainer className="justify-end lg:hidden">
-					<MenuButton onClick={toggleMenu} icon={
-						isMenuOpen ? <X /> : <List />
-					} />
+				<NavItemContainer className="justify-end">
+
 				</NavItemContainer>
 			</nav>
-			{isMenuOpen && (
-				<div className="lg:hidden fixed inset-0 z-40 bg-white/90 dark:bg-black/90 dark:bg-opacity-90 backdrop-blur-sm pt-32 p-4">
-					<div className="flex flex-col items-stretch h-full gap-2">
-						{props.children}
-					</div>
+			<div className={clsx(
+				`
+				lg:hidden fixed w-8/12 inset-0 z-40
+				bg-white/80 dark:bg-black/80 backdrop-blur-sm
+				border-r border-zinc-400/40 dark:border-zinc-800/40
+				pt-32 p-4
+				transition-transform duration-300
+				`, isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+			)}>
+				<div className="flex flex-col items-stretch h-full gap-2">
+					{props.children}
 				</div>
-			)}
+			</div>
 		</>
 	);
 }
 
-export function NavItemContainer(props: ItemContainerProps) {
+function NavItemContainer(props: ItemContainerProps) {
 	return (
 		<div className={clsx("flex-1 flex items-center content-center gap-1", props.className)}>
 			{props.children}
 		</div>
 	);
 }
+
+export { NavBar, NavItemContainer };

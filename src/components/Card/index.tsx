@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
 import { H4 } from '@/components/Heading';
+import { Blanckspace } from '@/components/Separator';
 
 interface CardProps {
 	thumb?: string,
@@ -18,7 +19,7 @@ export default function Card(props: CardProps) {
 			border border-solid rounded-4xl border-zinc-300/60 dark:border-zinc-800/60
 			hover:shadow-2xl hover:shadow-zinc-200/20
 			overflow-hidden
-			hover:scale-105
+			hover:scale-95
 			transition duration-500
 		">
 			<div className="
@@ -34,8 +35,9 @@ export default function Card(props: CardProps) {
 				{props.tags!}
 				<H4>{props.title}</H4>
 				<p className="text-justify">{props.text}</p>
+				<Blanckspace space={20} />
 				<div className="
-					flex flex-row flex-wrap gap-2
+					flex flex-col gap-2
 					mt-auto pt-2
 				">
 					{props.children}
