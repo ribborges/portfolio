@@ -17,10 +17,11 @@
     },
     "about": {
         "title": "SOBRE MIM",
+        "subtitle": "Engenheiro de Software | Especialista em Backend & Microsserviços",
         "description": {
-            "p1": "Sou desenvolvedor full stack, bacharel em ciência da computação e atualmente cursando MBA em Engenharia de Software pela Escola Politécnica da USP.",
-            "p2": "Minhas principais habilidades são voltadas para o desenvolvimento Full Stack com tecnologias web (MERN Stack) como: HTML, CSS, JavaScript, TypeScript, Node.js, express.js, React.js, React Native, MongoDB e SASS. Possuo um perfil comunicativo, calmo e ágil, com uma grande facilidade para trabalho em equipe.",
-            "p3": "Apaixonado por tecnologia desde cedo, iniciei meus estudos na área com um curso técnico em informática e, logo em seguida, para o curso de ciência da computação na Pontifícia Universidade Católica de Minas Gerais (PUC Minas)."
+            "p1": "Com formação em Ciência da Computação (PUC-MG) e pós-graduação em Engenharia de Software (USP), atuo no desenvolvimento de sistemas escaláveis, desde arquiteturas monolíticas até soluções modernas em Microsserviços.",
+            "p2": "Domino tecnologias como Node.js, TypeScript, Express, React e MongoDB para criar aplicações completas e eficientes. Sou reconhecido pela minha capacidade de trabalho em equipe, comunicação e abordagem calma para resolver problemas.",
+            "p3": "Minha trajetória, impulsionada pela paixão por tecnologia desde o ensino técnico, é focada em unir conhecimento acadêmico robusto às melhores práticas do mercado para entregar software de alto valor."
         },
         "languages": "Linguagens",
         "backend": "Backend",

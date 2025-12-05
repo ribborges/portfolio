@@ -2,7 +2,7 @@ import { PersonFill } from "react-bootstrap-icons";
 
 import { Blanckspace } from '@/components/Separator';
 import { StackContainer, StackCard } from '@/components/Stack';
-import { H3 } from "@/components/Heading";
+import { H3, H4 } from "@/components/Heading";
 import Translator from "../Translator";
 
 export default function About() {
@@ -10,7 +10,15 @@ export default function About() {
 		<section className="p-2 md:p-4 lg:p-16" id="about">
 			<H3><PersonFill /><span><Translator path="about.title" /></span></H3>
 			<Blanckspace />
-			<div className="pl-2 pr-2 md:pl-32 md:pr-32 lg:pl-64 ld:pr-64">
+			<div className="
+				bg-zinc-200/50 dark:bg-zinc-900/50
+        		border border-solid rounded-2xl
+        		border-zinc-300/50 dark:border-zinc-800/50
+				md:mx-32 lg:mx-64
+				p-4 md:px-8 lg:p-16
+			">
+				<H4><Translator path="about.subtitle" /></H4>
+				<Blanckspace space={32} />
 				<Paragraph><Translator path="about.description.p1" /></Paragraph>
 				<Paragraph><Translator path="about.description.p2" /></Paragraph>
 				<Paragraph><Translator path="about.description.p3" /></Paragraph>
