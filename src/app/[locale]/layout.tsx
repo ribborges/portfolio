@@ -1,56 +1,54 @@
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-import { Analytics } from '@vercel/analytics/react';
+import { Inter } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { Analytics } from "@vercel/analytics/react";
 
-import AnimBackground from "@/components/AnimBackground";
 import ToastProvider from "@/providers/ToastProvider";
 
 import "@/styles/global.css";
 
 const inter = Inter({
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    subsets: ["latin"],
-    display: "swap",
-    adjustFontFallback: false
+	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+	subsets: ["latin"],
+	display: "swap",
+	adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
-    title: "Richard de Carvalho Borges",
-    description: "Meu portfólio de projetos desenvolvido com Next.js",
-}
+	title: "Richard de Carvalho Borges",
+	description: "Meu portfólio de projetos desenvolvido com Next.js",
+};
 
 export default async function RootLayout({
-    children,
-    params
+	children,
+	params,
 }: {
-    children: React.ReactNode,
-    params: Promise<{ locale: string }>
+	children: React.ReactNode;
+	params: Promise<{ locale: string }>;
 }) {
-    // Ensure that the incoming `locale` is valid
-    const { locale } = await params;
-    if (!routing.locales.includes(locale as any)) {
-        notFound();
-    }
+	// Ensure that the incoming `locale` is valid
+	const { locale } = await params;
+	if (!routing.locales.includes(locale as any)) {
+		notFound();
+	}
 
-    // Providing all messages to the client
-    // side is the easiest way to get started
-    const messages = await getMessages();
+	// Providing all messages to the client
+	// side is the easiest way to get started
+	const messages = await getMessages();
 
-    return (
-        <html lang="en">
-            <body className={`text-zinc-950 dark:text-zinc-100 ${inter.className}`}>
-                <AnimBackground />
-                <NextIntlClientProvider messages={messages}>
-                    <ToastProvider>
-                        {children}
-                    </ToastProvider>
-                </NextIntlClientProvider>
-                <Analytics />
-            </body>
-        </html>
-    );
+	return (
+		<html lang="en">
+			<body
+				className={`bg-zinc-100 dark:bg-zinc-950 text-zinc-950 dark:text-zinc-100 ${inter.className}`}
+			>
+				<NextIntlClientProvider messages={messages}>
+					<ToastProvider>{children}</ToastProvider>
+				</NextIntlClientProvider>
+				<Analytics />
+			</body>
+		</html>
+	);
 }
