@@ -2,31 +2,50 @@ import Anchor from "@/components/Anchor";
 import Translator from "@/components/Translator";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+	const currentYear = new Date().getFullYear();
 
-  return (
-    <footer
-      className="
-        text-xs
-        flex items-center justify-center
-        bg-zinc-200/50 dark:bg-zinc-900/50
-        border-t border-solid
-        border-zinc-300/50 dark:border-zinc-800/50
-        p-6 md:p-8 lg:p-10
-      "
-    >
-      <p>
-        <Translator path="footer.title" />{` `}
-        <Anchor href='https://www.linkedin.com/in/ribborges/' target={'_blank'}>Richard de Carvalho Borges</Anchor>
-        {` `}<Translator path="footer.with" />{` `}
-        <Anchor href='https://nextjs.org/' target={'_blank'}>Next.js</Anchor>
-        {`, `}
-        <Anchor href="https://www.typescriptlang.org/" target={'_blank'}>TypeScript</Anchor>
-        {` `}<Translator path="footer.and" />{` `}
-        <Anchor href='https://tailwindcss.com/' target={'_blank'}>TailwindCSS</Anchor>
-        {` | `}
-        {currentYear}
-      </p>
-    </footer>
-  );
+	return (
+		<footer
+			className="
+				text-xs
+				flex items-center justify-center
+				bg-zinc-200 dark:bg-zinc-900
+				border-t border-solid
+				border-zinc-300 dark:border-zinc-800
+				p-6 md:p-8 lg:p-10
+			"
+		>
+			<p>
+				<Translator path="footer.title" />
+				{` `}
+				<Anchor
+					href="https://www.linkedin.com/in/ribborges/"
+					target={"_blank"}
+				>
+					Richard de Carvalho Borges
+				</Anchor>
+				{` `}
+				<Translator path="footer.with" />
+				{` `}
+				<Anchor href="https://nextjs.org/" target={"_blank"}>
+					Next.js
+				</Anchor>
+				{`, `}
+				<Anchor
+					href="https://www.typescriptlang.org/"
+					target={"_blank"}
+				>
+					TypeScript
+				</Anchor>
+				{` `}
+				<Translator path="footer.and" />
+				{` `}
+				<Anchor href="https://tailwindcss.com/" target={"_blank"}>
+					TailwindCSS
+				</Anchor>
+				{` | `}
+				{currentYear}
+			</p>
+		</footer>
+	);
 }
