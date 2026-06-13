@@ -1,24 +1,24 @@
-import { ReactNode } from 'react';
-import clsx from 'clsx';
+import { ReactNode } from "react";
+import clsx from "clsx";
 
 interface ButtonProps {
-    autofocus?: boolean,
-    disabled?: boolean,
-    id?: string,
-    name?: string
-    value?: string,
-    className?: string,
-    type?: "button" | "submit" | "reset" | undefined,
-    onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined,
-    children?: ReactNode,
+	autofocus?: boolean;
+	disabled?: boolean;
+	id?: string;
+	name?: string;
+	value?: string;
+	className?: string;
+	type?: "button" | "submit" | "reset" | undefined;
+	onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
+	children?: ReactNode;
 }
 
 interface ButtonLinkProps {
-    id?: string,
-    href?: string,
-    className?: string,
-    target?: React.HTMLAttributeAnchorTarget | undefined,
-    children?: ReactNode,
+	id?: string;
+	href?: string;
+	className?: string;
+	target?: React.HTMLAttributeAnchorTarget | undefined;
+	children?: ReactNode;
 }
 
 const buttonStyles = `
@@ -28,45 +28,56 @@ const buttonStyles = `
     text-zinc-800 dark:text-zinc-200 disabled:text-zinc-500/40
     bg-transparent hover:bg-slate-600 focus:bg-slate-600
     disabled:bg-transparent
-    rounded-2xl border border-solid
+    rounded-2xl border-1 border-solid
+    border-zinc-900 dark:border-zinc-200
     hover:border-slate-600 disabled:border-zinc-500/40
     hover:shadow-2xl focus:shadow-2xl
     disabled:hover:shadow-none disabled:focus:shadow-none
-    hover:shadow-zinc-950/20 focus:shadow-zinc-950/20
-    dark:hover:shadow-zinc-200/20 dark:focus:shadow-zinc-200/20
+    hover:shadow-black/40 hover:dark:shadow-white/20
+    focus:shadow-black/40 focus:dark:shadow-white/20
     transition duration-500
     cursor-pointer disabled:cursor-default select-none
 `;
 
-function Button({ type = "button", autofocus, disabled, id, name, value, onClick, children, className }: ButtonProps) {
-    return (
-        <button
-            className={clsx(buttonStyles, className)}
-            type={type}
-            id={id}
-            name={name}
-            value={value}
-            autoFocus={autofocus}
-            disabled={disabled}
-            onClick={onClick}
-        >
-            {children}
-        </button>
-    );
+function Button({
+	type = "button",
+	autofocus,
+	disabled,
+	id,
+	name,
+	value,
+	onClick,
+	children,
+	className,
+}: ButtonProps) {
+	return (
+		<button
+			className={clsx(buttonStyles, className)}
+			type={type}
+			id={id}
+			name={name}
+			value={value}
+			autoFocus={autofocus}
+			disabled={disabled}
+			onClick={onClick}
+		>
+			{children}
+		</button>
+	);
 }
 
 function ButtonLink({ target = "_blank", ...props }: ButtonLinkProps) {
-    return (
-        <a
-            id={props.id}
-            className={clsx(buttonStyles, props.className)}
-            href={props.href}
-            target={target}
-            rel="noopener noreferrer"
-        >
-            {props.children}
-        </a>
-    );
+	return (
+		<a
+			id={props.id}
+			className={clsx(buttonStyles, props.className)}
+			href={props.href}
+			target={target}
+			rel="noopener noreferrer"
+		>
+			{props.children}
+		</a>
+	);
 }
 
 export { Button, ButtonLink };

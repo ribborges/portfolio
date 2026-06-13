@@ -1,72 +1,206 @@
 import { PersonFill } from "react-bootstrap-icons";
 
-import { Blanckspace } from '@/components/Separator';
-import { StackContainer, StackCard } from '@/components/Stack';
+import { Blanckspace } from "@/components/Separator";
+import { StackContainer, StackCard } from "@/components/Stack";
 import { H3, H4 } from "@/components/Heading";
 import Translator from "../Translator";
 
 export default function About() {
 	return (
 		<section className="p-2 md:p-4 lg:p-16" id="about">
-			<H3><PersonFill /><span><Translator path="about.title" /></span></H3>
+			<H3>
+				<PersonFill />
+				<span>
+					<Translator path="about.title" />
+				</span>
+			</H3>
 			<Blanckspace />
-			<div className="
-				bg-zinc-200/50 dark:bg-zinc-900/50
-        		border border-solid rounded-2xl
-        		border-zinc-300/50 dark:border-zinc-800/50
-				md:mx-32 lg:mx-64
-				p-4 md:px-8 lg:p-16
-			">
-				<H4><Translator path="about.subtitle" /></H4>
+			<div
+				className="
+					relative isolate
+					bg-zinc-200 dark:bg-zinc-900
+					border-2 border-solid rounded-4xl
+					border-zinc-300 dark:border-zinc-800
+					md:mx-32 lg:mx-64
+					p-4 md:px-8 lg:p-16
+
+					after:content-['']
+					after:absolute
+					after:inset-0
+					after:rounded-[inherit]
+					after:-z-10
+					after:pointer-events-none
+					after:animate-pulse
+
+					after:shadow-2xl
+					after:shadow-slate-500/60
+					dark:after:shadow-slate-500/20
+				"
+			>
+				<H4>
+					<Translator path="about.subtitle" />
+				</H4>
 				<Blanckspace space={32} />
-				<Paragraph><Translator path="about.description.p1" /></Paragraph>
-				<Paragraph><Translator path="about.description.p2" /></Paragraph>
-				<Paragraph><Translator path="about.description.p3" /></Paragraph>
+				<Paragraph>
+					<Translator path="about.description.p1" />
+				</Paragraph>
+				<Paragraph>
+					<Translator path="about.description.p2" />
+				</Paragraph>
+				<Paragraph>
+					<Translator path="about.description.p3" />
+				</Paragraph>
 			</div>
 			<Blanckspace />
 			<StackContainer title={Translator({ path: "about.languages" })}>
-				<StackCard image="https://img.icons8.com/?size=512&id=108784&format=png" alt="JavaScript logo" name="JavaScript" />
-				<StackCard image="https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png" alt="TypeScript logo" name="TypeScript" />
-				<StackCard image="https://img.icons8.com/?size=512&id=13441&format=png" alt="Python logo" name="Python" />
-				<StackCard image="https://img.icons8.com/?size=512&id=haeAxVQEIg0F&format=png" alt="Rust logo" name="Rust" />
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=108784&format=png"
+					alt="JavaScript logo"
+					name="JavaScript"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=uJM6fQYqDaZK&format=png"
+					alt="TypeScript logo"
+					name="TypeScript"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=13441&format=png"
+					alt="Python logo"
+					name="Python"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=haeAxVQEIg0F&format=png"
+					alt="Rust logo"
+					name="Rust"
+				/>
 			</StackContainer>
 			<StackContainer title={Translator({ path: "about.backend" })}>
-				<StackCard image="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png" alt="Node.js logo" name="Node.js" />
-				<StackCard image="https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=png" alt="express.js logo" name="express.js" />
-				<StackCard image="https://img.icons8.com/?size=512&id=zJh5Gyrd6ZKu&format=png" alt="Prisma logo" name="Prisma" />
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png"
+					alt="Node.js logo"
+					name="Node.js"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=png"
+					alt="express.js logo"
+					name="express.js"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=zJh5Gyrd6ZKu&format=png"
+					alt="Prisma logo"
+					name="Prisma"
+				/>
 			</StackContainer>
 			<StackContainer title={Translator({ path: "about.frontend" })}>
-				<StackCard image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png" alt="React logo" name="React.js" />
-				<StackCard image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png" alt="React Native logo" name="React Native" />
-				<StackCard image="https://zustand-demo.pmnd.rs/favicon.ico" alt="Zustand logo" name="Zustand" />
-				<StackCard image="https://img.icons8.com/?size=512&id=MWiBjkuHeMVq&format=png" alt="Next logo" name="Next.js" />
-				<StackCard image="https://img.icons8.com/?size=512&id=dJjTWMogzFzg&format=png" alt="Vite logo" name="Vite" />
-				<StackCard image="https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png" alt="SASS logo" name="SASS" />
-				<StackCard image="https://img.icons8.com/?size=512&id=aVf5vRtxZGEY&format=png" alt="Styled Components logo" name="Styled Components" />
-				<StackCard image="https://img.icons8.com/?size=512&id=84710&format=png" alt="Bootstrap logo" name="Bootstrap" />
-				<StackCard image="https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png" alt="TailwindCSS logo" name="TailwindCSS" />
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png"
+					alt="React logo"
+					name="React.js"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=NfbyHexzVEDk&format=png"
+					alt="React Native logo"
+					name="React Native"
+				/>
+				<StackCard
+					image="https://zustand-demo.pmnd.rs/favicon.ico"
+					alt="Zustand logo"
+					name="Zustand"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=MWiBjkuHeMVq&format=png"
+					alt="Next logo"
+					name="Next.js"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=dJjTWMogzFzg&format=png"
+					alt="Vite logo"
+					name="Vite"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=QBqFNfPPB2Kx&format=png"
+					alt="SASS logo"
+					name="SASS"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=aVf5vRtxZGEY&format=png"
+					alt="Styled Components logo"
+					name="Styled Components"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=84710&format=png"
+					alt="Bootstrap logo"
+					name="Bootstrap"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=4PiNHtUJVbLs&format=png"
+					alt="TailwindCSS logo"
+					name="TailwindCSS"
+				/>
 			</StackContainer>
 			<StackContainer title={Translator({ path: "about.cloudDB" })}>
-				<StackCard image="https://img.icons8.com/?size=512&id=33039&format=png" alt="AWS logo" name="AWS" />
-				<StackCard image="https://img.icons8.com/?size=512&id=74402&format=png" alt="MongoDB logo" name="MongoDB" />
-				<StackCard image="https://img.icons8.com/?size=512&id=38561&format=png" alt="PostgreSQL logo" name="PostgreSQL" />
-				<StackCard image="https://img.icons8.com/?size=512&id=62452&format=png" alt="Firebase logo" name="Firebase" />
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=33039&format=png"
+					alt="AWS logo"
+					name="AWS"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=74402&format=png"
+					alt="MongoDB logo"
+					name="MongoDB"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=38561&format=png"
+					alt="PostgreSQL logo"
+					name="PostgreSQL"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=62452&format=png"
+					alt="Firebase logo"
+					name="Firebase"
+				/>
 			</StackContainer>
 			<StackContainer title={Translator({ path: "about.tools" })}>
-				<StackCard image="https://img.icons8.com/?size=512&id=22813&format=png" alt="Docker logo" name="Docker" />
-				<StackCard image="https://img.icons8.com/?size=512&id=9OGIyU8hrxW5&format=png" alt="VS Code logo" name="VS Code" />
-				<StackCard image="https://img.icons8.com/?size=512&id=20906&format=png" alt="Git logo" name="Git" />
-				<StackCard image="https://img.icons8.com/?size=512&id=zfHRZ6i1Wg0U&format=png" alt="Figma logo" name="Figma" />
-				<StackCard image="https://img.icons8.com/?size=512&id=QEQQKirln6Tf&format=png" alt="Postman logo" name="Postman" />
-				<StackCard image="https://img.icons8.com/?size=512&id=34301&format=png" alt="Unreal Engine logo" name="Unreal Engine" />
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=22813&format=png"
+					alt="Docker logo"
+					name="Docker"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=9OGIyU8hrxW5&format=png"
+					alt="VS Code logo"
+					name="VS Code"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=20906&format=png"
+					alt="Git logo"
+					name="Git"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=zfHRZ6i1Wg0U&format=png"
+					alt="Figma logo"
+					name="Figma"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=QEQQKirln6Tf&format=png"
+					alt="Postman logo"
+					name="Postman"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=34301&format=png"
+					alt="Unreal Engine logo"
+					name="Unreal Engine"
+				/>
 			</StackContainer>
 		</section>
-	)
+	);
 }
 
 function Paragraph(props: { children: React.ReactNode }) {
 	return (
-		<p className="inline-block text-justify text-xl mt-2 mb-2 indent-5 md:indent-10">{props.children}</p>
+		<p className="inline-block text-justify text-xl mt-2 mb-2 indent-5 md:indent-10">
+			{props.children}
+		</p>
 	);
 }
 
