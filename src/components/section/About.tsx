@@ -54,6 +54,11 @@ export default function About() {
 			<Blanckspace />
 			<StackContainer title={Translator({ path: "about.languages" })}>
 				<StackCard
+					image="https://img.icons8.com/?size=512&id=44442&format=png"
+					alt="Golang logo"
+					name="Go (Golang)"
+				/>
+				<StackCard
 					image="https://img.icons8.com/?size=512&id=108784&format=png"
 					alt="JavaScript logo"
 					name="JavaScript"
@@ -139,6 +144,16 @@ export default function About() {
 				/>
 			</StackContainer>
 			<StackContainer title={Translator({ path: "about.cloudDB" })}>
+				<StackCard
+					image="https://www.rabbitmq.com/img/rabbitmq-logo.svg"
+					alt="RabbitMQ logo"
+					name="RabbitMQ"
+				/>
+				<StackCard
+					image="https://img.icons8.com/?size=512&id=pHS3eRpynIRQ&format=png"
+					alt="Redis logo"
+					name="Redis"
+				/>
 				<StackCard
 					image="https://img.icons8.com/?size=512&id=33039&format=png"
 					alt="AWS logo"
