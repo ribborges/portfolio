@@ -12,6 +12,24 @@ interface LightBeam {
 	direction: "horizontal" | "vertical";
 }
 
+interface ThemePalette {
+	background: string;
+	grid: string;
+	beamRgb: string;
+}
+
+const darkPalette: ThemePalette = {
+	background: "#09090b",
+	grid: "#0f0f0f",
+	beamRgb: "255, 255, 255",
+};
+
+const lightPalette: ThemePalette = {
+	background: "#f4f4f5",
+	grid: "rgba(24, 24, 27, 0.1)",
+	beamRgb: "24, 24, 27",
+};
+
 export function AnimatedGridBackground() {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const containerRef = useRef<HTMLDivElement>(null);
@@ -31,6 +49,13 @@ export function AnimatedGridBackground() {
 		};
 		resizeCanvas();
 		window.addEventListener("resize", resizeCanvas);
+
+		const colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+		let palette = colorScheme.matches ? darkPalette : lightPalette;
+		const updatePalette = (event: MediaQueryListEvent) => {
+			palette = event.matches ? darkPalette : lightPalette;
+		};
+		colorScheme.addEventListener("change", updatePalette);
 
 		const gridSize = 34;
 
@@ -85,10 +110,10 @@ export function AnimatedGridBackground() {
 		}
 
 		const animate = () => {
-			ctx.fillStyle = "#09090b";
+			ctx.fillStyle = palette.background;
 			ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-			ctx.strokeStyle = "#0f0f0f";
+			ctx.strokeStyle = palette.grid;
 			ctx.lineWidth = 1;
 
 			for (let x = 0; x < canvas.width; x += gridSize) {
@@ -116,13 +141,13 @@ export function AnimatedGridBackground() {
 				);
 				gradient.addColorStop(
 					0,
-					`rgba(255, 255, 255, ${beam.intensity})`,
+					`rgba(${palette.beamRgb}, ${beam.intensity})`,
 				);
 				gradient.addColorStop(
 					0.2,
-					`rgba(200, 200, 200, ${beam.intensity * 0.2})`,
+					`rgba(${palette.beamRgb}, ${beam.intensity * 0.2})`,
 				);
-				gradient.addColorStop(0.5, "rgba(255, 255, 255, 0)");
+				gradient.addColorStop(0.5, `rgba(${palette.beamRgb}, 0)`);
 
 				ctx.fillStyle = gradient;
 				ctx.beginPath();
@@ -145,9 +170,12 @@ export function AnimatedGridBackground() {
 				);
 				trailGradient.addColorStop(
 					0,
-					`rgba(255, 255, 255, ${beam.intensity * 0.6})`,
+					`rgba(${palette.beamRgb}, ${beam.intensity * 0.6})`,
 				);
-				trailGradient.addColorStop(1, "rgba(255, 255, 255, 0)");
+				trailGradient.addColorStop(
+					1,
+					`rgba(${palette.beamRgb}, 0)`,
+				);
 
 				ctx.strokeStyle = trailGradient;
 				ctx.lineWidth = 3;
@@ -179,13 +207,15 @@ export function AnimatedGridBackground() {
 				}
 			});
 
-			requestAnimationFrame(animate);
+			animationFrame = requestAnimationFrame(animate);
 		};
 
-		animate();
+		let animationFrame = requestAnimationFrame(animate);
 
 		return () => {
+			cancelAnimationFrame(animationFrame);
 			window.removeEventListener("resize", resizeCanvas);
+			colorScheme.removeEventListener("change", updatePalette);
 		};
 	}, []);
 
