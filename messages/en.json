@@ -33,6 +33,17 @@
         "title": "PORTFOLIO",
         "dev": "Development",
         "design": "Design",
+        "jaci": {
+            "title": "Jaci UI",
+            "description": "Jaci UI is an accessible React component library with a neutral default visual language, Panda CSS tokens, static CSS distribution, and SSR-safe components.",
+            "code": "Code",
+            "storybook": "Storybook"
+        },
+        "thesis": {
+            "title": "Architectural Pattern for Microservices: a Cloud-Agnostic approach",
+            "description": "Monograph developed as part of my MBA in Software Engineering.",
+            "details": "Details"
+        },
         "kakebo": {
             "title": "Kakebo",
             "description": "Kakebo is a simple expense tracking app inspired by the Japanese method of saving money.",

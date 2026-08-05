@@ -1,4 +1,4 @@
-import { Github, ThreeDotsVertical, BoxArrowUpRight } from "react-bootstrap-icons";
+import { Github, ThreeDotsVertical, BoxArrowUpRight, BookHalf } from "react-bootstrap-icons";
 
 import Card from "@/components/Card";
 import { Tag, TagContainer } from "@/components/Tag";
@@ -8,7 +8,22 @@ import Translator from "@/components/Translator";
 
 export default function Dev() {
     return (
-        <GridContainer>
+		<GridContainer>
+			<Card
+                thumb="/static/img/projects/jaci-ui.webp"
+                tags={<TagContainer>
+                    <Tag text="TypeScript" className="bg-blue-700" />
+					<Tag text="React" className="bg-sky-400" />
+					<Tag text="Storybook" className="bg-rose-500" />
+                    <Tag text="PandaCSS" className="bg-yellow-500" />
+                </TagContainer>}
+                title={Translator({ path: "portfolio.jaci.title" })}
+                text={Translator({ path: "portfolio.jaci.description" })}
+            >
+				<MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.jaci.code" })} href="https://github.com/ribborges/jaci-ui" />
+                <MenuLink className="text-sm" icon={<BookHalf />} label={Translator({ path: "portfolio.jaci.storybook" })} href="https://ribborges.github.io/jaci-ui/" />
+			</Card>
+
             <Card
                 thumb="/static/img/projects/kakebo.webp"
                 tags={<TagContainer>
