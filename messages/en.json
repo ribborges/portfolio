@@ -37,7 +37,8 @@
             "title": "Jaci UI",
             "description": "Jaci UI is an accessible React component library with a neutral default visual language, Panda CSS tokens, static CSS distribution, and SSR-safe components.",
             "code": "Code",
-            "storybook": "Storybook"
+            "storybook": "Storybook",
+            "npm": "NPM"
         },
         "thesis": {
             "title": "Architectural Pattern for Microservices: a Cloud-Agnostic approach",

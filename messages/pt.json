@@ -37,7 +37,8 @@
             "title": "Jaci UI",
             "description": "Jaci UI é uma biblioteca de componentes acessíveis com um visual neutro padrão, tokens de Panda CSS, distribuição estática de CSS e componentes SSR-safe.",
             "code": "Código",
-            "storybook": "Storybook"
+            "storybook": "Storybook",
+            "npm": "NPM"
         },
         "thesis": {
             "title": "Padrão Arquitetural para Microsserviços: uma abordagem Cloud-Agnostic",

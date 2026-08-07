@@ -1,4 +1,4 @@
-import { Github, ThreeDotsVertical, BoxArrowUpRight, BookHalf } from "react-bootstrap-icons";
+import { Github, ThreeDotsVertical, BoxArrowUpRight, BookHalf, BoxSeamFill } from "react-bootstrap-icons";
 
 import Card from "@/components/Card";
 import { Tag, TagContainer } from "@/components/Tag";
@@ -21,7 +21,8 @@ export default function Dev() {
                 text={Translator({ path: "portfolio.jaci.description" })}
             >
 				<MenuLink className="text-sm" icon={<Github />} label={Translator({ path: "portfolio.jaci.code" })} href="https://github.com/ribborges/jaci-ui" />
-                <MenuLink className="text-sm" icon={<BookHalf />} label={Translator({ path: "portfolio.jaci.storybook" })} href="https://ribborges.github.io/jaci-ui/" />
+				<MenuLink className="text-sm" icon={<BookHalf />} label={Translator({ path: "portfolio.jaci.storybook" })} href="https://ribborges.github.io/jaci-ui/" />
+                <MenuLink className="text-sm" icon={<BoxSeamFill />} label={Translator({ path: "portfolio.jaci.npm" })} href="https://www.npmjs.com/package/jaci-ui" />
 			</Card>
 
             <Card
