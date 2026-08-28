@@ -10,6 +10,24 @@ export default function Dev() {
     return (
 		<GridContainer>
 			<Card
+                thumb="/static/img/projects/microservices.webp"
+				tags={<TagContainer>
+					<Tag text="Software Engineering" className="bg-amber-900" />
+					<Tag text="Software Architecture" className="bg-emerald-900" />
+                    <Tag text="Microservices" className="bg-cyan-900" />
+                </TagContainer>}
+                title={Translator({ path: "portfolio.thesis.title" })}
+                text={Translator({ path: "portfolio.thesis.description" })}
+            >
+				<MenuLink
+					className="text-sm"
+					icon={<ThreeDotsVertical />}
+					label={Translator({ path: "portfolio.thesis.details" })}
+					href="https://pecepoli.com.br//monografia-download/?content=Padr%C3%A3o%20Arquitetural%20para%20Microsservi%C3%A7os:%20Uma%20Abordagem%20Cloud-Agnostic|Richard%20de%20Carvalho%20Borges|2026-02-13%2020:00:00|98106|600|Renato%20Manzan%20de%20Andrade|ESW|MBA%20POLI%20USP%20em%20Engenharia%20de%20Software|15956"
+				/>
+			</Card>
+
+			<Card
                 thumb="/static/img/projects/jaci-ui.webp"
                 tags={<TagContainer>
                     <Tag text="TypeScript" className="bg-blue-700" />
