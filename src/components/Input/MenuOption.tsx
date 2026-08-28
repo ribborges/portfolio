@@ -36,7 +36,8 @@ export function MenuLink({ label, icon, className, href }: { href?: string } & M
     return (
         <a
             className={clsx(menuOptStyle, className)}
-            href={href}
+			href={href}
+            target="_blank"
         >
             {icon && icon}
             {label && label}
